@@ -21,13 +21,13 @@
 title: Vega Strike Project
 email: nabaco@tutamail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+    Open Source 3D Space Flight Sim: Trade, Fight, Explore
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.vega-strike.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vegastrike
 github_username:  vegastrike
+git_address: https://github.com/vegastrike/Vega-Strike-Engine-Source
+git_edit_address: https://github.com/vegastrike/Vega-Strike-Engine-Source/blob/master
 
 # Build settings
 #
@@ -57,3 +57,28 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
