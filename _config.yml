@@ -22,18 +22,25 @@ title: Vega Strike Project
 email: nabaco@tutamail.com
 description: >- # this means to ignore newlines until "baseurl:"
     Open Source 3D Space Flight Sim: Trade, Fight, Explore
+lang: en-US
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.vega-strike.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: vegastrike
-github_username:  vegastrike
 git_address: https://github.com/vegastrike/Vega-Strike-Engine-Source
 git_edit_address: https://github.com/vegastrike/Vega-Strike-Engine-Source/blob/master
+github_username:  vegastrike
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: cyborg #paper cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
-#
+markdown: kramdown
+highlighter: rouge
 #theme: minima
-remote_theme: aksakalli/jekyll-doc-theme@gh-pages
-bootwatch: cyborg
+#remote_theme: aksakalli/jekyll-doc-theme@gh-pages
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -60,6 +67,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
 
 defaults:
 - scope:
