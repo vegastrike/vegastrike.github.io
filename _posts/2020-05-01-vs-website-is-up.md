@@ -13,6 +13,7 @@ you find any issues, just [file a ticket][vs-issues] or [open a pull request][vs
 You're always welcome to jump to our [Gitter][vs-gitter] channel to chat with the rest of the community.
 
 Hope to see around, and don't break your hull!
+
 NaBaCo.
 
 [vs-gh]: https://github.com/vegastrike/Vega-Strike-Engine-Source
