@@ -29,6 +29,7 @@ url: "https://www.vega-strike.org" # the base hostname & protocol for your site,
 git_address: https://github.com/vegastrike/Vega-Strike-Engine-Source
 git_edit_address: https://github.com/vegastrike/Vega-Strike-Engine-Source/blob/master
 github_username:  vegastrike
+gitter: https://gitter.im/vegastrike/community
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap

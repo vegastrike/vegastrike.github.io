@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: News
-  link: /allposts
+  link: /allposts/
 - name: Forums
   link: https://forums.vega-strike.org
 - name: Wiki
@@ -10,3 +10,5 @@
   #  link: /docs/home/
 - name: Gitter
   link: https://gitter.im/vegastrike/community
+- name: About
+  link: /about/
