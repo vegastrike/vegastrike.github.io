@@ -50,6 +50,15 @@ html {
       font-weight: bold;
     }
   }
+
+  .post-meta {
+   font-size: 150%; 
+  }
+
+  .post-content {
+   font-size: 130%; 
+  }
+
   *[id]:before {
     display: block;
     content: " ";
