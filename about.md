@@ -1,15 +1,27 @@
 ---
-layout: default
+layout: page
 title: About
 permalink: /about/
 ---
-
-# About
 
 Vegastrike is an OpenSource 3D Space Simulator.
 Currently in Beta development, the project, at version 1.0, is to
 be a generic space simulator.
 Current features include split-screen play, trading, exploration and of course plenty of shoot 'em up action
+
+## The Game
+
+As you play, you will see that three races are present in the game. The Aera,
+Rlaan and Confederation (human). For some background you can read the
+Fiction included with the data files (recently greatly expanded!) and
+you can also mosy along over to the Vegastrike Database on the [Wiki](https://wiki.vega-strike.org), containing information on ships and their stats.
+Both of these things are under heavy development at the moment and so are not currently incorporated into the website, they will get better and more complete with time.
+
+## Developer Contributions
+
+Would you like to contribute to Vegastrike and become a developer? Great!
+Just head over to our [Gitter chatroom]({{ site.gitter }}) or straight to our [Github page]({{ site.git_address }}).
+YOU DO NOT HAVE TO KNOW CODING! We desperately need people to do many other things as well, such as documentation, artwork etc.
 
 ## Why Vega Strike is important to Free Open Source Software
 
@@ -31,19 +43,3 @@ Vega Strike started out on my hard drive as more or less a copy of Wing Commande
 Slowly other artists started contributing art to Vega Strike, and I assured that there was no trace of IP left in the data tree of Vega Strike.  I continue to assure this by not viewing the code of the Volition-owned FreeSpace2 engine.
 
 For more information about Free Software and the [Free Software Foundation](http://www.gnu.org/fsf/) please visit the GNU website linked to in this sentence. Free Software makes our world a better place to compute in!
-
-## The Game
-
-As you play, you will see that three races are present in the game. The Aera,
-Rlaan and Confederation (human). For some background you can read the
-Fiction included with the data files (recently greatly expanded!) and
-you can also mosy along over to the Vegastrike Database on the [Wiki](https://wiki.vega-strike.org), containing information on ships and their stats.
-Both of these things are under heavy development at the moment and so are not currently incorporated into the website, they will get better and more complete with time.
-
-## Developer Contributions
-
-Would you like to contribute to Vegastrike and become a developer? Great!
-Just head over to our [Gitter chatroom]({{ site.gitter }}) or straight to our [Github page]({{ site.git_address }}).
-YOU DO NOT HAVE TO KNOW CODING! We desperately need people to do many other things as well, such as documentation, artwork etc.
-
----
