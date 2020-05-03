@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "New Vega Strike website is up!"
+author: NaBaCo
 date:   2020-05-01 02:56:45 +0300
 categories: website announcements
 ---
