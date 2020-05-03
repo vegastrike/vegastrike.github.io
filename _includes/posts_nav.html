@@ -1,0 +1,13 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          Recent Posts
+        </h4>
+      </div>
+          {% for post in site.posts limit:10 %}
+          <a class="list-group-item {% if post.url == page.url %}active{% endif %}" href="{{ post.url  | relative_url }}">{{ post.title }}</a>
+          {% endfor %}
+          <a class="list-group-item" href="{{ "/allposts" | relative_url }}">All posts ...</a>
+    </div>
+</div>

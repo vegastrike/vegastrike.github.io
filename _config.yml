@@ -29,7 +29,7 @@ lang: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.vega-strike.org" # the base hostname & protocol for your site, e.g. http://example.com
 git_address: https://github.com/vegastrike/Vega-Strike-Engine-Source
-git_edit_address: https://github.com/vegastrike/Vega-Strike-Engine-Source/blob/master
+git_edit_address: https://github.com/vegastrike/vegastrike.github.io/blob/master
 github_username:  vegastrike
 gitter: https://gitter.im/vegastrike/community
 google_site_verification: z7w-3d4YMTeLVhjeVElqaV1_qmjG-zKJzKGVDgZucvY
@@ -85,14 +85,14 @@ defaults:
     type: posts
   values:
     layout: post
-    sectionid: blog
+    sectionid: News
 
 - scope:
     path: _docs
     type: docs
   values:
     layout: docs
-    sectionid: docs
+    sectionid: Docs
     seo:
       type: "WebPage"
 

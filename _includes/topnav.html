@@ -14,7 +14,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 {% for item in site.data.nav %}
-                <li {% if page.url == item.link %} class="active" {% endif %}><a href="{{ item.link }}">{{ item.name }}</a></li>
+                <li {% if page.url == item.link or page.sectionid == item.name %} class="active" {% endif %}><a href="{{ item.link }}">{{ item.name }}</a></li>
                 {% endfor %}
             </ul>
             <ul class="nav navbar-nav">
