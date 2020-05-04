@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vega Strike Project
+title: Vega Strike
 url: https://www.vega-strike.org
-logo: /assets/img/logonav.png
+logo: /assets/img/shorttext-square-color-logo.png
 email: nabaco@tutamail.com
 description: >- # this means to ignore newlines until "baseurl:"
     Open Source 3D Space Flight Sim: Trade, Fight, Explore
