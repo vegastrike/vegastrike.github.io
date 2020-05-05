@@ -13,6 +13,7 @@ layout: default
             <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             <div id="markdown-content-container" class="post-content">{{ content }}</div>
             <hr>
+            {% include share.html %}
             <ul class="pager">
                 {% if page.previous %}
                 <li class="previous">
@@ -29,6 +30,5 @@ layout: default
                 {% endif %}
             </ul>
         </div>
-
     </div>
 </div>
