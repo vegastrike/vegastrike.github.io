@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Release Roadmap"
+title: "Release Roadmap"
 description: "Vega Strike's upcoming releases"
 author: NaBaCo
-date:   2020-05-05 02:26:45 +0300
+date: 2020-05-05 02:26:45 +0300
 categories: website announcements releases
 excerpt_separator: <!--more-->
 ---
