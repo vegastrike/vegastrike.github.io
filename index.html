@@ -27,11 +27,12 @@ layout: default
     </div>
     <hr>
     <div class="row">
-		<h2 class="header-light regular-pad text-center">Latest news</h2>
+        <u><h2 class="header-light regular-pad text-center">Latest news</h2></u>
 		{% for post in site.posts limit:3 %}
         <div class="col-sm-4">
-			<a href="{{ post.url}}"><h3 class="text-center">{{ post.title }}</h3></a>
+			<h4 class="text-center">{{ post.title }}</h4>
 			<p>{{ post.excerpt }}</p>
+            <a href="{{ post.url }}">Read more...</a>
         </div>
 		{% endfor %}
     </div>

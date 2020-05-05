@@ -96,6 +96,12 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: page
+
 collections:
   docs:
     permalink: /:collection/:path/
@@ -103,3 +109,5 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+  pages:
+      permalink: /:path/

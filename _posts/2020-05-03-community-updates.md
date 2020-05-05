@@ -4,13 +4,14 @@ title:  "Community updates"
 author: NaBaCo
 date:   2020-05-03 23:56:45 +0300
 categories: website announcements
+excerpt_separator: <!--more-->
 ---
 
 Some updates about the new Vega Strike website.
 
 Except the overall improvement of the aesthetics of the website, I have added an Atom RSS feed to the website, that you can subscribe to with your favourite client.
 Additionally, I have added links to all of the important places of our community, so you'll be able to get from here to where ever you need.
-
+<!--more-->
 Feel free to add or change the content of this website through it's [Github][site-gh].
 
 
