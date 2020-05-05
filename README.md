@@ -24,5 +24,5 @@ documentation.
 - To change the theme, change the value of `bootwatch` in `_config.yml`
 - To make a new announcement, add a file in `./_posts/`. E.g. `YYYY-MM-DD-name-of-post.md`. Added
 to the top of the file the standard header as in all other posts.
-- In posts, place the `<!--more-->` tag at the end of the excerpt of the post. The text up till there will appeard on the "Latest news" section on the frontpae.
+- In posts, place the `<!--more-->` tag at the end of the excerpt of the post. The text up till there will appear on the "Latest news" section on the frontpae.
 - Load media and special pages to `./assets/`
