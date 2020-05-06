@@ -4,16 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Vegastrike is an OpenSource 3D Space Simulator.
-Currently in Beta development, the project, at version 1.0, is to
-be a generic space simulator.
-Current features include split-screen play, trading, exploration and of course plenty of shoot 'em up action
+Vega Strike is an Open Source Cross-Platform 3D Space Flight Simulator that allows a player to explore, trade, and fight in the vast open space.
+Currently in Beta development, the project, at version 1.0, is to be a generic space flight simulator.
+Current features include split-screen play, trading, exploration and of course plenty of shoot 'em up action.
 
 ## The Game
 
 As you play, you will see that three races are present in the game. The Aera,
 Rlaan and Confederation (human). For some background you can read the
-Fiction included with the data files (recently greatly expanded!) and
+Fiction included with the data files and
 you can also mosy along over to the Vegastrike Database on the [Wiki](https://wiki.vega-strike.org), containing information on ships and their stats.
 Both of these things are under heavy development at the moment and so are not currently incorporated into the website, they will get better and more complete with time.
 
@@ -21,7 +20,7 @@ Both of these things are under heavy development at the moment and so are not cu
 
 Would you like to contribute to Vegastrike and become a developer? Great!
 Just head over to our [Gitter chatroom]({{ site.gitter }}) or straight to our [Github page]({{ site.git_address }}).
-YOU DO NOT HAVE TO KNOW CODING! We desperately need people to do many other things as well, such as documentation, artwork etc.
+**YOU DO NOT HAVE TO KNOW CODING!** We desperately need content creators, to produce stories, artwork, music etc.
 
 ## Why Vega Strike is important to Free Open Source Software
 
