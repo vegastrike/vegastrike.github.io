@@ -1,6 +1,6 @@
-Hello to all of our past and present users I'm loki1950 Denis Belanger been with the project for 14 years now.
+Hello to all of our past and present users I'm **loki1950** aka Denis Belanger been with the project for 14 years now.
 And have been the forums administer for the last decade where I took the title "The Shepard" well a few weeks ago
-I was designated Project Lead by our current crew of developers so now that title took is more apt in that I now 
+I was designated Project Lead by our current crew of developers so now that title I took is more apt in that I now 
 Shepard the whole project not just the forums.
     Now a bit of biography that 1950 in my username is the year I was born so I'm an old geek actually wrote my first code
 back in the sixties in a precursor of FORTRAN called FORTE my college years added Assembly language on a couple of then 
