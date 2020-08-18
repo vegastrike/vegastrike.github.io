@@ -2,11 +2,11 @@
     <div class="container navbar-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
                 <span><img src="{{ "/assets/img/logonav.png" | relative_url }}" alt="Logo"></span> <!-- {{ site.title }} -->
             </a>
@@ -14,7 +14,17 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 {% for item in site.data.nav %}
-                <li {% if page.url == item.link or page.sectionid == item.name %} class="active" {% endif %}><a href="{{ item.link }}">{{ item.name }}</a></li>
+                    {% if item.links | size > 1 %}
+                        <li class="dropdown nav-item"><a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu-{{ item.name }}" href="#">{{ item.name }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu-{{ item.name }}">
+                                {% for subitem in item.links %}
+                                    <li {% if page.url == subitem.link or page.sectionid == item.name %} class="active" {% endif %} class="dropdown-item nav-item"><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="nav-item {% if page.url == item.link or page.sectionid == item.name %} active {% endif %}"><a href="{{ item.link }}">{{ item.name }}</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             <ul class="nav navbar-nav">

@@ -2,16 +2,18 @@
   link: /
 - name: News
   link: /allposts/
-- name: Forums
-  link: https://forums.vega-strike.org
-- name: Wiki
-  link: https://wiki.vega-strike.org
-- name: Gallery
-  link: https://forums.vega-strike.org/cpg/
+- name: Community
+  links:
+    - name: Forums
+      link: https://forums.vega-strike.org
+    - name: Wiki
+      link: https://wiki.vega-strike.org
+    - name: Gallery
+      link: https://forums.vega-strike.org/cpg/
+    - name: Gitter
+      link: https://gitter.im/vegastrike/community
   #- name: Docs
   #  link: /docs/home/
-- name: Gitter
-  link: https://gitter.im/vegastrike/community
 - name: About
   link: /about/
 - name: Roadmap
