@@ -36,6 +36,14 @@ The below provides some examples for individual Linux Distributions.
 
 Once installed there should be a `Vega Strike: Upon the Coldest Sea` shortcut available in your Desktop Environment.
 
+### Linux: Desktop Environments
+
+Please note that each Desktop Environment also has it's own GUI tooling for installing individual packages.
+Please make sure to download the appropriate packages for your distribution (see below) and then use the GUI tooling for your
+platform and environment if you like. Just be sure to install them in the correct order.
+
+The remaining Linux instructions will provide command-line oriented instructions.
+
 ### Linux: Red Hat/CentOS/Fedora
 
 The `dnf` packaging tool provides support for directly installing from a URL:
@@ -60,8 +68,8 @@ To install using Apt:
 	```
 ### Linux: Arch
 
-To install using an AUR:
+Vega Strike has been setup as an [AUR](https://aur.archlinux.org/packages/?O=0&K=vegastrike). To install using an AUR:
 
 	```
-	TBD
+	# yay -S vegastrike-git
 	```
