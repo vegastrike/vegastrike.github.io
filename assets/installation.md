@@ -62,8 +62,8 @@ To install using Apt:
 	$ mkdir vegastrike && cd vegastrike
 	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.6.0/vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
 	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.6.2/vsUTCS_v0.6.2.deb
-	$ sudo apt install vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
-	$ sudo apt install vsUTCS_v0.6.2.deb
+	$ sudo apt install ./vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
+	$ sudo apt install ./vsUTCS_v0.6.2.deb
 
 NOTE: GUI installers like qapt-deb-installer can be used as well. Just be sure to install in the same order as listed above.
 
