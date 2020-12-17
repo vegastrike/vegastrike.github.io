@@ -36,9 +36,11 @@ The below provides some examples for individual Linux Distributions.
 
 Once installed there should be a `Vega Strike: Upon the Coldest Sea` shortcut available in your Desktop Environment.
 
+NOTE: There is currently no shortcut for the configuration program (vssetup/vegasettings).
+
 ### Linux: Desktop Environments
 
-Please note that each Desktop Environment also has it's own GUI tooling for installing individual packages.
+Please note that each Desktop Environment also has its own GUI tooling for installing individual packages.
 Please make sure to download the appropriate packages for your distribution (see below) and then use the GUI tooling for your
 platform and environment if you like. Just be sure to install them in the correct order.
 
@@ -48,10 +50,8 @@ The remaining Linux instructions will provide command-line oriented instructions
 
 The `dnf` packaging tool provides support for directly installing from a URL:
 
-	```
 	# dnf install https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.6.0/vega-strike_v0.6.0-centos-8.rpm
 	# dnf install https://github.com/vegastrike/Assets-Production/releases/download/v0.6.2/vsUTCS_v0.6.2-centos-8.rpm
-	```
 
 NOTE: This doesn't work yet as we missed getting the RPMs build for the Vega Strike Engine 0.6.0 Release. See [here for details](https://github.com/vegastrike/Vega-Strike-Engine-Source/issues/368)
 
@@ -59,17 +59,18 @@ NOTE: This doesn't work yet as we missed getting the RPMs build for the Vega Str
 
 To install using Apt:
 
-	```
 	$ mkdir vegastrike && cd vegastrike
 	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.6.0/vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
 	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.6.2/vsUTCS_v0.6.2.deb
-	$ sudo dpkg -i vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
-	$ sudo dpkg -i vsUTCS_v0.6.2.deb
-	```
+	$ sudo apt install vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
+	$ sudo apt install vsUTCS_v0.6.2.deb
+
+NOTE: GUI installers like qapt-deb-installer can be used as well. Just be sure to install in the same order as listed above.
+
 ### Linux: Arch
 
-Vega Strike has been setup as an [AUR](https://aur.archlinux.org/packages/?O=0&K=vegastrike). To install using an AUR:
+Vega Strike has been setup as an [AUR](https://aur.archlinux.org/packages/?O=0&K=vegastrike). There are many tools available for installing AURs. For example, to install with `yay` do the following:
 
-	```
 	# yay -S vegastrike-git
-	```
+
+For more information about AURs see the [Arch User Repository Documentation](https://wiki.archlinux.org/index.php/Arch_User_Repository).
