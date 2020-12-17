@@ -15,6 +15,10 @@
   #- name: Docs
   #  link: /docs/home/
 - name: About
-  link: /about/
-- name: Roadmap
-  link: /roadmap/
+  links:
+    - name: About Vega Strike
+      link: /about/
+    - name: Installation
+      link: /install/
+    - name: Roadmap
+      link: /roadmap/

@@ -78,6 +78,10 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
+  - vendor/bundle/
+  - vendor/cache
+  - vendor/gems/
+  - vendor/ruby/
 
 defaults:
 - scope:
