@@ -8,20 +8,6 @@ To help all understand our release targets, the following outlines what we are a
 
 At this time this is not a strict road map. That is, we will not reject work from future targets while working on earlier targets unless it blocks our effort on the existing targets. If a future target gets completed earlier then we may update the road map and related milestones to reflect that it will fall under an earlier release.
 
-## Release 0.6.x
-[Milestone](https://github.com/vegastrike/Vega-Strike-Engine-Source/milestone/1) | [Project Board](https://github.com/orgs/vegastrike/projects/7)
-
-Theme: Resurrecting Vega Strike - We Can Release!
-
-Minor release, to get things going.
-
-Goals:
-- Release Linux and MacOS binaries, to begin receiving feedback from users.
-- Release source code that compiles cleanly.
-
-Notes:
-- Windows and Mac releases were not achieved for this release and have been pushed back to a future release.
-
 ## Release 0.7.x
 [Milestone](https://github.com/vegastrike/Vega-Strike-Engine-Source/milestone/2) | [Project Board](https://github.com/orgs/vegastrike/projects/10)
 

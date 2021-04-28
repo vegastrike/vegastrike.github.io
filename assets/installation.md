@@ -35,8 +35,7 @@ NOTE: For 0.6.x the configuration program is `vssetup`. Starting with 0.7.x the 
 The below provides some examples for individual Linux Distributions.
 
 Once installed there should be a `Vega Strike: Upon the Coldest Sea` shortcut available in your Desktop Environment.
-
-NOTE: There is currently no shortcut for the configuration program (vssetup/vegasettings).
+Version 0.7.0 also brings a new short cut for the `vega Strike Settings` utility.
 
 ### Linux: Desktop Environments
 
@@ -50,20 +49,18 @@ The remaining Linux instructions will provide command-line oriented instructions
 
 The `dnf` packaging tool provides support for directly installing from a URL:
 
-	# dnf install https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.6.0/vega-strike_v0.6.0-centos-8.rpm
-	# dnf install https://github.com/vegastrike/Assets-Production/releases/download/v0.6.2/vsUTCS_v0.6.2-centos-8.rpm
-
-NOTE: This doesn't work yet as we missed getting the RPMs build for the Vega Strike Engine 0.6.0 Release. See [here for details](https://github.com/vegastrike/Vega-Strike-Engine-Source/issues/368)
+	# dnf install https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py3-centos-8_x86_64.rpm
+	# dnf install https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0/vsUTCS_v0.7.0-centos-8.rpm
 
 ### Linux: Debian/Ubuntu
 
 To install using Apt:
 
 	$ mkdir vegastrike && cd vegastrike
-	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.6.0/vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
-	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.6.2/vsUTCS_v0.6.2.deb
-	$ sudo apt install ./vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
-	$ sudo apt install ./vsUTCS_v0.6.2.deb
+	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py2-Ubuntu-xenial_x86_64.deb
+	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0/vsUTCS_v0.7.0.deb
+	$ sudo apt install ./Vega-Strike_v0.7.0-py2-Ubuntu-xenial_x86_64.deb
+	$ sudo apt install ./vsUTCS_v0.7.0.deb
 
 NOTE: GUI installers like qapt-deb-installer can be used as well. Just be sure to install in the same order as listed above.
 
