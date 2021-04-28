@@ -3,7 +3,7 @@ layout: post
 title: "Vega Strike 0.7.0 Released!"
 description: "New Releases: Vega Strike 0.7.0, VS:UtCS 0.7.0"
 author: BenjamenMeyer
-date: 2021-04 21 03:50:00 +0000
+date: 2021-04-21 03:50:00 +0000
 categories: website announcements releases community
 excerpt_separator: <!--more-->
 ---
