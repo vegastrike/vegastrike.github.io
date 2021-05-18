@@ -39,11 +39,22 @@ Notes:
 ## Release 0.9.x
 [Milestone](https://github.com/vegastrike/Vega-Strike-Engine-Source/milestone/5) | [Project Board](https://github.com/orgs/vegastrike/projects/12)
 
-Theme: Updating
+Theme: Error Handling
 
 Goals:
-- Officially split the Vega Strike Assets and the Vega Strike Engine into separate release cycles
+- Start building error handling on the C/C++ side; possibly expose it to the Python side (though that may get delayed to 0.10.0)
 - TBD
 
 Notes:
 - Python 2 support will be completely removed.
+
+## Release 0.10.x
+[Milestone]() | [Project Board]()
+
+Theme: TBD
+
+Goals:
+- TBD
+
+Notes:
+- TBD
