@@ -34,6 +34,9 @@ github_username:  vegastrike
 gitter: https://gitter.im/vegastrike/community
 google_site_verification: z7w-3d4YMTeLVhjeVElqaV1_qmjG-zKJzKGVDgZucvY
 
+engine_download_url: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases
+vsutcs_download_url: https://github.com/vegastrike/Assets-Production/releases
+
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
 bootwatch: cyborg #paper cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
