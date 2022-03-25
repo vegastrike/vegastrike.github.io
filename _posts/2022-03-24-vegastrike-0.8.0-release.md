@@ -40,6 +40,9 @@ With 0.8.x we have restored the ability to build on the Mac and Windows platform
 binaries. Please watch our next release for pre-built binaries. In the meantime we invite you to download the source and build! If you
 still need a pre-built binary and don't mind an old version then please visit our old [SourceForge site][sf] to find the 0.5.x releases.
 
+NOTE: Under Windows the Vega Strike Settings utility is currently broken due to a dependency being flagged by Windows improperly and
+therefore preventing the utility from being able to run. Fixing this will be a priority for releasing 0.9.x.
+
 For a complete list of differences see [Vega Strike Engine Delta][vsedelta] and [Vega Strike: Upon the Coldest Sea Delta][vsutcsdelta].
 
 ## Want to help out?
