@@ -16,7 +16,7 @@ explore. The universe and adventure are yours.
 
 ## What's changed?
 
-Since our last release last April of Vega Strike 0.7.0 we've continued to refactor the code and make general improvements.
+Since our last release in April 2021 of Vega Strike 0.7.0 we've continued to refactor the code and make general improvements.
 
 We have also made the Python3 Support the official build. We are no longer providing Python2 builds; if you need Python2 it is still
 available but you must make your own build from source. Python2 support will be completely removed in our next release (0.9.0).
