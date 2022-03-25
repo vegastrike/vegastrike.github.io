@@ -13,10 +13,14 @@ Below is a listing of installation for each platform.
 We have not yet restored building the latest versions for Windows.
 Please see the [Vega Strike 0.5.1](https://sourceforge.net/projects/vegastrike/files/vegastrike/0.5.1/) for a release to use.
 
+NOTE: Version 0.8.0 has reestored building on Windows. Pre-built binaries are not yet being provided at this time.
+
 ## Mac OS X
 
 We have not yet restored building the latest versions for Mac OS X.
 Please see the [Vega Strike 0.5.0](https://sourceforge.net/projects/vegastrike/files/vegastrike/0.5.0/) for a release to use.
+
+NOTE: Version 0.8.0 has reestored building on Mac OS X. Pre-built binaries are not yet being provided at this time.
 
 ## Linux
 
@@ -35,7 +39,7 @@ NOTE: For 0.6.x the configuration program is `vssetup`. Starting with 0.7.x the 
 The below provides some examples for individual Linux Distributions.
 
 Once installed there should be a `Vega Strike: Upon the Coldest Sea` shortcut available in your Desktop Environment.
-Version 0.7.0 also brings a new short cut for the `vega Strike Settings` utility.
+Version 0.7.0 also brings a new short cut for the `Vega Strike Settings` utility.
 
 ### Linux: Desktop Environments
 
@@ -45,24 +49,27 @@ platform and environment if you like. Just be sure to install them in the correc
 
 The remaining Linux instructions will provide command-line oriented instructions.
 
-### Linux: Red Hat/CentOS/Fedora
+### Linux: Red Hat/CentOS/Fedora/Rocky
 
 The `dnf` packaging tool provides support for directly installing from a URL:
 
-	# dnf install https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py3-centos-8_x86_64.rpm
-	# dnf install https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0/vsUTCS_v0.7.0-centos-8.rpm
+	# dnf install https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-rocky-8.5_x86_64.rpm
+	# dnf install https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0/vsUTCS_v0.8.0-rocky-8.5.rpm
+
+NOTE: The Vega Strike Engine now supports two modes of using OpenGL; unfortunately this is a compile-time choice. The old OpenGL methods are supported using the LEGACY builds; while the new method uses the GLVND builds.
 
 ### Linux: Debian/Ubuntu
 
 To install using Apt:
 
 	$ mkdir vegastrike && cd vegastrike
-	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py2-Ubuntu-xenial_x86_64.deb
-	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0/vsUTCS_v0.7.0.deb
-	$ sudo apt install ./Vega-Strike_v0.7.0-py2-Ubuntu-xenial_x86_64.deb
-	$ sudo apt install ./vsUTCS_v0.7.0.deb
+	$ curl -LO https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-hirsute_x86_64.deb
+	$ curl -LO https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0/vsUTCS_v0.8.0.deb
+	$ sudo apt install ./Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-hirsute_x86_64.deb
+	$ sudo apt install ./vsUTCS_v0.8.0.deb
 
 NOTE: GUI installers like qapt-deb-installer can be used as well. Just be sure to install in the same order as listed above.
+NOTE: The Vega Strike Engine now supports two modes of using OpenGL; unfortunately this is a compile-time choice. The old OpenGL methods are supported using the LEGACY builds; while the new method uses the GLVND builds.
 
 ### Linux: Arch
 
