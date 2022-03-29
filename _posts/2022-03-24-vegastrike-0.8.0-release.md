@@ -32,7 +32,7 @@ be any earlier version. We highly recommend that game assets developers gate on 
 introducing changes where games will need to rely on the Engine API Version value to determine that they are compatible with the
 engine. Aside from the introduction of this API there is no difference in the Python API provided from 0.7.0.
 
-The Vega Strike Developers are also putting in place a standard binary naming convension of `vegastrike-<tool` or `libvegastrike-<library>`.
+The Vega Strike Developers are also putting in place a standard binary naming convention of `vegastrike-<tool>` or `libvegastrike-<library>`.
 This is to help associate all our tools and libraries. Binaries using the new naming convention will also not be specific to any given
 game asset and will require the appropriate parameter to specify where to find the game assets when applicable.
 

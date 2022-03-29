@@ -13,14 +13,14 @@ Below is a listing of installation for each platform.
 We have not yet restored building the latest versions for Windows.
 Please see the [Vega Strike 0.5.1](https://sourceforge.net/projects/vegastrike/files/vegastrike/0.5.1/) for a release to use.
 
-NOTE: Version 0.8.0 has reestored building on Windows. Pre-built binaries are not yet being provided at this time.
+NOTE: Version 0.8.0 has restored building on Windows. Pre-built binaries are not yet being provided at this time.
 
 ## Mac OS X
 
 We have not yet restored building the latest versions for Mac OS X.
 Please see the [Vega Strike 0.5.0](https://sourceforge.net/projects/vegastrike/files/vegastrike/0.5.0/) for a release to use.
 
-NOTE: Version 0.8.0 has reestored building on Mac OS X. Pre-built binaries are not yet being provided at this time.
+NOTE: Version 0.8.0 has restored building on Mac OS X. Pre-built binaries are not yet being provided at this time.
 
 ## Linux
 
