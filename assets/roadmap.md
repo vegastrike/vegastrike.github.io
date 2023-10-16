@@ -29,10 +29,6 @@ Goals:
 - Restore builds for Mac OS X, release pre-built binaries
 - Restore builds for Windows, release pre-built binaries
 
-Stretch Goals:
-- Installer for Mac OS X
-- Installer for Windows
-
 Notes:
 - Python 2 support will be completely removed from all platforms.
 
@@ -42,6 +38,8 @@ Notes:
 Theme: TBD
 
 Goals:
+- Installer for Mac OS X
+- Installer for Windows
 - Start building error handling on the C/C++ side; possibly expose it to the Python side (though that may get delayed to 0.10.0)
 
 Notes:
