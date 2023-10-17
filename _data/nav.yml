@@ -2,6 +2,16 @@
   link: /
 - name: News
   link: /allposts/
+- name: Games
+  links:
+    - name: All Games
+      link: /games/
+    - name: "VS: Upon The Coldest Sea"
+      link: /games/vs-upon-the-coldest-sea/
+    - name: "VSU: Black-Paralysis"
+      link: /games/vsu-black-paralysis/
+    - name: PWCU
+      link: /games/PWCU/
 - name: Screenshots
   link: https://forums.vega-strike.org/cpg/thumbnails.php?album=11
 - name: Community
