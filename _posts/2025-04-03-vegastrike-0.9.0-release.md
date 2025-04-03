@@ -38,9 +38,9 @@ Finally, our Vega Strike Engine API has been updated to Engine API 2 which moves
 addition to the CSV to JSON file format changes.
 
 As a reminder, the Vega Strike Engine application is available as `vegastrike-engine` which requires the `-D` parameter to specify
-where to find the Game Assets. The `vegastrike` binary is still being provided at this time and it will continue to autofind the
+where to find the Game Assets. The `vegastrike` binary is still being provided at this time and it will continue to autofind
 the assets like with previous versions. However, we strongly advise moving to the new `vegastrike-engine` binary and specifying
-the parameter for the Game Assets as we will be dropping it in a future release.
+the parameter for the Game Assets as we will be dropping the old binary name (vegastrike) in a future release.
 
 For a complete list of differences see [Vega Strike Engine Delta][vsedelta] and [Vega Strike: Upon the Coldest Sea Delta][vsutcsdelta].
 
@@ -60,9 +60,6 @@ You can also find the community at the [Vega Strike Forums][forums].
 [Vega Strike Engine 0.9.0][vse]
 [Vega Strike: Upon the Coldest Sea 0.9.0][vsutcs]
 
-NOTE: Presently just the Linux builds are provided. The Vega Strike Team is still working to restore Mac and Windows support.
-
-[sf]: https://sourceforge.net/projects/vegastrike/
 [gh]: https://github.com/vegastrike
 [roadmap]: https://www.vega-strike.org/roadmap/
 [gitter]: https://gitter.im/vegastrike/community
