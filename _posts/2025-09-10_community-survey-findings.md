@@ -23,18 +23,12 @@ current development team uses themselves. This survey provides us with the first
 
 Results:
 ```mermaid
----
-config:
-  themeVariables:
-    xyChart:
-      plotColorPalette: '#00FF00'
----
-xychart
-  title Platform Usage
-  x-axis "valuesX" 0 --> 26
-  y-axis "categoriesY" ["Windows 11", "Windows 10", "Windows 8", "Windows 7", "Windows XP", "Mac OSX 15", "Mac OSX 14", "Mac OSX 13", Mac OSX 12", "Red Hat Linux 9", "Red Hat 8", "OpenSuSe Leap", "Linux Mint 21", "Linux Mint 22", "Ubuntu 20.04", "Ubuntu 22.04", "Ubuntu 24.04", "Fedora Linux", "Arch Linux", "Rocky Linux 9", "Rocky Linux 8", "Debian Bookworm", "Debian Bullseye", "Linux - Snap Packages", "Linux - FlatPak", "Gentoo Linux", "PC Linux OS", "Debian Trixie Forky", "Mageia Linux", "Slackware 15", "Slackware"]
-  %% Green Bar
+xychart-beta horizontal
+  title "Platform Usage"
+  y-axis "valuesX" 0 --> 26
+  x-axis "categoriesY" ["Windows 11", "Windows 10", "Windows 8", "Windows 7", "Windows XP", "Mac OSX 15", "Mac OSX 14", "Mac OSX 13", Mac OSX 12", "Red Hat Linux 9", "Red Hat 8", "OpenSuSe Leap", "Linux Mint 21", "Linux Mint 22", "Ubuntu 20.04", "Ubuntu 22.04", "Ubuntu 24.04", "Fedora Linux", "Arch Linux", "Rocky Linux 9", "Rocky Linux 8", "Debian Bookworm", "Debian Bullseye", "Linux - Snap Packages", "Linux - FlatPak", "Gentoo Linux", "PC Linux OS", "Debian Trixie Forky", "Mageia Linux", "Slackware 15", "Slackware"]
   bar [25,17,2,2,1,1,0,0,0,0,0,0,4,5,3,5,5,3,9,0,0,8,4,0,5,1,1,1,1,1,1]
+  line [25,17,2,2,1,1,0,0,0,0,0,0,4,5,3,5,5,3,9,0,0,8,4,0,5,1,1,1,1,1,1]
 ```
 
 From this we can see that the majority is currently running on Windows (47 users across the various versions), followed by Linux users across a few different distros (57 users
@@ -50,18 +44,12 @@ Vega Strike 0.9.0 with binaries for Windows and Mac; though our Mac builds are p
 We also asked about Hardware Architectures:
 
 ```mermaid
----
-config:
-  themeVariables:
-    xyChart:
-      plotColorPalette: '#00FF00'
----
-xychart
-  title Hardware Architecture Usage
-  x-axis "valuesX" 0 --> 26
-  y-axis "categoriesY" ["Mac M1/M2/M3 ARM", "Intel x86-64", "ARM (RPi, Snapdragon, etc)", "AMD x64"]
-  %% Green Bar
-  bar [2, 52, 2, 1]
+xychart-beta horizontal
+    title "Hardware Architecture Usage"
+    x-axis "Processor Architecture" ["Mac M1/M2/M3 ARM", "Intel x86-64", "ARM (RPi, Snapdragon, etc)", "AMD x64"]
+    y-axis "Users" 0 --> 55
+    bar [2, 52, 2, 1]
+    line [2, 52, 2, 1]
 ```
 
 We do see some desire for ARM-based releases; though as expected the majority are all x86-64 users.
