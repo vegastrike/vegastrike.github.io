@@ -33,7 +33,7 @@ xychart-beta horizontal
 ```
 
 From this we can see that the majority is currently running on Windows (47 users across the various versions), followed by Linux users across a few different distros (57 users
-across Mint(9), Ubuntu(11), Fedora (3), Debian(13), FlatPak(5), Mageia(1), Slackware(2), and Arch(9)).
+across Mint(9), Ubuntu(13), Fedora (3), Debian(13), FlatPak(5), Mageia(1), Slackware(2), Arch(9), Gentoo (1), PCLinuxOS (1)).
 
 Now, at the time of the survey we had only released binaries for the Linux Platforms, and we do not have direct support for FlatPak yet (though we are aware that someone in the
 community has at least tried to make a FlatPak build). So it would be natural to expect to see more Linux users at this time. The primary reason for this support was simply
@@ -52,6 +52,8 @@ xychart-beta horizontal
     bar [2, 52, 2, 1]
     line [2, 52, 2, 1]
 ```
+
+NOTE: AMDx64 is almost certainly the Intel x86-64 architecture. Technically  x86-64 is the AMD64 Architecture; however, most will know it as Intel. We're reporting it here as AMDx64 to reflect how the community submitted it.
 
 We do see some desire for ARM-based releases; though as expected the majority are all x86-64 users.
 
