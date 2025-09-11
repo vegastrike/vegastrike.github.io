@@ -154,7 +154,7 @@ We are glad to report that with the release of 0.9.0 we have full Windows suppor
 
 ### Generative AI usage
 
-We have discussed this on occassion on gitter; however we presently have so much to do that it is not a high priority for us right now. We think there can be
+We have discussed this on occasion on gitter; however we presently have so much to do that it is not a high priority for us right now. We think there can be
 some very interesting things to do with enabling AI tooling to take over operating the various NPC ships, do communication, etc. So tick this one for a future enhancement.
 
 ### Updating the pipeline
