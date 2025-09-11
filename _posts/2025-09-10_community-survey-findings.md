@@ -136,7 +136,7 @@ So as-far-as In-Game this would need to be on our backlog of features.
 
 We agree that we could always have better documentation. We want to make the game as easily access to be our users as we can. We know not everyone is a developer and
 we expect that a wide range of people with a wide range of skills are going to want to use VS. Our resources are limited, however; that said one way non-developers
-can help out is by getting involved to contribute documentation, updating tutorials, etc. We know there's a lot of information in the old VS Wiki, and its getting
+can help out is by getting involved to contribute documentation, updating tutorials, etc. We know there's a lot of information in the old VS Wiki, and it's getting
 out of date as we move forward. We'd love to have help there.
 
 
