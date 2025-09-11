@@ -172,7 +172,7 @@ The best way to help out with this would be to join us on Gitter and GitHub to h
 # Final Thoughts
 
 It has been about 5 years since the new dev team has come together to pick up the mantle of VS and ressurect it. We've had a lot of challenges in that time but have
-also come along ways, and are now addressing major bugs in the system that have been there for a long time - even discovering some new ones.
+also come a long ways, and are now addressing major bugs in the system that have been there for a long time - even discovering some new ones.
 
 Our goal is to make VS the best we can make it and we hope that as we do our community will also come up along side us, grow the team, and continue building it for
 the future generations to enjoy. There is much work to be done and we look forward to getting to know you all through this endeavor.
