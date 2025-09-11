@@ -126,7 +126,7 @@ know yet how to extend the game for this. So presently we will need to keep this
 ### In-Game 3D Map of the VS Universe
 
 We are not sure where this presently falls. Certainly an in-game map would be a new feature and we do not yet have bandwidth to take on a new feature. However, we might
-be able to help ressurect the VSMap3D tool and bring it back for usage. And we would love to know what other tools there were too. Most of us were not part of the original
+be able to help resurrect the VSMap3D tool and bring it back for usage. And we would love to know what other tools there were too. Most of us were not part of the original
 dev team and do not know all the tools that were made or utilized. We've been learning; but if there's something you think could help us then please reach out and let us
 know.
 
