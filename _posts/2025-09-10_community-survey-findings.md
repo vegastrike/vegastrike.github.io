@@ -145,7 +145,7 @@ out of date as we move forward. We'd love to have help there.
 We are aware that there is a desire to make these universal packages. However, they are not without their issues.
 
 We did have a community member reach out about building a FlatPak; and are not sure where it ended up. Though at the time we were seeing issues with how the FlatPak
-Platform interacts with out build environments which made it hard to move forward. We certainly welcome such efforts to add to the community, and indeed this is
+Platform interacts with our build environments which made it hard to move forward. We certainly welcome such efforts to add to the community, and indeed this is
 how our Arch Linux users are supported as we had someone step up and make an Arch Package (AUR) for VS.
 
 ### Windows Releases
