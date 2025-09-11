@@ -66,11 +66,11 @@ So if you would like to see us support the M-series then it would be greatly hel
 our Gitter.im channel. We could really use some folks that can build the project locally, even if we needed
 to help out with getting things setup. Or even if you wanted to provide access to teams members in some form.
 
-Alternatively, the we do have the ability to collect donations through [OpenCollective](https://opencollective.com/vega-strike).
+Alternatively, we do have the ability to collect donations through [OpenCollective](https://opencollective.com/vega-strike).
 Our funds there are presently very limited, and our goal is to be able to pay back those in the community that
 are already providing resources (DNS, Servers) and cover any storage costs we may need to for our CI system
 (presently supported via the Open Source plan with Docker Hub). However, if there were sufficient funds we
-could also support using services like https://www.macincloud.com/ to provide developers access to the Mac
+could also provide support using services like https://www.macincloud.com/ to developers for access to the Mac
 Platform to help iron out those issues and deliver better Mac support.
 
 ## General Feedback
