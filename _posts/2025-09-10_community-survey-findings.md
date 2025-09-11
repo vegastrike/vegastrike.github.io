@@ -93,7 +93,7 @@ While most of the feedback was thanking us there were a few items called out:
 First, we welcome all feedback and we have multiple ways for users to submit feedback to us. The best way to provide feedback is to
 get on GitHub and direclty file issues with us [VS Engine Bug](https://github.com/vegastrike/Vega-Strike-Engine-Source/issues),
 [VS:Upon The Coldest Sea Bug](https://github.com/vegastrike/Assets-Masters/issues), or engage with us in conversation on [Gitter.im](https://gitter.im/vegastrike/community).
-Alternative we do have some email addresses:
+Alternatively we do have some email addresses:
 
 - [Development](mailto:devel@lists.vega-strike.org)
 - [Security](mailto:security@lists.vega-strike.org)
