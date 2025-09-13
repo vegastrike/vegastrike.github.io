@@ -4,7 +4,7 @@ title: "Vega Strike 2024 Community Survey Results"
 description: "Vega Strike Community Survey - 2024 Survey Results"
 author: BenjamenMeyer
 date: 2025-09-11 00:00:00 +0000
-categories: announcements community
+categories: website announcements community
 excerpt_separator: <!--more-->
 ---
 # Overview
