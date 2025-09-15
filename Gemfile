@@ -20,6 +20,9 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-redirect-from"
   gem "jekyll-remote-theme"
+  # Unfortunately GitHub pages does not let us install plugins
+  #gem "jekyll-mermaid" #, "~> 1.0"
+  #gem "jekyll-mermaid-diagrams"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -34,3 +37,5 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 
 gem "webrick", "~> 1.8"
+
+gem "logger"
