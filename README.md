@@ -12,6 +12,7 @@ documentation.
 	```sh
 	$ gem install bundler jekyll
 	$ cd vegastrike.github.io
+	$ bundle config set path ~/.local/share/gem
 	$ bundle install
 	$ bundle exec jekyll serve
 	```
