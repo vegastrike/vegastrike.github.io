@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: impish
+Codename: impish
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (impish)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 3b3f3ad882727fd7447a7df26b6e14ef 7994 main/binary-amd64/Packages
+ e48a2403bd7fbda1d832252825f46338 645 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 1913672840dbbbe1760a0de6ff9a3f046661ef8f44683d92b86e9ee76e720205 7994 main/binary-amd64/Packages
+ cecb70a0b37db0da6e90670106c6ac1cd73da6fad8f7afb2828b777b5b6d0413 645 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

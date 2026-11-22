@@ -5,14 +5,14 @@ Codename: noble
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (noble)
-Date: Sun, 22 Nov 2026 21:33:51 UTC
+Date: Sun, 22 Nov 2026 21:58:05 UTC
 MD5Sum:
  566f24f8158ff137befbb605c2022128 9695 main/binary-amd64/Packages
- fd91968c36bab0cbfb5b31419bd170a9 858 main/binary-amd64/Packages.gz
+ 4493140bfb44c2e0457600d58e5ae49d 858 main/binary-amd64/Packages.gz
  4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- df35c6409580258a4f292e13843f368b 1229 main/binary-all/Packages.gz
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
 SHA256:
  971dbc5276f4e77a7649107a28cd28abd82596c7cfcff61e02257bfb9079611b 9695 main/binary-amd64/Packages
- a790b835d7525f99f6f6620775f829a3ec9088b2b97d4e93da0c3b86bd73308f 858 main/binary-amd64/Packages.gz
+ 887c37f2054bfd79d03aa2c60aaf2f9ecb727f04e7d8b5098b8b98c5dffa80d7 858 main/binary-amd64/Packages.gz
  d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 01f31421f85fff8d9fc72000e24c382ebaf6b8c535ad418261a2c6aaf24398fc 1229 main/binary-all/Packages.gz
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

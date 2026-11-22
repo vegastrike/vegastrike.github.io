@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: focal
+Codename: focal
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (focal)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ fc7794367ac44df855ebea915004b315 13492 main/binary-amd64/Packages
+ 9b4fff8ee607c6e14fe1c868f8d8ed6c 822 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ cb8e9e1dd0ba1e1cd20d197b63b344c1b9902bac4d06d19dcda75e911c5e0c91 13492 main/binary-amd64/Packages
+ 6bf314f4c39fd47ec0c4975f37cfd50dae28259aa3b010d4ea86a975ad2ce575 822 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

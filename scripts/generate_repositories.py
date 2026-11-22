@@ -581,52 +581,52 @@ sudo apt update</code></pre>
   <script src="/assets/js/bootstrap.min.js"></script>
   <script>
     // Native robust tab switching support (works offline and alongside Bootstrap)
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {{
       var tabLinks = document.querySelectorAll('.nav-tabs a[data-toggle="tab"]');
-      tabLinks.forEach(function (link) {
-        link.addEventListener("click", function (e) {
+      tabLinks.forEach(function (link) {{
+        link.addEventListener("click", function (e) {{
           e.preventDefault();
           var targetId = this.getAttribute("href");
           if (!targetId || targetId === "#") return;
 
           var navList = this.closest("ul");
-          if (navList) {
-            navList.querySelectorAll("li").forEach(function (li) {
+          if (navList) {{
+            navList.querySelectorAll("li").forEach(function (li) {{
               li.classList.remove("active");
-            });
-          }
-          if (this.parentElement) {
+            }});
+          }}
+          if (this.parentElement) {{
             this.parentElement.classList.add("active");
-          }
+          }}
 
           var tabContent = document.querySelector(".tab-content");
-          if (tabContent) {
-            tabContent.querySelectorAll(".tab-pane").forEach(function (pane) {
+          if (tabContent) {{
+            tabContent.querySelectorAll(".tab-pane").forEach(function (pane) {{
               pane.classList.remove("active");
-            });
+            }});
             var targetPane = document.querySelector(targetId);
-            if (targetPane) {
+            if (targetPane) {{
               targetPane.classList.add("active");
-            }
-          }
-        });
-      });
+            }}
+          }}
+        }});
+      }});
 
       // Add copy button functionality to code blocks
-      document.querySelectorAll("pre.code-block").forEach(function (block) {
+      document.querySelectorAll("pre.code-block").forEach(function (block) {{
         var btn = document.createElement("button");
         btn.className = "btn-copy";
         btn.textContent = "Copy";
-        btn.addEventListener("click", function () {
+        btn.addEventListener("click", function () {{
           var code = block.querySelector("code") ? block.querySelector("code").innerText : block.innerText;
-          navigator.clipboard.writeText(code.trim()).then(function () {
+          navigator.clipboard.writeText(code.trim()).then(function () {{
             btn.textContent = "Copied!";
-            setTimeout(function () { btn.textContent = "Copy"; }, 2000);
-          });
-        });
+            setTimeout(function () {{ btn.textContent = "Copy"; }}, 2000);
+          }});
+        }});
         block.appendChild(btn);
-      });
-    });
+      }});
+    }});
   </script>
 </body>
 </html>
@@ -713,23 +713,23 @@ metadata_expire=1d
     debian_dir = os.path.join(REPOS_DIR, "debian")
     os.makedirs(debian_dir, exist_ok=True)
 
-    debian_sources = """Types: deb
+    debian_pkgs = [p for p in packages if (p["distro"] == "debian" or p["distro"] == "debian-like") and p["pkg_type"] == "deb"]
+    deb_suites = sorted(list(set(p["distro_version"] for p in debian_pkgs if p["distro_version"] != "all")))
+    deb_asset_pkgs = [p for p in debian_pkgs if p["component"] == "assets"]
+
+    debian_sources = f"""Types: deb
 URIs: https://www.vega-strike.org/repositories/debian
-Suites: bookworm trixie
+Suites: {' '.join(deb_suites)}
 Components: main
 Trusted: yes
 """
     with open(os.path.join(debian_dir, "vegastrike.sources"), "w") as f:
         f.write(debian_sources)
 
-    debian_list = "deb [trusted=yes] https://www.vega-strike.org/repositories/debian bookworm main\n"
+    default_deb_suite = deb_suites[-1] if deb_suites else "trixie"
+    debian_list = f"deb [trusted=yes] https://www.vega-strike.org/repositories/debian {default_deb_suite} main\n"
     with open(os.path.join(debian_dir, "vegastrike.list"), "w") as f:
         f.write(debian_list)
-
-    debian_pkgs = [p for p in packages if (p["distro"] == "debian" or p["distro"] == "debian-like") and p["pkg_type"] == "deb"]
-    # Group by suites
-    deb_suites = ["bookworm", "trixie"]
-    deb_asset_pkgs = [p for p in debian_pkgs if p["component"] == "assets"]
 
     for s in deb_suites:
         s_pkgs = [p for p in debian_pkgs if p["distro_version"] == s] + deb_asset_pkgs
@@ -740,21 +740,23 @@ Trusted: yes
     ubuntu_dir = os.path.join(REPOS_DIR, "ubuntu")
     os.makedirs(ubuntu_dir, exist_ok=True)
 
-    ubuntu_sources = """Types: deb
+    ubuntu_pkgs = [p for p in packages if (p["distro"] in ("ubuntu", "linuxmint") or p["distro"] == "debian-like") and p["pkg_type"] == "deb"]
+    ubuntu_suites = sorted(list(set(p["distro_version"] for p in ubuntu_pkgs if p["distro_version"] != "all")))
+
+    ubuntu_sources = f"""Types: deb
 URIs: https://www.vega-strike.org/repositories/ubuntu
-Suites: jammy noble resolute
+Suites: {' '.join(ubuntu_suites)}
 Components: main
 Trusted: yes
 """
     with open(os.path.join(ubuntu_dir, "vegastrike.sources"), "w") as f:
         f.write(ubuntu_sources)
 
-    ubuntu_list = "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu noble main\n"
+    default_ubuntu_suite = ubuntu_suites[-1] if ubuntu_suites else "noble"
+    ubuntu_list = f"deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu {default_ubuntu_suite} main\n"
     with open(os.path.join(ubuntu_dir, "vegastrike.list"), "w") as f:
         f.write(ubuntu_list)
 
-    ubuntu_pkgs = [p for p in packages if (p["distro"] in ("ubuntu", "linuxmint") or p["distro"] == "debian-like") and p["pkg_type"] == "deb"]
-    ubuntu_suites = ["jammy", "noble", "resolute"]
     for s in ubuntu_suites:
         s_pkgs = [p for p in ubuntu_pkgs if p["distro_version"] == s] + deb_asset_pkgs
         if s_pkgs:

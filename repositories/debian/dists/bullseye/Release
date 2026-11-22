@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Debian Repository
+Suite: bullseye
+Codename: bullseye
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Debian (bullseye)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 62ce062c11728fc460661e29778af254 12915 main/binary-amd64/Packages
+ 29a224611eb52a2df696f64a2fe601bd 798 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 93d8f43d540cecc925bd0213a41199484c33019abc99132e4348fc6e17f99819 12915 main/binary-amd64/Packages
+ d0a68a79771041ddb59856ba6fff75262c8409691deea5f8165b574bce2157bc 798 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

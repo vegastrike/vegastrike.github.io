@@ -1,5 +1,5 @@
 Types: deb
 URIs: https://www.vega-strike.org/repositories/ubuntu
-Suites: jammy noble resolute
+Suites: bionic focal hirsute impish jammy mantic noble questing resolute ulyana vanessa vera victoria virginia
 Components: main
 Trusted: yes

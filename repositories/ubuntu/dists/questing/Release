@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: questing
+Codename: questing
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (questing)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 6703b743fb69ddf735b30477229e4c74 615 main/binary-amd64/Packages
+ 6b67a3e1d661745dd625dca13cdf3dc5 442 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 6b1774f05b15daf7eab2f82041f71dff031e040de0c20d4d468b655f935196da 615 main/binary-amd64/Packages
+ 45f999331b115c19bbec40b84aedc4c24c787a68121d7a52991e29b3435c5746 442 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

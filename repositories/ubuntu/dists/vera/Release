@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: vera
+Codename: vera
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (vera)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 3bfb39d7ddfac6b60003999668b3fbf1 12770 main/binary-amd64/Packages
+ ed6e8a9840fb12fa367bd0db9cc9b22f 782 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ b03c42a77db665572d4a376513a015af642d5c60f248bed8ecd5271ac1bf87cf 12770 main/binary-amd64/Packages
+ 0ac2673a7184bcf8b38d6ee89a7afed192253141e4b12bc725d6facb26a4a805 782 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

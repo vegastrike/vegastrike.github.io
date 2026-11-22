@@ -5,14 +5,14 @@ Codename: resolute
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (resolute)
-Date: Sun, 22 Nov 2026 21:33:51 UTC
+Date: Sun, 22 Nov 2026 21:58:05 UTC
 MD5Sum:
  8762b71d7facbee3a82ed976d3812f26 2463 main/binary-amd64/Packages
- 8dd54eb23f88fb703d0b20f5a1200f36 665 main/binary-amd64/Packages.gz
+ f80ee906dc86b1c28ab401906fbcdd11 665 main/binary-amd64/Packages.gz
  4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- df35c6409580258a4f292e13843f368b 1229 main/binary-all/Packages.gz
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
 SHA256:
  83a6a87a779174f13a7f3d89e9ebb91ddf4157b605586c8198ea53db5882d4cb 2463 main/binary-amd64/Packages
- f67e31563f69b588e6318ed5e43e6a5b7c8a4bb5508932107441796fe9dc6014 665 main/binary-amd64/Packages.gz
+ 59db1173eb54076d6aa41ed40ce7d3b8619c0b40a147a099ff4a42fdae1a8201 665 main/binary-amd64/Packages.gz
  d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 01f31421f85fff8d9fc72000e24c382ebaf6b8c535ad418261a2c6aaf24398fc 1229 main/binary-all/Packages.gz
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

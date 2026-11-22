@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: victoria
+Codename: victoria
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (victoria)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ a6b88be2b9e5702335e50660ac449803 7936 main/binary-amd64/Packages
+ f520d9436abf14348fc70ef4ad64c875 643 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 0a400405094853630dc007d7dd0441edc64cbba62aede713c4959b962c166de6 7936 main/binary-amd64/Packages
+ 4f49a5e5b2d1a59fd85f920972a38aee22fee5324f1f2e6c0c107c222e1b1b0f 643 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

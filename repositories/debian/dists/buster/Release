@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Debian Repository
+Suite: buster
+Codename: buster
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Debian (buster)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 9ef2c4820b44dc0015658eef9f8fe407 8602 main/binary-amd64/Packages
+ 02d6d2791e0feb41dbefb946b27c75fa 690 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 71634d9e456c2a6eb10e677e4ebbb6914262ca46ba65bb2829ba98c3f0ceba60 8602 main/binary-amd64/Packages
+ 0ae7211c7b44bed96be9e8ca11a13b090270ffb95956988a10cc42859b09a5cf 690 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: mantic
+Codename: mantic
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (mantic)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 53a930e920f7ee71978675491d345fa0 6097 main/binary-amd64/Packages
+ 5f2b8f2c30cfeb40aa1f7593d2fdc5ef 568 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 09672389879fc2671dd31cc61715e2082e92def5027bd41256fb6a64319c94b4 6097 main/binary-amd64/Packages
+ c82d0cf75439bcb9891bf78c3dcfd81b4d08d8d2a622ffc1da50f75f423dfcde 568 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

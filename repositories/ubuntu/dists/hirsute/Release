@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: hirsute
+Codename: hirsute
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (hirsute)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 709f0e9d97ccc359508ae34ddf62d3c9 8007 main/binary-amd64/Packages
+ b98f64ba514eff7d211ee2dd526a228f 631 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ acfd1511af70e69c7ef2540cf7984edbc4ed9c0c00d38a9c75e96c260d360ea4 8007 main/binary-amd64/Packages
+ 937a02e5f30fdc11883a3a8890fce9b40e5c5fa694303f22c8d6fe06ada653c2 631 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

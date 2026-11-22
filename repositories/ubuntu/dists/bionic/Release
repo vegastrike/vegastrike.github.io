@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: bionic
+Codename: bionic
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (bionic)
+Date: Sun, 22 Nov 2026 21:58:05 UTC
+MD5Sum:
+ 7e05be6fd5b513748b017789bf126133 6793 main/binary-amd64/Packages
+ ee75f7ef2a1ef0c26a88f08f8b540c06 641 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+SHA256:
+ 58fe1eee467511f1c466f5af1f25096aebe1d5d733dc89432866e11608c8a4f0 6793 main/binary-amd64/Packages
+ a5d14f6cf198467cd8338d3c16199cbb7d2c40e0b0ff7c135bc709267d6c2a32 641 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz

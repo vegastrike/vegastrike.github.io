@@ -5,14 +5,14 @@ Codename: bookworm
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (bookworm)
-Date: Sun, 22 Nov 2026 21:33:51 UTC
+Date: Sun, 22 Nov 2026 21:58:05 UTC
 MD5Sum:
  cdb270757883360e59063518c1d25ca8 14633 main/binary-amd64/Packages
- dda64e3aaaa9938e59c45b2924a38b16 993 main/binary-amd64/Packages.gz
+ a258a12a48f6b8494851ea2dc5787fb4 993 main/binary-amd64/Packages.gz
  4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- df35c6409580258a4f292e13843f368b 1229 main/binary-all/Packages.gz
+ 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
 SHA256:
  b80df272a4d3816be115f68c4e9db50cd641972be903eb0a98043ac05895de13 14633 main/binary-amd64/Packages
- c12a661e569ed01d9d34fbe4a7520bed236e289459c5f8ba3acb135d9cea307d 993 main/binary-amd64/Packages.gz
+ 90e960d26f68e80c24d0042dba168d9eb4139b2472c258279d564740f60937fc 993 main/binary-amd64/Packages.gz
  d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 01f31421f85fff8d9fc72000e24c382ebaf6b8c535ad418261a2c6aaf24398fc 1229 main/binary-all/Packages.gz
+ 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
