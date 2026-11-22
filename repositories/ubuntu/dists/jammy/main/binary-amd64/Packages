@@ -344,7 +344,7 @@ Description: Vega Strike Engine
  fight, and explore in a vast universe.
 
 Package: vegastrike
-Version: 0.8.1~beta1~py2-1
+Version: 0.8.1~beta1-1
 Architecture: amd64
 Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
 Installed-Size: 71354

@@ -5,14 +5,14 @@ Codename: vanessa
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (vanessa)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
  39f427d8f6790a3bff2b2f9324ad192e 12833 main/binary-amd64/Packages
- 3496888a82feec9635518a0c6fc7ffdb 778 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ ca99b06b064425bae4f9742bc1ed7350 778 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
  355a15462bafae4746f23aa170ee94af73109bc4f6cad7ee099ed231da490be9 12833 main/binary-amd64/Packages
- 85d1f8d63753ee08f7fa497b682d84e0789a3e65ffa7f59007ddcf7a2717293a 778 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 0c662d62924f578ef109921a3def0a6ccfd159c08096e247492f1a419a86699b 778 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

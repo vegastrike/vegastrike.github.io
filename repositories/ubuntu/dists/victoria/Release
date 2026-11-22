@@ -5,14 +5,14 @@ Codename: victoria
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (victoria)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
  a6b88be2b9e5702335e50660ac449803 7936 main/binary-amd64/Packages
- f520d9436abf14348fc70ef4ad64c875 643 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ 3dea2719687de9e8c397574170c4055f 643 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
  0a400405094853630dc007d7dd0441edc64cbba62aede713c4959b962c166de6 7936 main/binary-amd64/Packages
- 4f49a5e5b2d1a59fd85f920972a38aee22fee5324f1f2e6c0c107c222e1b1b0f 643 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 575f6430f47614acb9bdc2e45120afa7a65e9e2dcaafe66a370879dd13a95c93 643 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

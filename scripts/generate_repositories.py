@@ -54,15 +54,20 @@ def parse_package_asset(asset, release_tag, repo_source):
         sha256 = digest[7:]
 
     # Engine packages:
+    # Supports 0.6.x, 0.7.x, 0.8.x, 0.9.x, 0.10.x, 0.11.x, etc.
     # e.g.: Vega-Strike_v0.11.0-alpha2-GLVND-fedora-43_x86_64.rpm
     #       Vega-Strike_0.8.0-alpha3-543b3fb719000c1bafe7ace3abd42247460d7470-py3-GLVND-Debian-bullseye_x86_64.deb
+    #       Vega-Strike_v0.7.0-py3-fedora-33_x86_64.rpm
+    #       vega-strike_v0.6.0-Ubuntu-xenial_x86_64.deb
     m_vse = re.match(
-        r"^Vega-Strike_v?([0-9a-zA-Z\.\-]+?)-(?:[0-9a-f]{40}-)?(?:py3-)?(GLVND|LEGACY)-([A-Za-z]+)-([0-9a-zA-Z\.\-]+)_([0-9a-zA-Z_]+)\.(deb|rpm)$",
+        r"^[Vv]ega-[Ss]trike_v?([0-9a-zA-Z\.\-]+?)-(?:[0-9a-f]{40}-)?(?:(py[23])-)?(?:(GLVND|LEGACY)-)?([A-Za-z]+)-([0-9a-zA-Z\.\-]+)_([0-9a-zA-Z_]+)\.(deb|rpm)$",
         filename
     )
     if m_vse:
-        ver, opengl, distro_raw, dist_ver_raw, arch, pkg_type = m_vse.groups()
+        ver, py, opengl, distro_raw, dist_ver_raw, arch, pkg_type = m_vse.groups()
         distro = distro_raw.lower()
+        if distro == "centos":
+            distro = "rocky"
         dist_ver = dist_ver_raw.lower()
         if dist_ver.startswith("leap-"):
             dist_ver = dist_ver.replace("leap-", "")
@@ -72,7 +77,7 @@ def parse_package_asset(asset, release_tag, repo_source):
             "package_name": "vegastrike",
             "display_name": "Vega Strike Engine",
             "version": ver,
-            "opengl": opengl,
+            "opengl": opengl or "default",
             "distro": distro,
             "distro_version": dist_ver,
             "arch": "amd64" if arch == "x86_64" and pkg_type == "deb" else arch,
@@ -89,13 +94,16 @@ def parse_package_asset(asset, release_tag, repo_source):
     # e.g.: vsUTCS_0.10.0-alpha3-fedora-42.rpm
     #       vsUTCS_0.10.0-alpha3-opensuse-leap-16.0.rpm
     #       vsUTCS_v0.9.1-rocky-9.5.rpm
+    #       vsUTCS_v0.6.0-centos-8.rpm
     m_asset_rpm = re.match(
-        r"^vsUTCS_v?([0-9a-zA-Z\.\-]+?)-([a-zA-Z\-]+)-([0-9a-zA-Z\.\-]+)\.rpm$",
+        r"^vsUTCS[_-]v?([0-9a-zA-Z\.\-]+?)-([a-zA-Z\-]+)-([0-9a-zA-Z\.\-]+)\.rpm$",
         filename
     )
     if m_asset_rpm:
         ver, distro_raw, dist_ver_raw = m_asset_rpm.groups()
         distro = distro_raw.lower()
+        if distro == "centos":
+            distro = "rocky"
         dist_ver = dist_ver_raw.lower()
         if distro.startswith("opensuse"):
             distro = "opensuse"
@@ -121,7 +129,9 @@ def parse_package_asset(asset, release_tag, repo_source):
 
     # Assets packages (DEB):
     # e.g.: vsUTCS_0.10.0-alpha3.deb
-    m_asset_deb = re.match(r"^vsUTCS_v?([0-9a-zA-Z\.\-]+?)\.deb$", filename)
+    #       vsUTCS-0.6.0-Linux.deb
+    #       vsUTCS_v0.7.0.deb
+    m_asset_deb = re.match(r"^vsUTCS[_-]v?([0-9a-zA-Z\.\-]+?)(?:-Linux)?\.deb$", filename)
     if m_asset_deb:
         ver = m_asset_deb.group(1)
         return {

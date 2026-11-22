@@ -5,14 +5,14 @@ Codename: ulyana
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (ulyana)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
  9dc450f277467b5b600576c8c2641d64 12921 main/binary-amd64/Packages
- bf2aac24c5106ab05d3b271229fe7f57 813 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ c53bc535f9ad908c725ed0e9a8fae412 813 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
  abb3ff3db78120d7950186b238c68de709659c319a8e565642b1e839de68d00c 12921 main/binary-amd64/Packages
- 7798c70cbea65b900b040028bbe494ace8e6119bfa05f3344c4d97221b9390d7 813 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 517c6475e8c294554376a0118e28d34541b1de9b07aa7193c5c6368e0a452765 813 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

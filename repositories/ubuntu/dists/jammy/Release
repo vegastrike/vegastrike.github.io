@@ -5,14 +5,14 @@ Codename: jammy
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (jammy)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
- c53cdb63a0324237fe9499240813f0c4 14561 main/binary-amd64/Packages
- 1eff39781e5f3bf1a5828f84bc28701e 850 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ 6857d13b0379fdde232f55a094f78bcb 14557 main/binary-amd64/Packages
+ 9610a3de5bd68145333cf5428a9204c0 847 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
- a3e88785440719d148920d6f0eaecc21205eadedb659440032607710f57e76da 14561 main/binary-amd64/Packages
- 6885177adb6d5cb9fa9c97b75f60525da92475748901b070800b0b1c5669310b 850 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 1b924727677db8cce889f4663ec0d812d84d1e263e91a466928899cb31fc79b8 14557 main/binary-amd64/Packages
+ 984d4b5bdf9f2c2269bda4c34d9e187614dd370d6f911c132290a49036988775 847 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

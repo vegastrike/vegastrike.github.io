@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Ubuntu Repository
+Suite: xenial
+Codename: xenial
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Ubuntu (xenial)
+Date: Sun, 22 Nov 2026 22:04:01 UTC
+MD5Sum:
+ 3e27d25b7307347ec24a78cdf2a35087 13257 main/binary-amd64/Packages
+ f3a75ce2e51ccbbdfc377726d17a8e48 757 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+SHA256:
+ 037a9f2b2b7132fcae4045a1af7fd63ef5cc5d815b873eca3c208bdc0452262a 13257 main/binary-amd64/Packages
+ f79fc4ac08979771442000077e1f4e342a7f6d98d232e06f10ebc78ad1e4580b 757 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

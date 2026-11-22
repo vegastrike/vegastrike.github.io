@@ -1,5 +1,5 @@
 Types: deb
 URIs: https://www.vega-strike.org/repositories/ubuntu
-Suites: bionic focal hirsute impish jammy mantic noble questing resolute ulyana vanessa vera victoria virginia
+Suites: bionic focal hirsute impish jammy mantic noble questing resolute ulyana vanessa vera victoria virginia xenial
 Components: main
 Trusted: yes

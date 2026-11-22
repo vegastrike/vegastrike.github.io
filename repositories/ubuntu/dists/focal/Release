@@ -5,14 +5,14 @@ Codename: focal
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (focal)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
- fc7794367ac44df855ebea915004b315 13492 main/binary-amd64/Packages
- 9b4fff8ee607c6e14fe1c868f8d8ed6c 822 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ d1d142a41a051c3bfdedd1f89502a8ec 24348 main/binary-amd64/Packages
+ a7c39e440d4490428049b09fd3763045 1141 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
- cb8e9e1dd0ba1e1cd20d197b63b344c1b9902bac4d06d19dcda75e911c5e0c91 13492 main/binary-amd64/Packages
- 6bf314f4c39fd47ec0c4975f37cfd50dae28259aa3b010d4ea86a975ad2ce575 822 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 70b6e28412e524e855dff247a98ee42182efeb2dda7b1965834b6e35db8fe613 24348 main/binary-amd64/Packages
+ 8f9addb0850b254eeb684f971ecdb4c596157d02d0e643f91cd9305368cded81 1141 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz

@@ -5,14 +5,14 @@ Codename: trixie
 Components: main
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (trixie)
-Date: Sun, 22 Nov 2026 21:58:05 UTC
+Date: Sun, 22 Nov 2026 22:04:01 UTC
 MD5Sum:
  0f9bd52d533cbd387bc0359c6af357ab 2455 main/binary-amd64/Packages
- f95c935bd49e4b981d7e052ebeacba61 664 main/binary-amd64/Packages.gz
- 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
- 2b64f1466d3b6a7f8247c6dfdec88ae0 1229 main/binary-all/Packages.gz
+ 72cbf6d2fe081bf530d46be63251c345 664 main/binary-amd64/Packages.gz
+ 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
+ a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
 SHA256:
  5e76c980ba449665ec0e1c8a775391837c05742e4804aa937aa57f28b414ce6e 2455 main/binary-amd64/Packages
- 3df2e086bbe27e8972a7287e24e1f2083f017de2334837f8ed6cadb14a69f042 664 main/binary-amd64/Packages.gz
- d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
- 57ccb2c1ebce982848d84e897835ea3893e75ee3debf05a687ba0dc6e3d22fc8 1229 main/binary-all/Packages.gz
+ 9cb64b1351dc3ddddd8f3f79bfa617b5f928b9c1cdaf2473769428f7587ec099 664 main/binary-amd64/Packages.gz
+ 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
+ 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
