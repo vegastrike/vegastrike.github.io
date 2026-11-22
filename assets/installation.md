@@ -57,6 +57,9 @@ installers are named according to the Darwin version.)
 
 ## Linux
 
+Vega Strike provides official Linux package repositories for Fedora, openSUSE, Rocky Linux / RHEL, Debian, and Ubuntu.
+You can configure your package manager (DNF, Zypper, APT) using our [Linux Repositories](/repositories/) page to automatically install and receive updates.
+
 Vega Strike has been split into two main packages:
 
 - [Vega Strike: Upon the Coldest Sea](https://github.com/vegastrike/Assets-Production/releases)

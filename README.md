@@ -27,3 +27,39 @@ documentation.
 to the top of the file the standard header as in all other posts.
 - In posts, place the `<!--more-->` tag at the end of the excerpt of the post. The text up till there will appear on the "Latest news" section on the frontpae.
 - Load media and special pages to `./assets/`
+
+## Linux Package Repositories
+
+The website hosts compliant static package repositories under `/repositories/` for Fedora (DNF), openSUSE (Zypper), Rocky Linux / RHEL (DNF), Debian (APT), and Ubuntu (APT).
+To keep the git repository lightweight, package binaries (`.deb`, `.rpm`) are **not** stored here; only metadata referencing assets on GitHub Releases is generated.
+
+### Adding New Packages (Release Updates)
+
+When new releases of [Vega-Strike-Engine-Source](https://github.com/vegastrike/Vega-Strike-Engine-Source/releases) or [Assets-Production](https://github.com/vegastrike/Assets-Production/releases) are published:
+
+#### Preferred Method: GitHub Actions Workflow
+The repository update is fully automated via GitHub Actions:
+1. Go to the repository's **Actions** tab on GitHub.
+2. Select the **Update Linux Repositories** workflow from the left sidebar.
+3. Click **Run workflow** &rarr; **Run workflow** on the `master` branch.
+4. The workflow will query the GitHub Releases API, regenerate all repository metadata under `repositories/`, update `_data/repositories.json`, and commit the changes directly.
+
+*(Note: The workflow also runs automatically on a weekly schedule every Sunday at 02:00 UTC).*
+
+#### Alternative: Local Generation via Script
+If you need to generate or test repository metadata locally:
+1. Ensure Python 3 is installed.
+2. Run the generator script:
+   ```sh
+   python3 scripts/generate_repositories.py --fetch --build
+   ```
+3. Commit and push the changes:
+   ```sh
+   git add _data/repositories.json repositories/
+   git commit -m "Update Linux repositories for release vX.Y.Z"
+   git push
+   ```
+To rebuild metadata from cached static data without querying GitHub:
+```sh
+python3 scripts/generate_repositories.py --build
+```

@@ -1,0 +1,359 @@
+Package: vegastrike
+Version: 0.10.0~alpha7-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 43717
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.10.0-alpha7/Vega-Strike_v0.10.0-alpha7-GLVND-Debian-bookworm_x86_64.deb
+Size: 44766706
+SHA256: e326672824e3c4ec3d8dd4d6370a361060f05a21156ceb4cdd8012c597259588
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.10.0~alpha6-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 43605
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.10.0-alpha6/Vega-Strike_v0.10.0-alpha6-GLVND-Debian-bookworm_x86_64.deb
+Size: 44651916
+SHA256: a1ba4a6e98422879bc9451ce26cc4ac0cc82d6e46ebdc44a209a749907feaa8f
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.10.0~alpha3-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 82258
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.10.0-alpha3/Vega-Strike_v0.10.0-alpha3-GLVND-Debian-bookworm_x86_64.deb
+Size: 84232266
+SHA256: 767ced2e88a44f69d0c65f9a004daf0cbb30b7cbfb6346a17c7e5c8b4bf486ce
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.1-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 74916
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1/Vega-Strike_v0.9.1-GLVND-Debian-bookworm_x86_64.deb
+Size: 76714370
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.1~beta4-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 74916
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Debian-bookworm_x86_64.deb
+Size: 76714380
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.1~beta3-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 74916
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Debian-bookworm_x86_64.deb
+Size: 76714294
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.1~beta2-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 74916
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Debian-bookworm_x86_64.deb
+Size: 76714522
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 78402
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0/Vega-Strike_v0.9.0-GLVND-Debian-bookworm_x86_64.deb
+Size: 80284026
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~beta3-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 78402
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Debian-bookworm_x86_64.deb
+Size: 80284018
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~beta2-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 78322
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Debian-bookworm_x86_64.deb
+Size: 80202424
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~beta1-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860144
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha16-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860154
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha15-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860156
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha14-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860160
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha13-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860136
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha12-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77988
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Debian-bookworm_x86_64.deb
+Size: 79860164
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha11-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77863
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha11/Vega-Strike_v0.9.0-alpha11-GLVND-Debian-bookworm_x86_64.deb
+Size: 79732178
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha10-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77759
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha10/Vega-Strike_v0.9.0-alpha10-GLVND-Debian-bookworm_x86_64.deb
+Size: 79625732
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha9-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77759
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha9/Vega-Strike_v0.9.0-alpha9-GLVND-Debian-bookworm_x86_64.deb
+Size: 79625740
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha7-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77759
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha7/Vega-Strike_v0.9.0-alpha7-GLVND-Debian-bookworm_x86_64.deb
+Size: 79625742
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha6-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77759
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha6/Vega-Strike_v0.9.0-alpha6-GLVND-Debian-bookworm_x86_64.deb
+Size: 79625762
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha5-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 77759
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha5/Vega-Strike_v0.9.0-alpha5-GLVND-Debian-bookworm_x86_64.deb
+Size: 79625764
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha4-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 76187
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha4/Vega-Strike_v0.9.0-alpha4-GLVND-Debian-bookworm_x86_64.deb
+Size: 78015956
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vegastrike
+Version: 0.9.0~alpha3-1
+Architecture: amd64
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 76187
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha3/Vega-Strike_v0.9.0-alpha3-GLVND-Debian-bookworm_x86_64.deb
+Size: 78015958
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike Engine
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.

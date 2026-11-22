@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://www.vega-strike.org/repositories/ubuntu
+Suites: jammy noble resolute
+Components: main
+Trusted: yes

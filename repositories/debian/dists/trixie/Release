@@ -1,0 +1,18 @@
+Origin: Vega Strike
+Label: Vega Strike Debian Repository
+Suite: trixie
+Codename: trixie
+Components: main
+Architectures: all amd64
+Description: Vega Strike Official Packages for Debian (trixie)
+Date: Sun, 22 Nov 2026 21:33:51 UTC
+MD5Sum:
+ 0f9bd52d533cbd387bc0359c6af357ab 2455 main/binary-amd64/Packages
+ ad09b17cbecaf3d35d964e0ab6ef44d8 664 main/binary-amd64/Packages.gz
+ 4a9f6c256a6700df7687ca19aecede9a 19759 main/binary-all/Packages
+ df35c6409580258a4f292e13843f368b 1229 main/binary-all/Packages.gz
+SHA256:
+ 5e76c980ba449665ec0e1c8a775391837c05742e4804aa937aa57f28b414ce6e 2455 main/binary-amd64/Packages
+ d39e83205081e818d8eeccfd55d095dbea7cfb1e4dfded272ffaf0b4db116c64 664 main/binary-amd64/Packages.gz
+ d34ae3870967259631e42d023001579187993d015de18c30949b2762ad08f27b 19759 main/binary-all/Packages
+ 01f31421f85fff8d9fc72000e24c382ebaf6b8c535ad418261a2c6aaf24398fc 1229 main/binary-all/Packages.gz
