@@ -116,6 +116,7 @@ def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False):
         return {
             "component": "assets",
             "package_name": "vsutcs",
+            "provides": ["vegastrike-upon-the-coldest-sea", "vsUTCS"],
             "display_name": "Vega Strike: Upon The Coldest Sea Assets",
             "version": ver,
             "opengl": "any",
@@ -142,6 +143,7 @@ def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False):
         return {
             "component": "assets",
             "package_name": "vsutcs",
+            "provides": ["vegastrike-upon-the-coldest-sea"],
             "display_name": "Vega Strike: Upon The Coldest Sea Assets",
             "version": ver,
             "opengl": "any",
@@ -238,6 +240,9 @@ def generate_rpm_repodata(output_dir, packages_list):
         primary_xml_lines.append(f'      <rpm:group>Amusements/Games</rpm:group>')
         primary_xml_lines.append(f'      <rpm:provides>')
         primary_xml_lines.append(f'        <rpm:entry name="{pkg_name}" flags="EQ" epoch="0" ver="{ver}" rel="1"/>')
+        for prov in p.get("provides", []):
+            if prov != pkg_name:
+                primary_xml_lines.append(f'        <rpm:entry name="{prov}" flags="EQ" epoch="0" ver="{ver}" rel="1"/>')
         primary_xml_lines.append(f'      </rpm:provides>')
         primary_xml_lines.append(f'    </format>')
         primary_xml_lines.append(f'  </package>')
@@ -313,11 +318,15 @@ def generate_deb_repository(output_dir, suite, components_pkgs, distro_label="De
                     f"SHA256: {sha256}",
                     f"Section: games",
                     f"Priority: optional",
+                ]
+                if p.get("provides"):
+                    entry.append(f"Provides: {', '.join(p['provides'])}")
+                entry.extend([
                     f"Homepage: https://www.vega-strike.org",
                     f"Description: {p['display_name']}",
                     f" Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,",
                     f" fight, and explore in a vast universe."
-                ]
+                ])
                 pkg_entries.append("\n".join(entry))
 
             packages_content = ("\n\n".join(pkg_entries) + "\n").encode("utf-8")
@@ -485,9 +494,14 @@ def generate_landing_page(packages):
     
     <div class="alert alert-info" style="background-color: #0d2238; border-color: #1f4266; color: #a5d6ff;">
       <strong>Note:</strong> Vega Strike provides two release channels:
-      <ul style="margin-top: 8px; margin-bottom: 0;">
+      <ul style="margin-top: 8px; margin-bottom: 8px;">
         <li><strong style="color: #56d364;">Stable Channel (Default):</strong> Official releases (e.g. 0.9.1, 0.9.0, 0.8.0). Enabled by default.</li>
         <li><strong style="color: #e3b341;">Testing Channel (Opt-in):</strong> Latest preview alphas and betas (e.g. 0.10.x, 0.11.x). Disabled by default.</li>
+      </ul>
+      <strong>Available Packages:</strong>
+      <ul style="margin-top: 4px; margin-bottom: 0;">
+        <li><code>vegastrike</code> &mdash; Core Game Engine</li>
+        <li><code>vegastrike-upon-the-coldest-sea</code> &mdash; Vega Strike: Upon the Coldest Sea Assets <em>(also installable as <code>vsutcs</code>)</em></li>
       </ul>
     </div>
 
@@ -514,13 +528,14 @@ def generate_landing_page(packages):
         <div class="channel-box channel-stable">
           <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
           <p>Installs the latest official stable release (e.g. 0.9.1):</p>
-          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo dnf install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <p><small>Also installable using the alias: <code>sudo dnf install vegastrike vsutcs</code></small></p>
         </div>
 
         <div class="channel-box channel-testing">
           <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
           <p>To install preview builds or alphas:</p>
-          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
           <p><small>To permanently enable testing: <code>sudo dnf config-manager --set-enabled vegastrike-testing</code></small></p>
         </div>
       </div>
@@ -535,12 +550,12 @@ sudo zypper refresh</code></pre>
 
         <div class="channel-box channel-stable">
           <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
-          <pre class="code-block"><code>sudo zypper install vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo zypper install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
           <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
-          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
       </div>
 
@@ -553,12 +568,12 @@ sudo zypper refresh</code></pre>
 
         <div class="channel-box channel-stable">
           <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
-          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo dnf install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
           <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
-          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
       </div>
 
@@ -571,7 +586,7 @@ sudo zypper refresh</code></pre>
           <p>Configures the repository for stable releases (component <code>main</code>):</p>
           <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
 sudo apt update
-sudo apt install vegastrike vsutcs</code></pre>
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
@@ -579,7 +594,7 @@ sudo apt install vegastrike vsutcs</code></pre>
           <p>To enable preview testing builds (component <code>testing</code>):</p>
           <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
 sudo apt update
-sudo apt install vegastrike vsutcs</code></pre>
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
       </div>
 
@@ -591,14 +606,14 @@ sudo apt install vegastrike vsutcs</code></pre>
           <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
           <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
 sudo apt update
-sudo apt install vegastrike vsutcs</code></pre>
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
           <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
           <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
 sudo apt update
-sudo apt install vegastrike vsutcs</code></pre>
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
       </div>
 

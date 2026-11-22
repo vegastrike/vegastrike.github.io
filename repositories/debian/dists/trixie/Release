@@ -5,18 +5,18 @@ Codename: trixie
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (trixie)
-Date: Sun, 22 Nov 2026 22:19:07 UTC
+Date: Sun, 22 Nov 2026 22:52:40 UTC
 MD5Sum:
- e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
- 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
+ e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
  0f9bd52d533cbd387bc0359c6af357ab 2455 testing/binary-amd64/Packages
- f5b637264fae4e938f760dc0af59c9cb 664 testing/binary-amd64/Packages.gz
- 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
- 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
+ 94c8e3d22f5a0a405110ba50a96fb2f8 664 testing/binary-amd64/Packages.gz
+ aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
+ 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
 SHA256:
- bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
- d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
+ ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
  5e76c980ba449665ec0e1c8a775391837c05742e4804aa937aa57f28b414ce6e 2455 testing/binary-amd64/Packages
- f67ff3aa679ac1d843e4a1947f37b16b7b102964e621a5d1ca9de969023fa4d4 664 testing/binary-amd64/Packages.gz
- f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
- 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz
+ 95929ef4dd7f843f03f4bb981cc9faa9f96747108fe1ac87258e58f2748fea2d 664 testing/binary-amd64/Packages.gz
+ 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
+ 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz

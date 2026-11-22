@@ -5,22 +5,22 @@ Codename: victoria
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (victoria)
-Date: Sun, 22 Nov 2026 22:19:07 UTC
+Date: Sun, 22 Nov 2026 22:52:40 UTC
 MD5Sum:
  859acd00c6cda62a19c2943f358e09dc 1185 main/binary-amd64/Packages
- a375efe7e0110bd53ee9a3e4c4465302 425 main/binary-amd64/Packages.gz
- e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
- 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 056a042851d9416424700db292443cf6 425 main/binary-amd64/Packages.gz
+ 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
+ e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
  4ecb74b13670d74ec1352eda4d13cb69 6750 testing/binary-amd64/Packages
- b009bae44efecccbe581f0f7213e10a1 606 testing/binary-amd64/Packages.gz
- 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
- 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
+ 2c3a440705283610d8a5c36e00bf035a 606 testing/binary-amd64/Packages.gz
+ aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
+ 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
 SHA256:
  347d5828572c26d03869c004df670408ce09977bd321c650b3e5fa15bf556cd4 1185 main/binary-amd64/Packages
- cbe0a0c1e9b41fdc4b0bf7c802a0924b3fc749dc6d0dfbbf5899a3e66a75bcc6 425 main/binary-amd64/Packages.gz
- bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
- d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ afb73a6f2f9eff03a21ee4d668986294a4f19be4b5baa077e1a2ebf21d7e16e5 425 main/binary-amd64/Packages.gz
+ f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
+ ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
  3be0655039503bd13dfdcb1a828858349b576c89546edb8ab3a698169eaf0f99 6750 testing/binary-amd64/Packages
- 7b0fd102d14e021f167ff4076d536304b45384befd2cc218203aed1a4181ef9d 606 testing/binary-amd64/Packages.gz
- f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
- 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz
+ 778a56acc8b477c52721fc0484dc03db366258453c496598c83fcfe5d7fb8caf 606 testing/binary-amd64/Packages.gz
+ 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
+ 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz

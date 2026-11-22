@@ -5,22 +5,22 @@ Codename: buster
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (buster)
-Date: Sun, 22 Nov 2026 22:19:07 UTC
+Date: Sun, 22 Nov 2026 22:52:40 UTC
 MD5Sum:
  52c5e5949112f50c6557e59fef51e93b 1770 main/binary-amd64/Packages
- 20067f85913c72bc2657f55f002a9eb3 446 main/binary-amd64/Packages.gz
- e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
- 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 6a1362dc2c3e1bbdb9613e3f620e43dc 446 main/binary-amd64/Packages.gz
+ 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
+ e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
  1fb37ef84c64a7a7fc164c6847a46207 13472 testing/binary-amd64/Packages
- eb244902cba539ae63514c4810243520 845 testing/binary-amd64/Packages.gz
- 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
- 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
+ 64ddde7e2b5b3df116eda22323175b03 845 testing/binary-amd64/Packages.gz
+ aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
+ 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
 SHA256:
  fe889db34f0d4220f5e44362a5a4be587c48776131aab3a13de25b78d5851573 1770 main/binary-amd64/Packages
- ac31b01c8e703ca97c8701047793c7d33aae108891563f05b04fde2c8d5bcde2 446 main/binary-amd64/Packages.gz
- bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
- d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ cbc7ad7a86d102e0e581455969ae53cd780a6ef90b7f74fe4276f83532cda909 446 main/binary-amd64/Packages.gz
+ f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
+ ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
  d4ee2b7abad09d8cdb8071ddccc49fc66cd30a1e492b9769f59917143218d7bc 13472 testing/binary-amd64/Packages
- 53b23dcb1f7bc75694518d1a147a3424ea788b4c616dc550c789ab7f461c3350 845 testing/binary-amd64/Packages.gz
- f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
- 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz
+ c05a742bf6482857725bfe6cc4172a0f1355b0180e6819bb4cd5575e2f4e08bc 845 testing/binary-amd64/Packages.gz
+ 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
+ 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz

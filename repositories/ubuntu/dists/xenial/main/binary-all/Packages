@@ -8,6 +8,7 @@ Size: 694880782
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
@@ -23,6 +24,7 @@ Size: 694357444
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
@@ -38,6 +40,7 @@ Size: 694618402
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
@@ -53,6 +56,7 @@ Size: 694601984
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
@@ -68,6 +72,7 @@ Size: 694602264
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
@@ -83,6 +88,7 @@ Size: 694623476
 SHA256: 0000000000000000000000000000000000000000000000000000000000000000
 Section: games
 Priority: optional
+Provides: vegastrike-upon-the-coldest-sea
 Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
