@@ -1,0 +1,449 @@
+Package: vsutcs
+Version: 0.6.0-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 3364
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/V0.6.0-alpha4/vsUTCS-0.6.0-Linux.deb
+Size: 3445230
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.0-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 1
+Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/V0.6.0-alpha3/vsUTCS-0.6.0-Linux.deb
+Size: 582
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.10.0~alpha3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 699851
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.10.0-alpha3/vsUTCS_0.10.0-alpha3.deb
+Size: 716647612
+SHA256: 6754db1334965cc30eed82c5c872a35b5e6768aca490d92738480cd08517b325
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.10.0~alpha2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678693
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.10.0-alpha2/vsUTCS_0.10.0-alpha2.deb
+Size: 694982072
+SHA256: a6798b7ce166895422f3bd5a43b48b82d2682111f3e9672ef0f78419e2d1e7a4
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.10.0~alpha1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678724
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.10.0-alpha1/vsUTCS_0.10.0-alpha1.deb
+Size: 695014048
+SHA256: 4931e2d36e64b41828c6420ba84ed756787ee02e82c2e9c555bb3dcb99da41bc
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.1~beta3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678596
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta3/vsUTCS_v0.9.1-beta3.deb
+Size: 694882558
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.1~beta2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678591
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta2/vsUTCS_v0.9.1-beta2.deb
+Size: 694878078
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.1~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678592
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta1/vsUTCS_v0.9.1-beta1.deb
+Size: 694878984
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~beta2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678085
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-beta2/vsUTCS_v0.9.0-beta2.deb
+Size: 694359692
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678087
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-beta1/vsUTCS_v0.9.0-beta1.deb
+Size: 694361410
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha6-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678086
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha6/vsUTCS_v0.9.0-alpha6.deb
+Size: 694360800
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha5-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678088
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha5/vsUTCS_v0.9.0-alpha5.deb
+Size: 694362652
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha4-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678095
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha4/vsUTCS_v0.9.0-alpha4.deb
+Size: 694370012
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678083
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha3/vsUTCS_v0.9.0-alpha3.deb
+Size: 694357288
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678093
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha2/vsUTCS_v0.9.0-alpha2.deb
+Size: 694367756
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.9.0~alpha1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678093
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha1/vsUTCS_v0.9.0-alpha1.deb
+Size: 694367280
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.8.1~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678332
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.1-beta1/vsUTCS_v0.8.1-beta1.deb
+Size: 694612506
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.8.0~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678337
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-beta1/vsUTCS_v0.8.0-beta1.deb
+Size: 694617094
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.8.0~alpha2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678331
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-alpha2/vsUTCS_v0.8.0-alpha2.deb
+Size: 694611232
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.8.0~alpha1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678337
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-alpha1/vsUTCS_v0.8.0-alpha1.deb
+Size: 694618000
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.7.1~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678314
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.1-beta1/vsUTCS_v0.7.1-beta1.deb
+Size: 694593542
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.7.0~beta4-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678314
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta4/vsUTCS_v0.7.0-beta4.deb
+Size: 694594228
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.7.0~beta3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678338
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta3/vsUTCS_v0.7.0-beta3.deb
+Size: 694618574
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.7.0~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678349
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta1/vsUTCS_v0.7.0-beta1.deb
+Size: 694629942
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.7.0~alpha1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678347
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-alpha1/vsUTCS_v0.7.0-alpha1.deb
+Size: 694627352
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678347
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.1/vsUTCS_v0.6.1.deb
+Size: 694627678
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.0~beta1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678346
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-beta1/vsUTCS_v0.6.0-beta1.deb
+Size: 694626682
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.0~alpha3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678342
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-alpha3/vsUTCS_v0.6.0-alpha3.deb
+Size: 694622302
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.0-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678344
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0/vsUTCS_v0.6.0.deb
+Size: 694625250
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsutcs
+Version: 0.6.0~alpha2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Installed-Size: 678342
+Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-alpha2/vsUTCS_v0.6.0-alpha2.deb
+Size: 694623010
+SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+Section: games
+Priority: optional
+Homepage: https://www.vega-strike.org
+Description: Vega Strike: Upon The Coldest Sea Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.

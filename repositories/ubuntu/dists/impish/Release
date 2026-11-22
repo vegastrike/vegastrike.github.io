@@ -2,17 +2,25 @@ Origin: Vega Strike
 Label: Vega Strike Ubuntu Repository
 Suite: impish
 Codename: impish
-Components: main
+Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (impish)
-Date: Sun, 22 Nov 2026 22:04:01 UTC
+Date: Sun, 22 Nov 2026 22:19:07 UTC
 MD5Sum:
- 3b3f3ad882727fd7447a7df26b6e14ef 7994 main/binary-amd64/Packages
- 97a7612242ed634b93ac6bc51f9575cc 645 main/binary-amd64/Packages.gz
- 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
- a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+ 87444edd286864932493dada8490f57d 1184 main/binary-amd64/Packages
+ 590a641807b9ab7ce6ae225db52779b3 414 main/binary-amd64/Packages.gz
+ e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
+ 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 4f48b301369266f634e239e7f8b37505 6809 testing/binary-amd64/Packages
+ afac2d2db09f4a82fc865404379c4cd8 615 testing/binary-amd64/Packages.gz
+ 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
+ 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
 SHA256:
- 1913672840dbbbe1760a0de6ff9a3f046661ef8f44683d92b86e9ee76e720205 7994 main/binary-amd64/Packages
- 71b8694dc94569f8410e0235976ab5ed1a8967259b0de431b3e379d98750314c 645 main/binary-amd64/Packages.gz
- 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
- 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
+ 679f6c9c3d1c8a16ed2fe0f9d4ca0d745db50a2acc5cf1963d9a3f97de4d3abe 1184 main/binary-amd64/Packages
+ b8e1be955dc1518ffd4ebc39f04e805f679a31b88242961a022494a7735d54d0 414 main/binary-amd64/Packages.gz
+ bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
+ d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ bec774ee7f815c866ce3348d54e130c19449eec87a65e1d049887d20005fd4f3 6809 testing/binary-amd64/Packages
+ c0af68c68bdef00c108c0fe20a99e0ad066c536e4bafaa6aecef372d56e10a3d 615 testing/binary-amd64/Packages.gz
+ f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
+ 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz

@@ -2,17 +2,25 @@ Origin: Vega Strike
 Label: Vega Strike Ubuntu Repository
 Suite: noble
 Codename: noble
-Components: main
+Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (noble)
-Date: Sun, 22 Nov 2026 22:04:01 UTC
+Date: Sun, 22 Nov 2026 22:19:07 UTC
 MD5Sum:
- 566f24f8158ff137befbb605c2022128 9695 main/binary-amd64/Packages
- 45c83a4e02bfa275149bd381638064a9 858 main/binary-amd64/Packages.gz
- 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
- a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+ 8b67f44d0d3a30c69e016ee7937e1557 1173 main/binary-amd64/Packages
+ 26b43b31ba199d532822adfa3de34c0b 421 main/binary-amd64/Packages.gz
+ e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
+ 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ fed5667cda79597a32a90bcf5096e037 8521 testing/binary-amd64/Packages
+ 0e3700c3bf9b0ce4255111996796c3d1 820 testing/binary-amd64/Packages.gz
+ 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
+ 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
 SHA256:
- 971dbc5276f4e77a7649107a28cd28abd82596c7cfcff61e02257bfb9079611b 9695 main/binary-amd64/Packages
- 08a0a4fbba33fa28e5376a7dff7e31b7eba14db823415f3036e3beedb531200f 858 main/binary-amd64/Packages.gz
- 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
- 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
+ 9ddf879f0fd07f15cbcbe9875fbd2c45a5a7ee21ef3e04cc854282c454dda5c8 1173 main/binary-amd64/Packages
+ c994072f9f68b713a1fc7f483cee674781c1d343db5c940d460fe76d7d6fa8db 421 main/binary-amd64/Packages.gz
+ bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
+ d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ 44fc194ff81d0cf160783ec39c7d1ee4e201f80055ea0bcc19a887f2d03b93e8 8521 testing/binary-amd64/Packages
+ c2563f91951a6dfdd0b4b52d718cfc57fbdb3ba6d89774750a45ecb68e467908 820 testing/binary-amd64/Packages.gz
+ f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
+ 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz

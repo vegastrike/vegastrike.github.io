@@ -1,0 +1,15 @@
+[vegastrike]
+name=Vega Strike - Fedora $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/fedora/$releasever/$basearch/
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d
+
+[vegastrike-testing]
+name=Vega Strike Testing (Alphas & Betas) - Fedora $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/fedora-testing/$releasever/$basearch/
+enabled=0
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d

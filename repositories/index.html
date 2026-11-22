@@ -26,24 +26,6 @@
       margin-bottom: 24px;
       transition: border-color 0.2s ease;
     }
-    .repo-card:hover {
-      border-color: #4a576d;
-    }
-    .distro-badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 0.85em;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
-    .badge-fedora { background: #294172; color: #fff; }
-    .badge-opensuse { background: #173f35; color: #73c48f; }
-    .badge-rocky { background: #13382c; color: #10b981; }
-    .badge-debian { background: #4a1525; color: #ff6b8b; }
-    .badge-ubuntu { background: #4a2612; color: #ff9854; }
     pre.code-block {
       background: #090a0d;
       border: 1px solid #222630;
@@ -89,26 +71,28 @@
       border-radius: 0 0 8px 8px;
       padding: 24px;
     }
+    .channel-box {
+      background: #0e1117;
+      border: 1px solid #272d38;
+      border-radius: 6px;
+      padding: 18px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    .channel-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .channel-stable { border-left: 4px solid #2ea043; }
+    .channel-testing { border-left: 4px solid #dbab09; }
     a.site-nav {
       color: #58a6ff;
       text-decoration: none;
     }
     a.site-nav:hover {
       text-decoration: underline;
-    }
-    table.table-pkgs {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-      font-size: 0.9em;
-    }
-    table.table-pkgs th, table.table-pkgs td {
-      padding: 8px 12px;
-      border-bottom: 1px solid #272d38;
-    }
-    table.table-pkgs th {
-      color: #8b949e;
-      text-align: left;
     }
   </style>
 </head>
@@ -126,7 +110,11 @@
   <div class="container" style="padding-bottom: 60px;">
     
     <div class="alert alert-info" style="background-color: #0d2238; border-color: #1f4266; color: #a5d6ff;">
-      <strong>Note:</strong> Vega Strike is packaged into two components: the <strong>Engine</strong> (<code>vegastrike</code>) and the <strong>Game Assets</strong> (<code>vsutcs</code>). Both are available through these repositories.
+      <strong>Note:</strong> Vega Strike provides two release channels:
+      <ul style="margin-top: 8px; margin-bottom: 0;">
+        <li><strong style="color: #56d364;">Stable Channel (Default):</strong> Official releases (e.g. 0.9.1, 0.9.0, 0.8.0). Enabled by default.</li>
+        <li><strong style="color: #e3b341;">Testing Channel (Opt-in):</strong> Latest preview alphas and betas (e.g. 0.10.x, 0.11.x). Disabled by default.</li>
+      </ul>
     </div>
 
     <!-- Nav tabs -->
@@ -144,92 +132,117 @@
       <!-- Fedora Tab -->
       <div role="tabpanel" class="tab-pane active" id="fedora">
         <h3>Fedora (DNF / RPM)</h3>
-        <p>Supports Fedora 40, 41, 42, 43, and 44 (x86_64).</p>
         
-        <h4>1. Add the Repository</h4>
+        <h4>1. Add the Repository File</h4>
         <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/fedora/vegastrike-fedora.repo</code></pre>
-        <p><small>Or download the repo file manually to <code>/etc/yum.repos.d/vegastrike-fedora.repo</code>: <a href="/repositories/fedora/vegastrike-fedora.repo" download class="site-nav">Download vegastrike-fedora.repo</a></small></p>
+        <p><small>Or download: <a href="/repositories/fedora/vegastrike-fedora.repo" download class="site-nav">Download vegastrike-fedora.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Installs the latest official stable release (e.g. 0.9.1):</p>
+          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To install preview builds or alphas:</p>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+          <p><small>To permanently enable testing: <code>sudo dnf config-manager --set-enabled vegastrike-testing</code></small></p>
+        </div>
       </div>
 
       <!-- openSUSE Tab -->
       <div role="tabpanel" class="tab-pane" id="opensuse">
         <h3>openSUSE Leap (Zypper / YaST)</h3>
-        <p>Supports openSUSE Leap 15.6 and Leap 16.0 (x86_64).</p>
 
         <h4>1. Add the Repository</h4>
         <pre class="code-block"><code>sudo zypper addrepo https://www.vega-strike.org/repositories/opensuse/vegastrike-opensuse.repo
 sudo zypper refresh</code></pre>
-        <p><small>Or download the repo file manually to <code>/etc/zypp/repos.d/vegastrike-opensuse.repo</code>: <a href="/repositories/opensuse/vegastrike-opensuse.repo" download class="site-nav">Download vegastrike-opensuse.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo zypper install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo zypper install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Rocky Linux Tab -->
       <div role="tabpanel" class="tab-pane" id="rocky">
         <h3>Rocky Linux / RHEL / CentOS Stream (DNF)</h3>
-        <p>Supports Rocky Linux 8, 9, and 10 (x86_64).</p>
 
         <h4>1. Add the Repository</h4>
         <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/rocky/vegastrike-rocky.repo</code></pre>
-        <p><small>Or download: <a href="/repositories/rocky/vegastrike-rocky.repo" download class="site-nav">Download vegastrike-rocky.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Debian Tab -->
       <div role="tabpanel" class="tab-pane" id="debian">
         <h3>Debian (APT)</h3>
-        <p>Supports Debian Bookworm (12) and Trixie (13) (amd64).</p>
 
-        <h4>1. Configure the Repository</h4>
-        <p>Using the modern deb822 sources format (recommended):</p>
-        <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
-sudo apt update</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Configures the repository for stable releases (component <code>main</code>):</p>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
 
-        <p>Or traditional <code>sources.list.d</code> entry:</p>
-        <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/vegastrike.list
-sudo apt update</code></pre>
-
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo apt install vegastrike vsutcs</code></pre>
-        <p><small>Direct release downloads are also accessible at <a href="https://github.com/vegastrike/Vega-Strike-Engine-Source/releases" target="_blank" class="site-nav">Vega Strike Engine Releases</a>.</small></p>
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To enable preview testing builds (component <code>testing</code>):</p>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Ubuntu Tab -->
       <div role="tabpanel" class="tab-pane" id="ubuntu">
         <h3>Ubuntu &amp; Linux Mint (APT)</h3>
-        <p>Supports Ubuntu 22.04 LTS (Jammy), 24.04 LTS (Noble), 26.04 (Resolute), and Linux Mint.</p>
 
-        <h4>1. Configure the Repository</h4>
-        <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
-sudo apt update</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
 
-        <p>Or traditional <code>sources.list.d</code> entry:</p>
-        <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/vegastrike.list
-sudo apt update</code></pre>
-
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo apt install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
     </div>
 
     <div style="margin-top: 40px;">
-      <h3>Repository Structure Overview</h3>
-      <p style="color: #8b949e;">Each repository conforms to the native package manager specifications:</p>
+      <h3>Channel &amp; Repository Layout</h3>
+      <p style="color: #8b949e;">Each distribution provides separate Stable and Testing repodata:</p>
       <ul>
-        <li><code>/repositories/fedora/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/opensuse/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/rocky/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/debian/dists/$suite/main/binary-amd64/Packages.gz</code></li>
-        <li><code>/repositories/ubuntu/dists/$suite/main/binary-amd64/Packages.gz</code></li>
+        <li><strong>Fedora Stable:</strong> <code>/repositories/fedora/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Fedora Testing:</strong> <code>/repositories/fedora-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Stable:</strong> <code>/repositories/opensuse/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Testing:</strong> <code>/repositories/opensuse-testing/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Stable:</strong> <code>/repositories/rocky/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Testing:</strong> <code>/repositories/rocky-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Debian &amp; Ubuntu:</strong> Component <code>main</code> (Stable) and Component <code>testing</code> (Alphas/Betas)</li>
       </ul>
-      <p style="color: #8b949e;">Packages are streamed on demand directly from official GitHub Release binaries.</p>
+      <p style="color: #8b949e;">All package files stream on demand from official GitHub Release binaries.</p>
     </div>
 
   </div>

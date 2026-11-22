@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repomd xmlns="http://linux.duke.edu/metadata/repo" xmlns:rpm="http://linux.duke.edu/metadata/rpm">
   <data type="primary">
-    <checksum type="sha256">77ffda440a0dd93517642ab827c6965311458b4bd5e017fe935a493bdf6743a9</checksum>
-    <open-checksum type="sha256">80ecf5f543397b8cec0da6496463d76c9b4331ecd6813ca112c253d42bd27233</open-checksum>
+    <checksum type="sha256">3f3340640288298b879a5a581c12679db697b3b29f425e12e7be0c876b5211a3</checksum>
+    <open-checksum type="sha256">571182257f6876740d7bd70a1d87355286abebd94293eeb7820731d0737ef88e</open-checksum>
     <location href="repodata/primary.xml.gz"/>
-    <timestamp>1795385041</timestamp>
-    <size>1377</size>
-    <open-size>24478</open-size>
+    <timestamp>1795385947</timestamp>
+    <size>758</size>
+    <open-size>4130</open-size>
   </data>
 </repomd>

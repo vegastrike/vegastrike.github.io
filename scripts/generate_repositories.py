@@ -8,6 +8,10 @@ Generates compliant, static Linux package repositories for:
   - Rocky Linux / RHEL / CentOS (DNF / RPM)
   - Debian & Ubuntu (APT / DEB)
 
+Supports both:
+  - Stable Channel: official non-prerelease versions (e.g. 0.9.1, 0.9.0, 0.8.0...)
+  - Testing Channel: pre-release builds (e.g. 0.10.x and 0.11.x alphas/betas)
+
 The metadata files point to assets hosted on GitHub Releases,
 avoiding the need to store large binaries in the git repository.
 """
@@ -21,7 +25,6 @@ import hashlib
 import argparse
 from datetime import datetime, timezone
 import urllib.request
-import xml.etree.ElementTree as ET
 
 WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(WORKSPACE_DIR, "_data")
@@ -41,7 +44,7 @@ def fetch_github_releases(url):
         print(f"Error fetching from {url}: {e}", file=sys.stderr)
         return []
 
-def parse_package_asset(asset, release_tag, repo_source):
+def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False):
     filename = asset.get("name", "")
     if not (filename.endswith(".deb") or filename.endswith(".rpm")):
         return None
@@ -87,7 +90,8 @@ def parse_package_asset(asset, release_tag, repo_source):
             "sha256": sha256,
             "download_url": download_url,
             "release_tag": release_tag,
-            "repo_source": repo_source
+            "repo_source": repo_source,
+            "prerelease": is_prerelease
         }
 
     # Assets packages (RPM):
@@ -124,7 +128,8 @@ def parse_package_asset(asset, release_tag, repo_source):
             "sha256": sha256,
             "download_url": download_url,
             "release_tag": release_tag,
-            "repo_source": repo_source
+            "repo_source": repo_source,
+            "prerelease": is_prerelease
         }
 
     # Assets packages (DEB):
@@ -149,7 +154,8 @@ def parse_package_asset(asset, release_tag, repo_source):
             "sha256": sha256,
             "download_url": download_url,
             "release_tag": release_tag,
-            "repo_source": repo_source
+            "repo_source": repo_source,
+            "prerelease": is_prerelease
         }
 
     return None
@@ -163,16 +169,18 @@ def collect_release_data():
 
     for r in vse_releases:
         tag = r.get("tag_name", "")
+        is_pre = r.get("prerelease", False)
         for a in r.get("assets", []):
-            pkg = parse_package_asset(a, tag, "Vega-Strike-Engine-Source")
+            pkg = parse_package_asset(a, tag, "Vega-Strike-Engine-Source", is_pre)
             if pkg and pkg["download_url"] not in seen_urls:
                 packages.append(pkg)
                 seen_urls.add(pkg["download_url"])
 
     for r in assets_releases:
         tag = r.get("tag_name", "")
+        is_pre = r.get("prerelease", False)
         for a in r.get("assets", []):
-            pkg = parse_package_asset(a, tag, "Assets-Production")
+            pkg = parse_package_asset(a, tag, "Assets-Production", is_pre)
             if pkg and pkg["download_url"] not in seen_urls:
                 packages.append(pkg)
                 seen_urls.add(pkg["download_url"])
@@ -184,6 +192,9 @@ def generate_rpm_repodata(output_dir, packages_list):
     Generates repomd.xml and primary.xml.gz inside output_dir/repodata/
     pointing directly to package URLs on GitHub Releases.
     """
+    if not packages_list:
+        return
+
     repodata_dir = os.path.join(output_dir, "repodata")
     os.makedirs(repodata_dir, exist_ok=True)
 
@@ -261,75 +272,85 @@ def generate_rpm_repodata(output_dir, packages_list):
     with open(os.path.join(repodata_dir, "repomd.xml"), "w", encoding="utf-8") as f_repomd:
         f_repomd.write(repomd_xml)
 
-def generate_deb_repository(output_dir, suite, packages_list, distro_label="Debian"):
+def generate_deb_repository(output_dir, suite, components_pkgs, distro_label="Debian"):
     """
-    Generates dists/<suite>/Release and dists/<suite>/main/binary-<arch>/Packages[.gz]
+    components_pkgs: dict like {"main": [pkgs], "testing": [pkgs]}
+    Generates dists/<suite>/Release and dists/<suite>/<comp>/binary-<arch>/Packages[.gz]
     """
     dists_suite_dir = os.path.join(output_dir, "dists", suite)
     os.makedirs(dists_suite_dir, exist_ok=True)
 
-    arch_map = {}
-    for p in packages_list:
-        arch = p["arch"]
-        arch_map.setdefault(arch, []).append(p)
+    release_files_meta = []
+    all_architectures = set()
+
+    for comp_name, pkgs in components_pkgs.items():
+        if not pkgs:
+            continue
+        arch_map = {}
+        for p in pkgs:
+            arch = p["arch"]
+            arch_map.setdefault(arch, []).append(p)
+            all_architectures.add(arch)
+
+        for arch, arch_pkgs in arch_map.items():
+            bin_dir = os.path.join(dists_suite_dir, comp_name, f"binary-{arch}")
+            os.makedirs(bin_dir, exist_ok=True)
+
+            pkg_entries = []
+            for p in arch_pkgs:
+                ver = p["version"].replace("-", "~")
+                sha256 = p["sha256"] or "0" * 64
+                size = p["size"]
+                installed_size = max(1, size // 1024)
+                entry = [
+                    f"Package: {p['package_name']}",
+                    f"Version: {ver}-1",
+                    f"Architecture: {arch}",
+                    f"Maintainer: Vega Strike Development Team <nabaco@tutamail.com>",
+                    f"Installed-Size: {installed_size}",
+                    f"Filename: {p['download_url']}",
+                    f"Size: {size}",
+                    f"SHA256: {sha256}",
+                    f"Section: games",
+                    f"Priority: optional",
+                    f"Homepage: https://www.vega-strike.org",
+                    f"Description: {p['display_name']}",
+                    f" Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,",
+                    f" fight, and explore in a vast universe."
+                ]
+                pkg_entries.append("\n".join(entry))
+
+            packages_content = ("\n\n".join(pkg_entries) + "\n").encode("utf-8")
+
+            pkgs_path = os.path.join(bin_dir, "Packages")
+            with open(pkgs_path, "wb") as f_pkg:
+                f_pkg.write(packages_content)
+
+            pkgs_gz_path = os.path.join(bin_dir, "Packages.gz")
+            with gzip.open(pkgs_gz_path, "wb") as f_gz:
+                f_gz.write(packages_content)
+
+            rel_pkgs_path = f"{comp_name}/binary-{arch}/Packages"
+            rel_pkgs_gz_path = f"{comp_name}/binary-{arch}/Packages.gz"
+
+            with open(pkgs_gz_path, "rb") as f_gz_read:
+                gz_bytes = f_gz_read.read()
+
+            release_files_meta.append((rel_pkgs_path, len(packages_content), hashlib.md5(packages_content).hexdigest(), hashlib.sha256(packages_content).hexdigest()))
+            release_files_meta.append((rel_pkgs_gz_path, len(gz_bytes), hashlib.md5(gz_bytes).hexdigest(), hashlib.sha256(gz_bytes).hexdigest()))
+
+    active_components = [c for c, pkgs in components_pkgs.items() if pkgs]
+    if not active_components:
+        return
 
     date_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S UTC")
-    release_files_meta = []
-
-    for arch, arch_pkgs in arch_map.items():
-        bin_dir = os.path.join(dists_suite_dir, "main", f"binary-{arch}")
-        os.makedirs(bin_dir, exist_ok=True)
-
-        pkg_entries = []
-        for p in arch_pkgs:
-            ver = p["version"].replace("-", "~")
-            sha256 = p["sha256"] or "0" * 64
-            size = p["size"]
-            installed_size = max(1, size // 1024)
-            entry = [
-                f"Package: {p['package_name']}",
-                f"Version: {ver}-1",
-                f"Architecture: {arch}",
-                f"Maintainer: Vega Strike Development Team <nabaco@tutamail.com>",
-                f"Installed-Size: {installed_size}",
-                f"Filename: {p['download_url']}",
-                f"Size: {size}",
-                f"SHA256: {sha256}",
-                f"Section: games",
-                f"Priority: optional",
-                f"Homepage: https://www.vega-strike.org",
-                f"Description: {p['display_name']}",
-                f" Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,",
-                f" fight, and explore in a vast universe."
-            ]
-            pkg_entries.append("\n".join(entry))
-
-        packages_content = ("\n\n".join(pkg_entries) + "\n").encode("utf-8")
-
-        pkgs_path = os.path.join(bin_dir, "Packages")
-        with open(pkgs_path, "wb") as f_pkg:
-            f_pkg.write(packages_content)
-
-        pkgs_gz_path = os.path.join(bin_dir, "Packages.gz")
-        with gzip.open(pkgs_gz_path, "wb") as f_gz:
-            f_gz.write(packages_content)
-
-        rel_pkgs_path = f"main/binary-{arch}/Packages"
-        rel_pkgs_gz_path = f"main/binary-{arch}/Packages.gz"
-
-        with open(pkgs_gz_path, "rb") as f_gz_read:
-            gz_bytes = f_gz_read.read()
-
-        release_files_meta.append((rel_pkgs_path, len(packages_content), hashlib.md5(packages_content).hexdigest(), hashlib.sha256(packages_content).hexdigest()))
-        release_files_meta.append((rel_pkgs_gz_path, len(gz_bytes), hashlib.md5(gz_bytes).hexdigest(), hashlib.sha256(gz_bytes).hexdigest()))
-
     release_lines = [
         f"Origin: Vega Strike",
         f"Label: Vega Strike {distro_label} Repository",
         f"Suite: {suite}",
         f"Codename: {suite}",
-        f"Components: main",
-        f"Architectures: {' '.join(sorted(arch_map.keys()))}",
+        f"Components: {' '.join(sorted(active_components))}",
+        f"Architectures: {' '.join(sorted(all_architectures))}",
         f"Description: Vega Strike Official Packages for {distro_label} ({suite})",
         f"Date: {date_str}",
         f"MD5Sum:"
@@ -347,7 +368,7 @@ def generate_deb_repository(output_dir, suite, packages_list, distro_label="Debi
 def generate_landing_page(packages):
     """
     Generates a responsive repositories/index.html page with copy-paste instructions
-    for Fedora, openSUSE, Rocky, Debian, and Ubuntu.
+    for Stable and Testing channels across all supported distributions.
     """
     now_date = datetime.now(timezone.utc).strftime("%B %d, %Y")
 
@@ -379,24 +400,6 @@ def generate_landing_page(packages):
       margin-bottom: 24px;
       transition: border-color 0.2s ease;
     }}
-    .repo-card:hover {{
-      border-color: #4a576d;
-    }}
-    .distro-badge {{
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 0.85em;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }}
-    .badge-fedora {{ background: #294172; color: #fff; }}
-    .badge-opensuse {{ background: #173f35; color: #73c48f; }}
-    .badge-rocky {{ background: #13382c; color: #10b981; }}
-    .badge-debian {{ background: #4a1525; color: #ff6b8b; }}
-    .badge-ubuntu {{ background: #4a2612; color: #ff9854; }}
     pre.code-block {{
       background: #090a0d;
       border: 1px solid #222630;
@@ -442,26 +445,28 @@ def generate_landing_page(packages):
       border-radius: 0 0 8px 8px;
       padding: 24px;
     }}
+    .channel-box {{
+      background: #0e1117;
+      border: 1px solid #272d38;
+      border-radius: 6px;
+      padding: 18px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }}
+    .channel-title {{
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }}
+    .channel-stable {{ border-left: 4px solid #2ea043; }}
+    .channel-testing {{ border-left: 4px solid #dbab09; }}
     a.site-nav {{
       color: #58a6ff;
       text-decoration: none;
     }}
     a.site-nav:hover {{
       text-decoration: underline;
-    }}
-    table.table-pkgs {{
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-      font-size: 0.9em;
-    }}
-    table.table-pkgs th, table.table-pkgs td {{
-      padding: 8px 12px;
-      border-bottom: 1px solid #272d38;
-    }}
-    table.table-pkgs th {{
-      color: #8b949e;
-      text-align: left;
     }}
   </style>
 </head>
@@ -479,7 +484,11 @@ def generate_landing_page(packages):
   <div class="container" style="padding-bottom: 60px;">
     
     <div class="alert alert-info" style="background-color: #0d2238; border-color: #1f4266; color: #a5d6ff;">
-      <strong>Note:</strong> Vega Strike is packaged into two components: the <strong>Engine</strong> (<code>vegastrike</code>) and the <strong>Game Assets</strong> (<code>vsutcs</code>). Both are available through these repositories.
+      <strong>Note:</strong> Vega Strike provides two release channels:
+      <ul style="margin-top: 8px; margin-bottom: 0;">
+        <li><strong style="color: #56d364;">Stable Channel (Default):</strong> Official releases (e.g. 0.9.1, 0.9.0, 0.8.0). Enabled by default.</li>
+        <li><strong style="color: #e3b341;">Testing Channel (Opt-in):</strong> Latest preview alphas and betas (e.g. 0.10.x, 0.11.x). Disabled by default.</li>
+      </ul>
     </div>
 
     <!-- Nav tabs -->
@@ -497,92 +506,117 @@ def generate_landing_page(packages):
       <!-- Fedora Tab -->
       <div role="tabpanel" class="tab-pane active" id="fedora">
         <h3>Fedora (DNF / RPM)</h3>
-        <p>Supports Fedora 40, 41, 42, 43, and 44 (x86_64).</p>
         
-        <h4>1. Add the Repository</h4>
+        <h4>1. Add the Repository File</h4>
         <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/fedora/vegastrike-fedora.repo</code></pre>
-        <p><small>Or download the repo file manually to <code>/etc/yum.repos.d/vegastrike-fedora.repo</code>: <a href="/repositories/fedora/vegastrike-fedora.repo" download class="site-nav">Download vegastrike-fedora.repo</a></small></p>
+        <p><small>Or download: <a href="/repositories/fedora/vegastrike-fedora.repo" download class="site-nav">Download vegastrike-fedora.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Installs the latest official stable release (e.g. 0.9.1):</p>
+          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To install preview builds or alphas:</p>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+          <p><small>To permanently enable testing: <code>sudo dnf config-manager --set-enabled vegastrike-testing</code></small></p>
+        </div>
       </div>
 
       <!-- openSUSE Tab -->
       <div role="tabpanel" class="tab-pane" id="opensuse">
         <h3>openSUSE Leap (Zypper / YaST)</h3>
-        <p>Supports openSUSE Leap 15.6 and Leap 16.0 (x86_64).</p>
 
         <h4>1. Add the Repository</h4>
         <pre class="code-block"><code>sudo zypper addrepo https://www.vega-strike.org/repositories/opensuse/vegastrike-opensuse.repo
 sudo zypper refresh</code></pre>
-        <p><small>Or download the repo file manually to <code>/etc/zypp/repos.d/vegastrike-opensuse.repo</code>: <a href="/repositories/opensuse/vegastrike-opensuse.repo" download class="site-nav">Download vegastrike-opensuse.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo zypper install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo zypper install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Rocky Linux Tab -->
       <div role="tabpanel" class="tab-pane" id="rocky">
         <h3>Rocky Linux / RHEL / CentOS Stream (DNF)</h3>
-        <p>Supports Rocky Linux 8, 9, and 10 (x86_64).</p>
 
         <h4>1. Add the Repository</h4>
         <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/rocky/vegastrike-rocky.repo</code></pre>
-        <p><small>Or download: <a href="/repositories/rocky/vegastrike-rocky.repo" download class="site-nav">Download vegastrike-rocky.repo</a></small></p>
 
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo dnf install vegastrike vsutcs</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Debian Tab -->
       <div role="tabpanel" class="tab-pane" id="debian">
         <h3>Debian (APT)</h3>
-        <p>Supports Debian Bookworm (12) and Trixie (13) (amd64).</p>
 
-        <h4>1. Configure the Repository</h4>
-        <p>Using the modern deb822 sources format (recommended):</p>
-        <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
-sudo apt update</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Configures the repository for stable releases (component <code>main</code>):</p>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
 
-        <p>Or traditional <code>sources.list.d</code> entry:</p>
-        <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/vegastrike.list
-sudo apt update</code></pre>
-
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo apt install vegastrike vsutcs</code></pre>
-        <p><small>Direct release downloads are also accessible at <a href="https://github.com/vegastrike/Vega-Strike-Engine-Source/releases" target="_blank" class="site-nav">Vega Strike Engine Releases</a>.</small></p>
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To enable preview testing builds (component <code>testing</code>):</p>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
       <!-- Ubuntu Tab -->
       <div role="tabpanel" class="tab-pane" id="ubuntu">
         <h3>Ubuntu &amp; Linux Mint (APT)</h3>
-        <p>Supports Ubuntu 22.04 LTS (Jammy), 24.04 LTS (Noble), 26.04 (Resolute), and Linux Mint.</p>
 
-        <h4>1. Configure the Repository</h4>
-        <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
-sudo apt update</code></pre>
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
 
-        <p>Or traditional <code>sources.list.d</code> entry:</p>
-        <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/vegastrike.list
-sudo apt update</code></pre>
-
-        <h4>2. Install Vega Strike</h4>
-        <pre class="code-block"><code>sudo apt install vegastrike vsutcs</code></pre>
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vsutcs</code></pre>
+        </div>
       </div>
 
     </div>
 
     <div style="margin-top: 40px;">
-      <h3>Repository Structure Overview</h3>
-      <p style="color: #8b949e;">Each repository conforms to the native package manager specifications:</p>
+      <h3>Channel &amp; Repository Layout</h3>
+      <p style="color: #8b949e;">Each distribution provides separate Stable and Testing repodata:</p>
       <ul>
-        <li><code>/repositories/fedora/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/opensuse/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/rocky/$releasever/$basearch/repodata/repomd.xml</code></li>
-        <li><code>/repositories/debian/dists/$suite/main/binary-amd64/Packages.gz</code></li>
-        <li><code>/repositories/ubuntu/dists/$suite/main/binary-amd64/Packages.gz</code></li>
+        <li><strong>Fedora Stable:</strong> <code>/repositories/fedora/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Fedora Testing:</strong> <code>/repositories/fedora-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Stable:</strong> <code>/repositories/opensuse/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Testing:</strong> <code>/repositories/opensuse-testing/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Stable:</strong> <code>/repositories/rocky/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Testing:</strong> <code>/repositories/rocky-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Debian &amp; Ubuntu:</strong> Component <code>main</code> (Stable) and Component <code>testing</code> (Alphas/Betas)</li>
       </ul>
-      <p style="color: #8b949e;">Packages are streamed on demand directly from official GitHub Release binaries.</p>
+      <p style="color: #8b949e;">All package files stream on demand from official GitHub Release binaries.</p>
     </div>
 
   </div>
@@ -647,79 +681,122 @@ sudo apt update</code></pre>
 def build_repositories(packages):
     os.makedirs(REPOS_DIR, exist_ok=True)
 
-    # 1. Fedora RPM repositories
-    # Distro versions: 40, 41, 42, 43, 44
+    # 1. Fedora RPM repositories (Stable & Testing)
     fedora_dir = os.path.join(REPOS_DIR, "fedora")
+    fedora_testing_dir = os.path.join(REPOS_DIR, "fedora-testing")
     os.makedirs(fedora_dir, exist_ok=True)
+    os.makedirs(fedora_testing_dir, exist_ok=True)
 
-    fedora_repo_content = """[vegastrike-fedora]
+    fedora_repo_content = """[vegastrike]
 name=Vega Strike - Fedora $releasever - $basearch
 baseurl=https://www.vega-strike.org/repositories/fedora/$releasever/$basearch/
 enabled=1
 gpgcheck=0
 repo_gpgcheck=0
 metadata_expire=1d
+
+[vegastrike-testing]
+name=Vega Strike Testing (Alphas & Betas) - Fedora $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/fedora-testing/$releasever/$basearch/
+enabled=0
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d
 """
     with open(os.path.join(fedora_dir, "vegastrike-fedora.repo"), "w") as f:
+        f.write(fedora_repo_content)
+    with open(os.path.join(fedora_testing_dir, "vegastrike-fedora.repo"), "w") as f:
         f.write(fedora_repo_content)
 
     fedora_pkgs = [p for p in packages if p["distro"] == "fedora" and p["pkg_type"] == "rpm"]
     fedora_versions = sorted(list(set(p["distro_version"] for p in fedora_pkgs)))
     for v in fedora_versions:
-        v_pkgs = [p for p in fedora_pkgs if p["distro_version"] == v]
-        v_dir = os.path.join(fedora_dir, v, "x86_64")
-        generate_rpm_repodata(v_dir, v_pkgs)
+        stable_v_pkgs = [p for p in fedora_pkgs if p["distro_version"] == v and not p.get("prerelease", False)]
+        testing_v_pkgs = [p for p in fedora_pkgs if p["distro_version"] == v and p.get("prerelease", False)]
+        if stable_v_pkgs:
+            generate_rpm_repodata(os.path.join(fedora_dir, v, "x86_64"), stable_v_pkgs)
+        if testing_v_pkgs:
+            generate_rpm_repodata(os.path.join(fedora_testing_dir, v, "x86_64"), testing_v_pkgs)
 
-    # 2. openSUSE RPM repositories
+    # 2. openSUSE RPM repositories (Stable & Testing)
     opensuse_dir = os.path.join(REPOS_DIR, "opensuse")
+    opensuse_testing_dir = os.path.join(REPOS_DIR, "opensuse-testing")
     os.makedirs(opensuse_dir, exist_ok=True)
+    os.makedirs(opensuse_testing_dir, exist_ok=True)
 
-    opensuse_repo_content = """[vegastrike-opensuse]
+    opensuse_repo_content = """[vegastrike]
 name=Vega Strike - openSUSE Leap $releasever
 baseurl=https://www.vega-strike.org/repositories/opensuse/leap/$releasever/$basearch/
 enabled=1
 gpgcheck=0
 repo_gpgcheck=0
 metadata_expire=1d
+
+[vegastrike-testing]
+name=Vega Strike Testing (Alphas & Betas) - openSUSE Leap $releasever
+baseurl=https://www.vega-strike.org/repositories/opensuse-testing/leap/$releasever/$basearch/
+enabled=0
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d
 """
     with open(os.path.join(opensuse_dir, "vegastrike-opensuse.repo"), "w") as f:
+        f.write(opensuse_repo_content)
+    with open(os.path.join(opensuse_testing_dir, "vegastrike-opensuse.repo"), "w") as f:
         f.write(opensuse_repo_content)
 
     opensuse_pkgs = [p for p in packages if p["distro"] in ("opensuse", "opensuse-leap") and p["pkg_type"] == "rpm"]
     opensuse_versions = sorted(list(set(p["distro_version"] for p in opensuse_pkgs)))
     for v in opensuse_versions:
-        v_pkgs = [p for p in opensuse_pkgs if p["distro_version"] == v]
-        v_dir = os.path.join(opensuse_dir, "leap", v, "x86_64")
-        generate_rpm_repodata(v_dir, v_pkgs)
+        stable_v_pkgs = [p for p in opensuse_pkgs if p["distro_version"] == v and not p.get("prerelease", False)]
+        testing_v_pkgs = [p for p in opensuse_pkgs if p["distro_version"] == v and p.get("prerelease", False)]
+        if stable_v_pkgs:
+            generate_rpm_repodata(os.path.join(opensuse_dir, "leap", v, "x86_64"), stable_v_pkgs)
+        if testing_v_pkgs:
+            generate_rpm_repodata(os.path.join(opensuse_testing_dir, "leap", v, "x86_64"), testing_v_pkgs)
 
-    # 3. Rocky Linux / EL RPM repositories
+    # 3. Rocky Linux / EL RPM repositories (Stable & Testing)
     rocky_dir = os.path.join(REPOS_DIR, "rocky")
+    rocky_testing_dir = os.path.join(REPOS_DIR, "rocky-testing")
     os.makedirs(rocky_dir, exist_ok=True)
+    os.makedirs(rocky_testing_dir, exist_ok=True)
 
-    rocky_repo_content = """[vegastrike-rocky]
+    rocky_repo_content = """[vegastrike]
 name=Vega Strike - Rocky Linux $releasever - $basearch
 baseurl=https://www.vega-strike.org/repositories/rocky/$releasever/$basearch/
 enabled=1
 gpgcheck=0
 repo_gpgcheck=0
 metadata_expire=1d
+
+[vegastrike-testing]
+name=Vega Strike Testing (Alphas & Betas) - Rocky Linux $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/rocky-testing/$releasever/$basearch/
+enabled=0
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d
 """
     with open(os.path.join(rocky_dir, "vegastrike-rocky.repo"), "w") as f:
+        f.write(rocky_repo_content)
+    with open(os.path.join(rocky_testing_dir, "vegastrike-rocky.repo"), "w") as f:
         f.write(rocky_repo_content)
 
     rocky_pkgs = [p for p in packages if p["distro"] == "rocky" and p["pkg_type"] == "rpm"]
     rocky_versions = sorted(list(set(p["distro_version"] for p in rocky_pkgs)))
     for v in rocky_versions:
-        v_pkgs = [p for p in rocky_pkgs if p["distro_version"] == v]
-        v_dir = os.path.join(rocky_dir, v, "x86_64")
-        generate_rpm_repodata(v_dir, v_pkgs)
-
-        # Also support major release (e.g. 9 for 9.8, 10 for 10.2, 8 for 8.5)
+        stable_v_pkgs = [p for p in rocky_pkgs if p["distro_version"] == v and not p.get("prerelease", False)]
+        testing_v_pkgs = [p for p in rocky_pkgs if p["distro_version"] == v and p.get("prerelease", False)]
         major = v.split(".")[0]
-        major_dir = os.path.join(rocky_dir, major, "x86_64")
-        generate_rpm_repodata(major_dir, v_pkgs)
 
-    # 4. Debian APT repositories
+        if stable_v_pkgs:
+            generate_rpm_repodata(os.path.join(rocky_dir, v, "x86_64"), stable_v_pkgs)
+            generate_rpm_repodata(os.path.join(rocky_dir, major, "x86_64"), stable_v_pkgs)
+        if testing_v_pkgs:
+            generate_rpm_repodata(os.path.join(rocky_testing_dir, v, "x86_64"), testing_v_pkgs)
+            generate_rpm_repodata(os.path.join(rocky_testing_dir, major, "x86_64"), testing_v_pkgs)
+
+    # 4. Debian APT repositories (Components: main = stable, testing = prerelease)
     debian_dir = os.path.join(REPOS_DIR, "debian")
     os.makedirs(debian_dir, exist_ok=True)
 
@@ -742,11 +819,18 @@ Trusted: yes
         f.write(debian_list)
 
     for s in deb_suites:
-        s_pkgs = [p for p in debian_pkgs if p["distro_version"] == s] + deb_asset_pkgs
-        if s_pkgs:
-            generate_deb_repository(debian_dir, s, s_pkgs, "Debian")
+        stable_s_pkgs = [p for p in debian_pkgs if p["distro_version"] == s and not p.get("prerelease", False)]
+        testing_s_pkgs = [p for p in debian_pkgs if p["distro_version"] == s and p.get("prerelease", False)]
+        stable_assets = [p for p in deb_asset_pkgs if not p.get("prerelease", False)]
+        testing_assets = [p for p in deb_asset_pkgs if p.get("prerelease", False)]
 
-    # 5. Ubuntu APT repositories
+        components_pkgs = {
+            "main": stable_s_pkgs + stable_assets,
+            "testing": testing_s_pkgs + testing_assets
+        }
+        generate_deb_repository(debian_dir, s, components_pkgs, "Debian")
+
+    # 5. Ubuntu APT repositories (Components: main = stable, testing = prerelease)
     ubuntu_dir = os.path.join(REPOS_DIR, "ubuntu")
     os.makedirs(ubuntu_dir, exist_ok=True)
 
@@ -768,9 +852,14 @@ Trusted: yes
         f.write(ubuntu_list)
 
     for s in ubuntu_suites:
-        s_pkgs = [p for p in ubuntu_pkgs if p["distro_version"] == s] + deb_asset_pkgs
-        if s_pkgs:
-            generate_deb_repository(ubuntu_dir, s, s_pkgs, "Ubuntu")
+        stable_s_pkgs = [p for p in ubuntu_pkgs if p["distro_version"] == s and not p.get("prerelease", False)]
+        testing_s_pkgs = [p for p in ubuntu_pkgs if p["distro_version"] == s and p.get("prerelease", False)]
+
+        components_pkgs = {
+            "main": stable_s_pkgs + stable_assets,
+            "testing": testing_s_pkgs + testing_assets
+        }
+        generate_deb_repository(ubuntu_dir, s, components_pkgs, "Ubuntu")
 
     # 6. Generate landing page
     generate_landing_page(packages)

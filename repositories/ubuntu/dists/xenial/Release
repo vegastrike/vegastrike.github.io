@@ -2,17 +2,25 @@ Origin: Vega Strike
 Label: Vega Strike Ubuntu Repository
 Suite: xenial
 Codename: xenial
-Components: main
+Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (xenial)
-Date: Sun, 22 Nov 2026 22:04:01 UTC
+Date: Sun, 22 Nov 2026 22:19:07 UTC
 MD5Sum:
- 3e27d25b7307347ec24a78cdf2a35087 13257 main/binary-amd64/Packages
- f3a75ce2e51ccbbdfc377726d17a8e48 757 main/binary-amd64/Packages.gz
- 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
- a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+ 281926eaab3b2cd8915b118dfa9e4a4a 1755 main/binary-amd64/Packages
+ c39eafe2b8a6b68c56cec89952631f13 440 main/binary-amd64/Packages.gz
+ e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
+ 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 86d62a6163a35e6198f6e1713150a35d 11501 testing/binary-amd64/Packages
+ 05981642a4e3ae547f04b40b2e5df841 714 testing/binary-amd64/Packages.gz
+ 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
+ 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
 SHA256:
- 037a9f2b2b7132fcae4045a1af7fd63ef5cc5d815b873eca3c208bdc0452262a 13257 main/binary-amd64/Packages
- f79fc4ac08979771442000077e1f4e342a7f6d98d232e06f10ebc78ad1e4580b 757 main/binary-amd64/Packages.gz
- 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
- 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
+ 6fba33fd1cc8de1e83f68a5b257c14083b1b607831b15d17027b74d13abab315 1755 main/binary-amd64/Packages
+ 474c580e15d4b6976ba178660e3bfc427e2e72a47f14febb053503440f6171fc 440 main/binary-amd64/Packages.gz
+ bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
+ d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ 0afa061ad43f624e7e849e0884c42abf67b8316c2608ace2c12bedb28161aaab 11501 testing/binary-amd64/Packages
+ 03e412a404f59a0fe239a009dbbc8f46007d1d982072f8e14063bf081a77d4be 714 testing/binary-amd64/Packages.gz
+ f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
+ 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz

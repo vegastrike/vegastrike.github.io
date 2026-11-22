@@ -2,17 +2,25 @@ Origin: Vega Strike
 Label: Vega Strike Debian Repository
 Suite: bullseye
 Codename: bullseye
-Components: main
+Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (bullseye)
-Date: Sun, 22 Nov 2026 22:04:01 UTC
+Date: Sun, 22 Nov 2026 22:19:07 UTC
 MD5Sum:
- 62ce062c11728fc460661e29778af254 12915 main/binary-amd64/Packages
- a576ad269d123ff8d3132d824f629f8c 798 main/binary-amd64/Packages.gz
- 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
- a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+ d81c71157b85cc6c25ae8e372a61cc53 1188 main/binary-amd64/Packages
+ ad102304744ce3cd85d2a3636b38c92b 419 main/binary-amd64/Packages.gz
+ e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
+ 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 7f99a07021dba847dc5bde792c60b36f 11726 testing/binary-amd64/Packages
+ 5cc3a2a637515154d3ee7a33f96cbea9 770 testing/binary-amd64/Packages.gz
+ 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
+ 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
 SHA256:
- 93d8f43d540cecc925bd0213a41199484c33019abc99132e4348fc6e17f99819 12915 main/binary-amd64/Packages
- 2edca121ba998e066b893c9cbe658dce0828ac850e724e927cdc4920bf0d54b8 798 main/binary-amd64/Packages.gz
- 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
- 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
+ f6d3221fdb25f336d63254778047d50e5056ce2602af944177321049211ccb17 1188 main/binary-amd64/Packages
+ 041d59fd9dc92d8fe860164f36d706f63051b9d28cc2a718766a765a518ae324 419 main/binary-amd64/Packages.gz
+ bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
+ d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ 8aa9450a98f07a6400d88f0db6fc6c5899aefc7e90a472bebd5d25c45cf27736 11726 testing/binary-amd64/Packages
+ 3dc7b7328ad13f57bb52cbccf191d5125de98e6cce0e823c4ce9d1aeb5614b35 770 testing/binary-amd64/Packages.gz
+ f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
+ 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz

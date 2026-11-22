@@ -2,17 +2,25 @@ Origin: Vega Strike
 Label: Vega Strike Ubuntu Repository
 Suite: hirsute
 Codename: hirsute
-Components: main
+Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (hirsute)
-Date: Sun, 22 Nov 2026 22:04:01 UTC
+Date: Sun, 22 Nov 2026 22:19:07 UTC
 MD5Sum:
- 709f0e9d97ccc359508ae34ddf62d3c9 8007 main/binary-amd64/Packages
- 1b0a007e7bfb436b84890b1cf3f9dd0f 631 main/binary-amd64/Packages.gz
- 2b7b142063c0213203ce422889db9e80 20916 main/binary-all/Packages
- a1d2ff0cdb2d04ba17aff9e268d68fb0 1291 main/binary-all/Packages.gz
+ f9b494260587296a4322dbb26627408f 1186 main/binary-amd64/Packages
+ bf1c74cea94fad629138448de5584a95 413 main/binary-amd64/Packages.gz
+ e0062154897f7fd09dc43ea0840ffb2a 3395 main/binary-all/Packages
+ 416db6189f4c497c10046b248dfa7a88 513 main/binary-all/Packages.gz
+ 762f220087913db860e952e787e74633 6820 testing/binary-amd64/Packages
+ a07e549b25cbfce8b7271e3a96b12f98 604 testing/binary-amd64/Packages.gz
+ 31e9c744254be1e06468166ac1b1a2b7 17520 testing/binary-all/Packages
+ 3aad5796b30c370f3786e52b134846ff 1181 testing/binary-all/Packages.gz
 SHA256:
- acfd1511af70e69c7ef2540cf7984edbc4ed9c0c00d38a9c75e96c260d360ea4 8007 main/binary-amd64/Packages
- 6c47db09ffee7b1080ff199f1933c895ffc6d56ec9cfa041187bcef873710978 631 main/binary-amd64/Packages.gz
- 9393f9ecd54df88fb136bdf64c5394915194c6280de1bb1059d862072de0d462 20916 main/binary-all/Packages
- 65da961577abd8f3af3cd8f4002332894754d44fa404f2ecbf82ce5a2d676e2b 1291 main/binary-all/Packages.gz
+ 56d9460d40d3b45bb2c8cf9e2b319fb797e3af0776241816ad24a4f19fa55d12 1186 main/binary-amd64/Packages
+ 355fd63079c44b12f03506375f74dac90a7df179e145c40a6f8c12199cfd9b54 413 main/binary-amd64/Packages.gz
+ bfca84602dbb58524f027a682709a8799abff6cb27308f59f000b4d200a5a2b1 3395 main/binary-all/Packages
+ d113ad88fd61fa773078336aeaabb3ad8e87a45f99ae42943fa4dcaf1eda1bbf 513 main/binary-all/Packages.gz
+ c69cb70dfbb5b6275d5ec666e3c164f7b808d500496a08020feedee99c377956 6820 testing/binary-amd64/Packages
+ 41be3cd3cfb1df2a42b322fe2bb44c472e4ae9ace66654a28e2eaf4780e136f3 604 testing/binary-amd64/Packages.gz
+ f2e9b9c5aac5065e347e2484e7204a60f7d477e2df106a5c6d93fc25ed6aed7a 17520 testing/binary-all/Packages
+ 018579afe3840481b029ee28e3de97b3bd5d068cec7a8ea63f69d020a54cc20d 1181 testing/binary-all/Packages.gz
