@@ -26,6 +26,8 @@ jobs:
           python3 scripts/generate_repositories.py --fetch --build
 
       - name: Commit and push changes
+        env:
+          TRIGGERED_BY: ${{ github.triggering_actor }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -33,6 +35,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in repositories metadata."
           else
-            git commit -m "Automation: update Linux repositories metadata from GitHub Releases"
+            git commit -m "Automation: update Linux repositories metadata from GitHub Releases" \
+                       -m "Triggered by @${TRIGGERED_BY}"
             git push
           fi
