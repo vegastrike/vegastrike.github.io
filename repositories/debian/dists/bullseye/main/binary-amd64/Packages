@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 96056
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Debian-bullseye_x86_64.deb
 Size: 98362350
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c9ceb62afbfc98165247a83cbdd4a5456f107c6f3dcaa498e888fe88815faaee
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 96057
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Debian-bullseye_x86_64.deb
 Size: 98362390
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: a7342bb1b1ab2f8c62e56f48f7ec252a4871b237abf5cb50301513ccc8745b74
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

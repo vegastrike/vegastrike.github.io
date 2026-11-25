@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71558
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Ubuntu-impish_x86_64.deb
 Size: 73275458
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 8a20c35f3cbfdaa6baa4275f4df4a9cce92a3b20215b0bd9441efa19ea93062c
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71558
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-impish_x86_64.deb
 Size: 73275674
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 206334ccb903719f53efdc08d41c323da59cec222aa4a3bfe0499fab0f4709b2
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

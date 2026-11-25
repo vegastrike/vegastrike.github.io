@@ -5,22 +5,22 @@ Codename: bullseye
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (bullseye)
-Date: Wed, 25 Nov 2026 03:25:33 UTC
+Date: Wed, 25 Nov 2026 19:03:42 UTC
 MD5Sum:
- 6f363d71a6dc7792054578611efca741 1202 main/binary-amd64/Packages
- 5247fbf8c98d54e953a83b7717f21491 415 main/binary-amd64/Packages.gz
- e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
- 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
- c0a1e5a3d325ad89d45bc72643eec365 11859 testing/binary-amd64/Packages
- c14b072878a116ad834cfde67b4a1fa5 763 testing/binary-amd64/Packages.gz
- 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
- 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
+ cbff46c26deec75c9a64ca73981770b3 1202 main/binary-amd64/Packages
+ 85310e1ddc9ad1f7b3ebe3f6104499f5 500 main/binary-amd64/Packages.gz
+ 7d9d28fc0ff62b146271e01f29ad5597 3689 main/binary-all/Packages
+ 871e6fcecbe212419a12146809404327 791 main/binary-all/Packages.gz
+ 9147619f2a84bcd4e142cb291a12a721 11859 testing/binary-amd64/Packages
+ 23a33e28a7098fc7234fbb3ac6cfc6a9 1533 testing/binary-amd64/Packages.gz
+ 69f9e81855580ca89b488a930f84254a 18990 testing/binary-all/Packages
+ dcb24a2b2a565c7284305d2cfca0e412 2343 testing/binary-all/Packages.gz
 SHA256:
- 83285168ea7ee1b5856d987b206dbac384f46450aff78276b536ff399bfffaa3 1202 main/binary-amd64/Packages
- eb0dc2a2af3f9cc1433853124b5449b9647e82125785892b8a864bc736b93404 415 main/binary-amd64/Packages.gz
- d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
- 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
- 4bef325fbd89a3080490d6ef442d82b8adee74322395335f5e696376c7c077e1 11859 testing/binary-amd64/Packages
- 33c4c421344623202f9eb7948a4f1bddb4565029f649b2abf7834803396c67a6 763 testing/binary-amd64/Packages.gz
- 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
- cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz
+ f019c1e68a5f8441db2390c9014d41d8c765f363c94766aa7e8783649075efe0 1202 main/binary-amd64/Packages
+ a6653d9425f0e4759d3911e53198a76e2a5b8b580277f8450ca683ffac06d734 500 main/binary-amd64/Packages.gz
+ da87989e21f5c1ecc93889ca3d4985bf9f982ca5348ea90bb320fe9078ea68c7 3689 main/binary-all/Packages
+ e42a9825760ff9644dc0799838a27564b95be7622cd445fc25f837c761249842 791 main/binary-all/Packages.gz
+ 4747087ca92d82e725bd2cc875232e63899a9e273d0581a8de66a3406263db6d 11859 testing/binary-amd64/Packages
+ bedf61b1938aca6bade2dc58a7bba3dc9e303370784cf1a96bd7cf7da4642133 1533 testing/binary-amd64/Packages.gz
+ 09f40877fb9c6ab1007041853d5256011610ce6478b0b7db02381c097983cf9c 18990 testing/binary-all/Packages
+ 63a89094949a12144e73e951761968327ce2711c8b5d55f541dcee41e80ca718 2343 testing/binary-all/Packages.gz

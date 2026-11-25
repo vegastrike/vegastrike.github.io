@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 3364
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/V0.6.0-alpha4/vsUTCS-0.6.0-Linux.deb
 Size: 3445230
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 60f247c7d584fb7204b5bebd7aa05183b7a662e1a13ada9038adf1563eef6b42
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -21,7 +21,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 1
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/V0.6.0-alpha3/vsUTCS-0.6.0-Linux.deb
 Size: 582
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b1db4e922d057c64974d85eccc2c4f826aeaa7dd181d75b854fdf20e1138fe21
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -85,7 +85,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678596
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta3/vsUTCS_v0.9.1-beta3.deb
 Size: 694882558
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 274f7f88e022a10d3873449daed33ad603f246da20354e5f9672e96c83d362e2
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -101,7 +101,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678591
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta2/vsUTCS_v0.9.1-beta2.deb
 Size: 694878078
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ed5f135639a3db922de8007483db220a498e1202011838029df0c5ac15788f51
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -117,7 +117,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678592
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.1-beta1/vsUTCS_v0.9.1-beta1.deb
 Size: 694878984
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 25072e87bc4614d5a95dc375073c2b6336e799b115b363dbf20c65e0dde2453e
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -133,7 +133,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678085
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-beta2/vsUTCS_v0.9.0-beta2.deb
 Size: 694359692
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: fa10bb554d1d5549370ef75df08fd4fc6a306c7b25e272a2451be58bd8650394
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -149,7 +149,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678087
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-beta1/vsUTCS_v0.9.0-beta1.deb
 Size: 694361410
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 292b7e0e5866451ea2c295935fbb77840f6682dd85c3a1acd9176f2a6eb707a5
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -165,7 +165,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678086
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha6/vsUTCS_v0.9.0-alpha6.deb
 Size: 694360800
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ca5f7f399c0c8eca587aa6c4b4ec99a4bb94a8e3258931324a7c60c0146e85a9
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -181,7 +181,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678088
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha5/vsUTCS_v0.9.0-alpha5.deb
 Size: 694362652
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c02a7df28cb93f6422b1533c5dc25a99b87a8b0325bc53f9d69cdd62efcc832c
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -197,7 +197,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678095
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha4/vsUTCS_v0.9.0-alpha4.deb
 Size: 694370012
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 2cd9520b3cf1933b5cf0fe688d1d6181ac8fb42b5e1448d7940ef4a04a8c7ea7
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -213,7 +213,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678083
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha3/vsUTCS_v0.9.0-alpha3.deb
 Size: 694357288
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 6479fe348ade4badffdad9c9d90134c0c4f8ede78fefaac4863978e832c30f25
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -229,7 +229,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678093
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha2/vsUTCS_v0.9.0-alpha2.deb
 Size: 694367756
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: cd0987b5fd02a710b07e2a08aed7299dddd1d91128aca88018b92f4213f0a719
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -245,7 +245,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678093
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.9.0-alpha1/vsUTCS_v0.9.0-alpha1.deb
 Size: 694367280
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 0ed806081c967130df2ebecdd7e9f572ef7d661b4b6263843bf8db4d68bade3b
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -261,7 +261,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678332
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.1-beta1/vsUTCS_v0.8.1-beta1.deb
 Size: 694612506
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 2924f475ff9c6a1dfb54ae59ad473c8b3a5516f685fc89cecda31d4089a06d00
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -277,7 +277,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678337
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-beta1/vsUTCS_v0.8.0-beta1.deb
 Size: 694617094
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 5c4e46ce02d563494c9625d9f00981cccf49e29dce472543931e1f2164ded5f6
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -293,7 +293,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678331
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-alpha2/vsUTCS_v0.8.0-alpha2.deb
 Size: 694611232
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 1a6cfe37848fb419b9a2f78ef56d5d5c651afbea88f539d0bd5110fe2f273377
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -309,7 +309,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678337
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.8.0-alpha1/vsUTCS_v0.8.0-alpha1.deb
 Size: 694618000
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b6fd05e628c03ca27cb03677543e9726cb3cab64adc8dc4e7a3f29c7ec97cd02
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -325,7 +325,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678314
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.1-beta1/vsUTCS_v0.7.1-beta1.deb
 Size: 694593542
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f63aa6f7d3802c2ede3b9e9127887bcd6b4ddc8a07d4a2e4fd114284930e1b7d
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -341,7 +341,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678314
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta4/vsUTCS_v0.7.0-beta4.deb
 Size: 694594228
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 45176024b0a242d9731991dfba8f9c67bfb8fa60cdf59b9b1a5cc53782de7949
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -357,7 +357,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678338
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta3/vsUTCS_v0.7.0-beta3.deb
 Size: 694618574
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 78d914733916ebe9318e2f73442c1bb5b833fb146a2d8c8a078e891b24c8a5ca
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -373,7 +373,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678349
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-beta1/vsUTCS_v0.7.0-beta1.deb
 Size: 694629942
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f13ca086696829b464726c1466a3cb54bde1df93916a91044338563a07216ce5
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -389,7 +389,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678347
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.7.0-alpha1/vsUTCS_v0.7.0-alpha1.deb
 Size: 694627352
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 1a089e2d525be2c102e1be66a90862028130127985827b39d9eb5fdbebaf3356
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -405,7 +405,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678347
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.1/vsUTCS_v0.6.1.deb
 Size: 694627678
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 54de2a2bfb982a4828cc26876cca55265653c761e4a75363056d247a3c8646c7
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -421,7 +421,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678346
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-beta1/vsUTCS_v0.6.0-beta1.deb
 Size: 694626682
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 5e46806a94c1f8c3cf3320954e535a76cd047ad2dc0de60b5d921324643b3b8d
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -437,7 +437,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678342
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-alpha3/vsUTCS_v0.6.0-alpha3.deb
 Size: 694622302
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 3c3b5cb109028d7b1fbf12d42a7c838af1bd3a237bd6f081d9afefa2aafbfdb4
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -453,7 +453,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678344
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0/vsUTCS_v0.6.0.deb
 Size: 694625250
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c316db96effce99500aed6d99fef89a14f5b133799327bb101d81a245ff9de70
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea
@@ -469,7 +469,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 678342
 Filename: https://github.com/vegastrike/Assets-Production/releases/download/v0.6.0-alpha2/vsUTCS_v0.6.0-alpha2.deb
 Size: 694623010
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ec89c97d0aaf3f8d0b56097e7fadde619422587356cf8f6306e91808c67eebca
 Section: games
 Priority: optional
 Provides: vegastrike-upon-the-coldest-sea

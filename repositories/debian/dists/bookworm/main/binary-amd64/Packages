@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 78402
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0/Vega-Strike_v0.9.0-GLVND-Debian-bookworm_x86_64.deb
 Size: 80284026
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 1279230b206c7ce2263c3fb9ba11da67c9d0014f94946313639f6b0ea42dd364
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

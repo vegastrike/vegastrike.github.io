@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609586
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 999cfcdb96876bff35c1354f8f537ea4ff04cab9079bf4173ab1420e9c379911
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87609554
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 856213474c8175142be28f6a380c25fafda9ba4dcd213d56a1e90fccd857e75e
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

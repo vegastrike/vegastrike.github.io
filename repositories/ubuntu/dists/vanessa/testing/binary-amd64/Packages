@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 78435916
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: fd5c7dff8d1a8a73b85f81d808898e97d7b777585269ebe680716e9638a8bea7
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 78435914
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 6b219a1cbda77459dd74f0b8077625ea2e3bb16cfe487647f742038e87b90bab
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -35,7 +35,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 78436040
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 041b92288384510f48bf13ce7155d041fa76991ddedb17d5a276c8eb6da5db71
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -50,7 +50,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77866
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79734788
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: bd2449f502c860e376ee3c7fb666dbfcddd573b8cd013c864530cfc08a0de38f
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -65,7 +65,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77781
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79648598
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b3df4c7b5bc0fb04df8b04416a6fee4384416b1715b4dfc33483bec56f382d4c
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -80,7 +80,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313814
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ce1591a129b4c6990f6e02abf924511f055963e3ea23d20e1114f4ad3ea45803
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -95,7 +95,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313786
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 1b5765d2659273517aff637e864bef444ab1fd1ea503dc052d218d78c2786b9f
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -110,7 +110,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313814
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: da37edd0e8516f99f880f225a616529b571e37e912930a732d8f5d7eda9c4147
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -125,7 +125,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313824
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 981e212aff8e73f14249f25658e8190ada1a655d2f54e5c48ec770005f3533cc
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -140,7 +140,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313876
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 3cdb2a68ebbd01c639ea242e45f88293694040ac0561a63b2297690a04a5b57f
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -155,7 +155,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79313784
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: cb7f592f3fc7a579e93931044ce67138020c11ce34a4d2ee9ec09ab70763097e
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -170,7 +170,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77329
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha11/Vega-Strike_v0.9.0-alpha11-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79185778
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 5204684244555060b43302f5db1b44602079ed0a69e6d5dea0a6953120e6d699
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -185,7 +185,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77236
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha10/Vega-Strike_v0.9.0-alpha10-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79090466
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c010f69b1a3cd3430f8d9baa98d8bfcc5c0afb84187b3762f377f3dd1bb1658e
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -200,7 +200,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77236
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha9/Vega-Strike_v0.9.0-alpha9-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79090452
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 9748cc95d93f42c64d639959213f43e84c22331ca8cc69d30de2f54f227a911c
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -215,7 +215,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77236
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha7/Vega-Strike_v0.9.0-alpha7-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79090454
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: fb51e63e7b44cd70b0f097a1c1bc7ee2e1bdf4f61698c151facbfbe2b8c8219d
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -230,7 +230,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77236
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha6/Vega-Strike_v0.9.0-alpha6-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79090450
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 45c86517fde12432f8371b40506927da2cd8b37720c6da94fbd7f56562f7f2b7
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -245,7 +245,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77236
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha5/Vega-Strike_v0.9.0-alpha5-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 79090424
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 643fdb5d1139f9ff58aa763885728aa836534fe3774bf884990be7c03eb9d619
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -260,7 +260,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha4/Vega-Strike_v0.9.0-alpha4-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 77395046
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: fc4d2feee57616fa35c8d93a273dea53fdf8ebdad54e877a1ca54d266415e036
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -275,7 +275,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha3/Vega-Strike_v0.9.0-alpha3-GLVND-Linuxmint-vanessa_x86_64.deb
 Size: 77395018
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 5b32aba8a40c9982b80621bc206d55122f5b0099de6b8be2ceb9817c920a6d58
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

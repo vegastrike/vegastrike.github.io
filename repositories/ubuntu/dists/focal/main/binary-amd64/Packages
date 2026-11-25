@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101974
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-focal_x86_64.deb
 Size: 104421684
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 168ee0f1e1daff94667f763cc34534f314445be418bf4cdf4e15f45f32f7eb61
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101974
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Ubuntu-focal_x86_64.deb
 Size: 104421734
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 29383ab87da6ff5fde157d259b87a5aebcec42fe30e3440a19e026f6417ae730
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -35,7 +35,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 98215
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py2-Ubuntu-focal_x86_64.deb
 Size: 100572928
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 117fadc3e482135548b76fcb7a4ad4a98e94bbb9374c8a0782e2a0e860037143
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -50,7 +50,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 98308
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py3-Ubuntu-focal_x86_64.deb
 Size: 100667466
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 7324798e9fb2c72de0344b927bac564de0db47c90a01152f723088842c10e372
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

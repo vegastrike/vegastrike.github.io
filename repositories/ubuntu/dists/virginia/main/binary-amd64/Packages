@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77866
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0/Vega-Strike_v0.9.0-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79734842
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 467a379c946db6b03ca87ea767cb5d70bf597b2f06d4cf0080a00660d929d30d
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

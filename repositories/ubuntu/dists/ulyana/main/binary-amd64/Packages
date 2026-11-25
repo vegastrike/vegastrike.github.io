@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101967
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Linuxmint-ulyana_x86_64.deb
 Size: 104414322
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: e5f3debde7c6b482ecd443ad0342ee574304fd4cbfa292998d04456273df7612
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101967
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Linuxmint-ulyana_x86_64.deb
 Size: 104414406
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b8398793872a5178acf6473b3083c4cf70f410364b84ba56f1964d1d16718487
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

@@ -5,7 +5,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419120
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 41130f069ce1aefacb9eb22f00ee7992e39475397b9160f689a51fea7b7195d0
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -20,7 +20,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419108
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 8c372f4b5c371549e1aed6c2cb20751170cfc0aa9ef8fc9b03478f149679cce3
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -35,7 +35,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419180
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: cbbd70fe55c46f2b2423d3f9ddd003ac739c6e4eabb55262cff55daf2c41862a
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -50,7 +50,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77859
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79728574
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: cf81bbdb5af7a2c59be274f4e75677b695aea52c48c7e6665c6d076c3cddd311
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -65,7 +65,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77771
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79638186
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ad0acc31226a2067fc24ed988b4b1be71a38cb007431a7cf2ada83f24c98f0b3
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -80,7 +80,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306590
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f1678d686ef71261dba964c219d2a4803367ae80a6d303807bae98d3b7d81fd2
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -95,7 +95,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306604
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 009e0624b013333971e070414bda39deb10779545386d3a2257e891a29642727
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -110,7 +110,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306582
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 2d11f7eb52c8971886a2a111f1b01088c813d0509491c75eff36680dcd957c26
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -125,7 +125,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306630
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f001d26de2ca7be8c32e8fe61b8505ad367253b58017164952df865d0c5e9a1d
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -140,7 +140,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306620
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: a14f74f208f4c462157c0c98abc25a02ca644ba683a897ef512518bec08c458a
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -155,7 +155,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306600
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: e813b72721306ae6b1a88aa79d29011c12d2fcefb5d096dcce7d0e39604ae20f
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -170,7 +170,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77321
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha11/Vega-Strike_v0.9.0-alpha11-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79176828
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 8dfeb4b4a0691661f02bfa69136aa1232691862ba800bd6dd464b84d936e3efe
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -185,7 +185,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha10/Vega-Strike_v0.9.0-alpha10-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081964
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c581047e1e07ab11021d0019c88777b44348c03391e69b5d7ccac30dabef0606
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -200,7 +200,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha9/Vega-Strike_v0.9.0-alpha9-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081962
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c0cfb30df181e238482c1c447163efe3a8257ecd1264d5b5cc330e37586e2577
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -215,7 +215,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha7/Vega-Strike_v0.9.0-alpha7-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081914
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f21f97e7b5e82d5073c903afddd9842f09c559a61510a644a3359e0839af0db8
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -230,7 +230,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha6/Vega-Strike_v0.9.0-alpha6-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081960
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b65a37bc805a347a43a481ac5960c7c83e8ba2eeb5ef654f84c8dbb097454043
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -245,7 +245,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha5/Vega-Strike_v0.9.0-alpha5-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081928
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c74c3b087143c545bbe1b91fa8398b41e4d6c508d4f0281882549782ad2b2397
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -260,7 +260,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75575
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha4/Vega-Strike_v0.9.0-alpha4-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 77388800
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: e8145db65b5c74da2401f61504a60a21a583e9ddb2c778bd4116329d11c696e3
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -275,7 +275,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75574
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha3/Vega-Strike_v0.9.0-alpha3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 77388796
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 278495a81864b8915ae4747842dd936ebe6615170e373a41d71c0ad6c4d38586
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -290,7 +290,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 73066920
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 02c50f1a3cf00d93f3833ae950cbcb703976d2817f0394c594d651317f78fea2
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -305,7 +305,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-LEGACY-Ubuntu-jammy_x86_64.deb
 Size: 73066960
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: c2476fb49037d4b577e95ad8567a5ed15656d18e4b40751d344aea81222b1cab
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -320,7 +320,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta1/Vega-Strike_v0.8.1-beta1-py2-LEGACY-Ubuntu-jammy_x86_64.deb
 Size: 73066938
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: e37d2b14d642d7720ac9b35bcf08e39ac299d23458c0b0b63a4eae217820e77e
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org

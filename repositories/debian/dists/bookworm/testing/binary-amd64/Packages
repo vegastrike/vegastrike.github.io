@@ -50,7 +50,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 74916
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Debian-bookworm_x86_64.deb
 Size: 76714380
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 6fae568176f0ace5f81f7be16a20becfd2349cb31d827b4b3842f408d5f70c05
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -65,7 +65,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 74916
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Debian-bookworm_x86_64.deb
 Size: 76714294
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b2f674cf68e9b86704ddef69ba27a1da0c8e9ffcdb2719b3067b82ac037c9c4d
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -80,7 +80,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 74916
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Debian-bookworm_x86_64.deb
 Size: 76714522
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 634ccbbf360a64147567936ac3b7e49c128411dcfcc830ae288a975d8c75ee35
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -95,7 +95,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 78402
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Debian-bookworm_x86_64.deb
 Size: 80284018
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b357a5338a94490beb92c43c3dfa1bae799805d7a777bf3f92df6432cb35b455
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -110,7 +110,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 78322
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Debian-bookworm_x86_64.deb
 Size: 80202424
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 84c1126d12fc8abfefbe149de53cd1122943292df7dc9a87570d31243a3ee645
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -125,7 +125,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860144
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 60afe7649186c5e9051a238a6efa427fa9d5d2005ad07ea312667d2a65ee7f9c
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -140,7 +140,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860154
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 89ad44c45aadef1ff69ce4e188492923e3dde2e1d6c6328f7caaa3eb86330b94
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -155,7 +155,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860156
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 8619fb5e319e6c7a4ba148cc934ff93fddd7883862c23ba06411056dbefcadbb
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -170,7 +170,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860160
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: f90ce0465e61a4fd5f0794a2e63cdd3cb073a19b228e290fdb5a30913e4de2bf
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -185,7 +185,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860136
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 34899ac4ed22bf73adb090ec737bb8d9e367cc302e84cc1178de698660306281
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -200,7 +200,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77988
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Debian-bookworm_x86_64.deb
 Size: 79860164
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 4dbf955be809d167b61d83043a6916ac1377dcd002f7fbf6107460f1e8af39f0
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -215,7 +215,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77863
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha11/Vega-Strike_v0.9.0-alpha11-GLVND-Debian-bookworm_x86_64.deb
 Size: 79732178
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 2875e5009b320a1b05f8b5c509b789cba3a256f3f9b852bb853f1b275a3d8d27
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -230,7 +230,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77759
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha10/Vega-Strike_v0.9.0-alpha10-GLVND-Debian-bookworm_x86_64.deb
 Size: 79625732
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 34fbac7af51360a6c7d0089c348cf1044b782d92666ac5bac683884ea8781df2
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -245,7 +245,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77759
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha9/Vega-Strike_v0.9.0-alpha9-GLVND-Debian-bookworm_x86_64.deb
 Size: 79625740
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 5fede2c1b917e899aff12db73b23f1edc2c2a61d87b4810cb8e00cbcdfbe6248
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -260,7 +260,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77759
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha7/Vega-Strike_v0.9.0-alpha7-GLVND-Debian-bookworm_x86_64.deb
 Size: 79625742
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: b8d8fd3c736bfb03cbeb785386685f75b9df9b6fbc67d66dc693ba91a3890eba
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -275,7 +275,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77759
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha6/Vega-Strike_v0.9.0-alpha6-GLVND-Debian-bookworm_x86_64.deb
 Size: 79625762
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: ae23f4b47b6b23018b63370af5b509bffdfcf3702d1ba9b9203d1c1e002ed621
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -290,7 +290,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77759
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha5/Vega-Strike_v0.9.0-alpha5-GLVND-Debian-bookworm_x86_64.deb
 Size: 79625764
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 76efd98634b1e12f6f9ce99db56dfa0068e8b8ac7f1002a63937841900a81fbf
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -305,7 +305,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76187
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha4/Vega-Strike_v0.9.0-alpha4-GLVND-Debian-bookworm_x86_64.deb
 Size: 78015956
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 2eb254ab489c02e5600cdd1c7d39c4cc02c6128ad229841b2647c0bfbc1b60be
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -320,7 +320,7 @@ Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76187
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha3/Vega-Strike_v0.9.0-alpha3-GLVND-Debian-bookworm_x86_64.deb
 Size: 78015958
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 7485667fbbb8e5d08278c90705256357733cfec554d7d6a32f06f51b454e637b
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
