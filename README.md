@@ -55,7 +55,7 @@ If you need to generate or test repository metadata locally:
    ```
 3. Commit and push the changes:
    ```sh
-   git add _data/repositories.json repositories/
+   git add _data/repositories.json _data/checksums_cache.json repositories/
    git commit -m "Update Linux repositories for release vX.Y.Z"
    git push
    ```
@@ -63,3 +63,6 @@ To rebuild metadata from cached static data without querying GitHub:
 ```sh
 python3 scripts/generate_repositories.py --build
 ```
+
+#### Checksums Cache (`_data/checksums_cache.json`)
+Package SHA256 hashes are persisted in `_data/checksums_cache.json`. The generator only computes and rebuilds values if an entry is missing from the cache. If a hash is ever corrupted, maintainers can submit a PR removing that package's URL entry from `_data/checksums_cache.json`; the next run will automatically recompute and restore it.

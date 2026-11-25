@@ -5,22 +5,22 @@ Codename: xenial
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (xenial)
-Date: Sun, 22 Nov 2026 22:52:40 UTC
+Date: Wed, 25 Nov 2026 03:25:33 UTC
 MD5Sum:
- 281926eaab3b2cd8915b118dfa9e4a4a 1755 main/binary-amd64/Packages
- 998d8bcd99723338d090ab9824366df1 440 main/binary-amd64/Packages.gz
- 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
- e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
- 86d62a6163a35e6198f6e1713150a35d 11501 testing/binary-amd64/Packages
- 1bd1bc13374f0db4d432cd111a2fa70e 714 testing/binary-amd64/Packages.gz
- aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
- 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
+ c59413e31dc1a1a9118d7b1eed5f3b81 1776 main/binary-amd64/Packages
+ 103336672c468b9efcf73ce7beb46a04 435 main/binary-amd64/Packages.gz
+ e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
+ 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
+ 203e0a84198d4c72b0f9b4f5fc5663da 11634 testing/binary-amd64/Packages
+ a76e8981789452bb319ad88f129599a6 708 testing/binary-amd64/Packages.gz
+ 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
+ 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
 SHA256:
- 6fba33fd1cc8de1e83f68a5b257c14083b1b607831b15d17027b74d13abab315 1755 main/binary-amd64/Packages
- 4e82c1f94264fb217dc2717c7ebbd1e8535e475795bca04b66779daff4d24324 440 main/binary-amd64/Packages.gz
- f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
- ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
- 0afa061ad43f624e7e849e0884c42abf67b8316c2608ace2c12bedb28161aaab 11501 testing/binary-amd64/Packages
- 28721ba0ddbe6199abeb6e35d52d3a3ba18a7b5dae7819b6f4d21747223c2b1a 714 testing/binary-amd64/Packages.gz
- 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
- 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz
+ 87387725d8648c519b774a93e9e202943db81016b35fb91767102162a50a6278 1776 main/binary-amd64/Packages
+ 3ee67af6375fe2b9b5a30944bbfbb22e89d79196ddb199b5ef1a97dc02aaca6f 435 main/binary-amd64/Packages.gz
+ d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
+ 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
+ ce077d5d582f7dc2c7f6fbb1db64199d6994fa5b3514372493cb81d00e51cd57 11634 testing/binary-amd64/Packages
+ 20b832728c25ceb49b59cb5bafcf54da274e540b404da29af7fa80476de1c3a9 708 testing/binary-amd64/Packages.gz
+ 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
+ cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz

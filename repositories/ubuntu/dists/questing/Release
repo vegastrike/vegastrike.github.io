@@ -5,18 +5,18 @@ Codename: questing
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (questing)
-Date: Sun, 22 Nov 2026 22:52:40 UTC
+Date: Wed, 25 Nov 2026 03:25:33 UTC
 MD5Sum:
- 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
- e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
- 6703b743fb69ddf735b30477229e4c74 615 testing/binary-amd64/Packages
- cca4c48c48e50365490294834a1ff4f2 442 testing/binary-amd64/Packages.gz
- aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
- 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
+ e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
+ 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
+ f6a512f015c235ca234194916b2643d5 622 testing/binary-amd64/Packages
+ 69278b5078db4a8a61b9e43b3ba51e30 438 testing/binary-amd64/Packages.gz
+ 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
+ 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
 SHA256:
- f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
- ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
- 6b1774f05b15daf7eab2f82041f71dff031e040de0c20d4d468b655f935196da 615 testing/binary-amd64/Packages
- 2201b155ab9775786e4f0d6e3482bb3ca7acb3c858e72973a32657315279d916 442 testing/binary-amd64/Packages.gz
- 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
- 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz
+ d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
+ 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
+ 4a59e21f5a60efe65456f989a95f2f13df1477a920f009a7b35b6aa81bb785b3 622 testing/binary-amd64/Packages
+ 1beccdc0414eb312c94468181f7fa12e16dbca0821dd42d84acc669a67ddf0cf 438 testing/binary-amd64/Packages.gz
+ 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
+ cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz

@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71558
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Ubuntu-impish_x86_64.deb
 Size: 73275458
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71558
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-impish_x86_64.deb
 Size: 73275674

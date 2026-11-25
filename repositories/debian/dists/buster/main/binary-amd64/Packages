@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 90908
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Debian-buster_x86_64.deb
 Size: 93089818
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 90908
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Debian-buster_x86_64.deb
 Size: 93089834
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 90445
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py3-Debian-buster_x86_64.deb
 Size: 92616138

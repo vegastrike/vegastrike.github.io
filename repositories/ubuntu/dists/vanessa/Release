@@ -5,22 +5,22 @@ Codename: vanessa
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (vanessa)
-Date: Sun, 22 Nov 2026 22:52:40 UTC
+Date: Wed, 25 Nov 2026 03:25:33 UTC
 MD5Sum:
- 78587fef0fd40a54e54a434672721b79 1183 main/binary-amd64/Packages
- 53f2f970f532e642c91594a1d702be65 425 main/binary-amd64/Packages.gz
- 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
- e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
- 0bb86dcb569c4bb8017f9f79b3bb348b 11649 testing/binary-amd64/Packages
- e637d6844413b13d284e33bfd85daee1 746 testing/binary-amd64/Packages.gz
- aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
- 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
+ 93007f80d07931c1736ca1cd6d668e29 1197 main/binary-amd64/Packages
+ 92b144235319450ae25e8a06142df9f6 467 main/binary-amd64/Packages.gz
+ e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
+ 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
+ 7a7d871418237ffd62897f40f3a0f4e8 11782 testing/binary-amd64/Packages
+ 25ac391735b9a9f1aa0ba3630913fd4e 740 testing/binary-amd64/Packages.gz
+ 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
+ 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
 SHA256:
- 111347693c9ada1f5917d65284b54a5cc2ea8968b79c1a0c3cfb5f23204cb619 1183 main/binary-amd64/Packages
- c0857c2b55990cdc3f0b6bbdc73f99fd91a04db4a052dba88ef1ba4dc7ed12bb 425 main/binary-amd64/Packages.gz
- f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
- ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
- ab47947f9b0a4136915151eb81be4e531194dfb6bd7b0cccf91dfc7b9a2b6bf5 11649 testing/binary-amd64/Packages
- a9e29db663f4ef6e4775a070ed72ffca0f968728c665cbb62c8ba5cdb3c8069b 746 testing/binary-amd64/Packages.gz
- 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
- 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz
+ db5b12762b184efc3f63d1b9c289deb789dda4d119ccaddf993fb3fc2d0b6929 1197 main/binary-amd64/Packages
+ c2b6c73f55b87394f31799218ce1f68dc2546c5014cbd02f9d52b27a8393eec1 467 main/binary-amd64/Packages.gz
+ d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
+ 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
+ 5911574b6bed0ebd7151c8d02b15a0eb3d6ec76e47a56ee48bc3868c92f594f9 11782 testing/binary-amd64/Packages
+ 3e4383458920c6c148927016bffb0316f5baffe0f96c7f3b6ad8ed3a8454dab3 740 testing/binary-amd64/Packages.gz
+ 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
+ cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz

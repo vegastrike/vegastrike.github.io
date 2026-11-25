@@ -22,6 +22,7 @@ import re
 import json
 import gzip
 import hashlib
+import shutil
 import argparse
 from datetime import datetime, timezone
 import urllib.request
@@ -30,9 +31,58 @@ WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(WORKSPACE_DIR, "_data")
 REPOS_DIR = os.path.join(WORKSPACE_DIR, "repositories")
 DATA_FILE = os.path.join(DATA_DIR, "repositories.json")
+CHECKSUMS_FILE = os.path.join(DATA_DIR, "checksums_cache.json")
 
 VSE_API_URL = "https://api.github.com/repos/vegastrike/Vega-Strike-Engine-Source/releases?per_page=100"
 ASSETS_API_URL = "https://api.github.com/repos/vegastrike/Assets-Production/releases?per_page=100"
+
+def load_checksums_cache():
+    if os.path.exists(CHECKSUMS_FILE):
+        try:
+            with open(CHECKSUMS_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Failed to load checksums cache: {e}", file=sys.stderr)
+    return {}
+
+def save_checksums_cache(cache):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(CHECKSUMS_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2, sort_keys=True)
+
+def get_asset_sha256(asset, cache, download_if_missing=True):
+    # 1. Native digest from GitHub Release API
+    digest = asset.get("digest")
+    if digest and digest.startswith("sha256:"):
+        sha = digest[7:]
+        url = asset.get("browser_download_url", "")
+        if url and cache is not None:
+            cache[url] = sha
+        return sha
+
+    url = asset.get("browser_download_url", "")
+    # 2. Persistent checksum cache
+    if cache is not None and url and url in cache and cache[url]:
+        return cache[url]
+
+    # 3. Compute on demand if missing from cache
+    if download_if_missing and url:
+        try:
+            print(f"Computing missing SHA256 for {asset.get('name', url)}...")
+            req = urllib.request.Request(url, headers={"User-Agent": "VegaStrike-Repo-Generator"})
+            h = hashlib.sha256()
+            with urllib.request.urlopen(req) as resp:
+                while chunk := resp.read(4 * 1024 * 1024):
+                    h.update(chunk)
+            sha = h.hexdigest()
+            if cache is not None:
+                cache[url] = sha
+                save_checksums_cache(cache)
+            return sha
+        except Exception as e:
+            print(f"Warning: Failed to compute SHA256 for {url}: {e}", file=sys.stderr)
+
+    return ""
 
 def fetch_github_releases(url):
     print(f"Fetching releases from {url}...")
@@ -44,17 +94,14 @@ def fetch_github_releases(url):
         print(f"Error fetching from {url}: {e}", file=sys.stderr)
         return []
 
-def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False):
+def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False, cache=None):
     filename = asset.get("name", "")
     if not (filename.endswith(".deb") or filename.endswith(".rpm")):
         return None
 
     size = asset.get("size", 0)
     download_url = asset.get("browser_download_url", "")
-    digest = asset.get("digest")
-    sha256 = ""
-    if digest and digest.startswith("sha256:"):
-        sha256 = digest[7:]
+    sha256 = get_asset_sha256(asset, cache) if cache is not None else ""
 
     # Engine packages:
     # Supports 0.6.x, 0.7.x, 0.8.x, 0.9.x, 0.10.x, 0.11.x, etc.
@@ -163,6 +210,7 @@ def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False):
     return None
 
 def collect_release_data():
+    cache = load_checksums_cache()
     vse_releases = fetch_github_releases(VSE_API_URL)
     assets_releases = fetch_github_releases(ASSETS_API_URL)
 
@@ -173,7 +221,7 @@ def collect_release_data():
         tag = r.get("tag_name", "")
         is_pre = r.get("prerelease", False)
         for a in r.get("assets", []):
-            pkg = parse_package_asset(a, tag, "Vega-Strike-Engine-Source", is_pre)
+            pkg = parse_package_asset(a, tag, "Vega-Strike-Engine-Source", is_pre, cache)
             if pkg and pkg["download_url"] not in seen_urls:
                 packages.append(pkg)
                 seen_urls.add(pkg["download_url"])
@@ -182,11 +230,12 @@ def collect_release_data():
         tag = r.get("tag_name", "")
         is_pre = r.get("prerelease", False)
         for a in r.get("assets", []):
-            pkg = parse_package_asset(a, tag, "Assets-Production", is_pre)
+            pkg = parse_package_asset(a, tag, "Assets-Production", is_pre, cache)
             if pkg and pkg["download_url"] not in seen_urls:
                 packages.append(pkg)
                 seen_urls.add(pkg["download_url"])
 
+    save_checksums_cache(cache)
     return packages
 
 def generate_rpm_repodata(output_dir, packages_list):
@@ -285,6 +334,23 @@ def generate_deb_repository(output_dir, suite, components_pkgs, distro_label="De
     dists_suite_dir = os.path.join(output_dir, "dists", suite)
     os.makedirs(dists_suite_dir, exist_ok=True)
 
+    # Clean up obsolete components and architecture subdirectories
+    for comp_name in ["main", "testing"]:
+        comp_dir = os.path.join(dists_suite_dir, comp_name)
+        pkgs = components_pkgs.get(comp_name, [])
+        if not pkgs:
+            if os.path.exists(comp_dir):
+                shutil.rmtree(comp_dir)
+            continue
+
+        active_arches = set(p["arch"] for p in pkgs)
+        if os.path.exists(comp_dir):
+            for entry in os.listdir(comp_dir):
+                if entry.startswith("binary-"):
+                    arch_part = entry.replace("binary-", "")
+                    if arch_part not in active_arches:
+                        shutil.rmtree(os.path.join(comp_dir, entry))
+
     release_files_meta = []
     all_architectures = set()
 
@@ -311,7 +377,7 @@ def generate_deb_repository(output_dir, suite, components_pkgs, distro_label="De
                     f"Package: {p['package_name']}",
                     f"Version: {ver}-1",
                     f"Architecture: {arch}",
-                    f"Maintainer: Vega Strike Development Team <nabaco@tutamail.com>",
+                    f"Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>",
                     f"Installed-Size: {installed_size}",
                     f"Filename: {p['download_url']}",
                     f"Size: {size}",
@@ -902,6 +968,15 @@ def main():
         if os.path.exists(DATA_FILE):
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 packages = json.load(f)
+            cache = load_checksums_cache()
+            updated = False
+            for p in packages:
+                if not p.get("sha256") and p.get("download_url") in cache:
+                    p["sha256"] = cache[p["download_url"]]
+                    updated = True
+            if updated:
+                with open(DATA_FILE, "w", encoding="utf-8") as f:
+                    json.dump(packages, f, indent=2)
             print(f"Loaded {len(packages)} package references from {DATA_FILE}")
         else:
             print(f"Data file {DATA_FILE} not found. Please run with --fetch first.", file=sys.stderr)

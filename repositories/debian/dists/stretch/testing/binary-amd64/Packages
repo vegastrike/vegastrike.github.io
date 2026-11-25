@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.7.0~beta14-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 154250
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta14/Vega-Strike_v0.7.0-beta14-py2-Debian-stretch_x86_64.deb
 Size: 157952796
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~beta13-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 154250
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta13/Vega-Strike_v0.7.0-beta13-py2-Debian-stretch_x86_64.deb
 Size: 157952946
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~beta9-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta9/Vega-Strike_v0.7.0-beta9-py2-Debian-stretch_x86_64.deb
 Size: 79508532
@@ -46,7 +46,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~beta10-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta10/Vega-Strike_v0.7.0-beta10-py2-Debian-stretch_x86_64.deb
 Size: 79508556
@@ -61,7 +61,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~beta7-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta7/Vega-Strike_v0.7.0-beta7-py2-Debian-stretch_x86_64.deb
 Size: 79508520
@@ -76,7 +76,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-beta1/Vega-Strike_v0.7.0-beta1-py2-Debian-stretch_x86_64.deb
 Size: 79508548
@@ -91,7 +91,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~alpha4-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-alpha4/Vega-Strike_v0.7.0-alpha4-py2-Debian-stretch_x86_64.deb
 Size: 79508560
@@ -106,7 +106,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0~alpha3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77645
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0-alpha3/Vega-Strike_v0.7.0-alpha3-py2-Debian-stretch_x86_64.deb
 Size: 79508536

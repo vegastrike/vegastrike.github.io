@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.9.1~beta4-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419120
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.1~beta3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419108
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76581
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 78419180
@@ -46,7 +46,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77859
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79728574
@@ -61,7 +61,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77771
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79638186
@@ -76,7 +76,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306590
@@ -91,7 +91,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha16-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306604
@@ -106,7 +106,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha15-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306582
@@ -121,7 +121,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha14-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306630
@@ -136,7 +136,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha13-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306620
@@ -151,7 +151,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha12-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77447
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79306600
@@ -166,7 +166,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha11-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77321
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha11/Vega-Strike_v0.9.0-alpha11-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79176828
@@ -181,7 +181,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha10-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha10/Vega-Strike_v0.9.0-alpha10-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081964
@@ -196,7 +196,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha9-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha9/Vega-Strike_v0.9.0-alpha9-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081962
@@ -211,7 +211,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha7-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha7/Vega-Strike_v0.9.0-alpha7-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081914
@@ -226,7 +226,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha6-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha6/Vega-Strike_v0.9.0-alpha6-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081960
@@ -241,7 +241,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha5-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77228
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha5/Vega-Strike_v0.9.0-alpha5-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 79081928
@@ -256,7 +256,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha4-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75575
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha4/Vega-Strike_v0.9.0-alpha4-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 77388800
@@ -271,7 +271,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75574
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha3/Vega-Strike_v0.9.0-alpha3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 77388796
@@ -286,7 +286,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-GLVND-Ubuntu-jammy_x86_64.deb
 Size: 73066920
@@ -301,7 +301,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-LEGACY-Ubuntu-jammy_x86_64.deb
 Size: 73066960
@@ -316,7 +316,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 71354
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta1/Vega-Strike_v0.8.1-beta1-py2-LEGACY-Ubuntu-jammy_x86_64.deb
 Size: 73066938

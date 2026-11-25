@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.8.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87609472
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta2/Vega-Strike_v0.8.1-beta2-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609520
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta1/Vega-Strike_v0.8.1-beta1-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87609504
@@ -46,7 +46,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.1~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.1-beta1/Vega-Strike_v0.8.1-beta1-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609572
@@ -61,7 +61,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-beta1/Vega-Strike_v0.8.0-beta1-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87609504
@@ -76,7 +76,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-beta1/Vega-Strike_v0.8.0-beta1-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609544
@@ -91,7 +91,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~alpha5-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-alpha5/Vega-Strike_v0.8.0-alpha5-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609568
@@ -106,7 +106,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~alpha3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-alpha3/Vega-Strike_0.8.0-alpha3-543b3fb719000c1bafe7ace3abd42247460d7470-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87609466
@@ -121,7 +121,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~alpha3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85556
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-alpha3/Vega-Strike_0.8.0-alpha3-543b3fb719000c1bafe7ace3abd42247460d7470-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87609584
@@ -136,7 +136,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~alpha2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85538
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-alpha2/Vega-Strike_v0.8.0-alpha2-py3-GLVND-Ubuntu-hirsute_x86_64.deb
 Size: 87591408
@@ -151,7 +151,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0~alpha2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 85538
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0-alpha2/Vega-Strike_v0.8.0-alpha2-py3-LEGACY-Ubuntu-hirsute_x86_64.deb
 Size: 87591318

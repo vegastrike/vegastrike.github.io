@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.9.1~beta4-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta4/Vega-Strike_v0.9.1-beta4-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 78435884
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.1~beta3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta3/Vega-Strike_v0.9.1-beta3-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 78435966
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.1~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76597
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1-beta2/Vega-Strike_v0.9.1-beta2-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 78436034
@@ -46,7 +46,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77866
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta3/Vega-Strike_v0.9.0-beta3-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79734840
@@ -61,7 +61,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta2-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77781
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta2/Vega-Strike_v0.9.0-beta2-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79648616
@@ -76,7 +76,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~beta1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-beta1/Vega-Strike_v0.9.0-beta1-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313792
@@ -91,7 +91,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha16-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha16/Vega-Strike_v0.9.0-alpha16-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313768
@@ -106,7 +106,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha15-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha15/Vega-Strike_v0.9.0-alpha15-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313822
@@ -121,7 +121,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha14-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha14/Vega-Strike_v0.9.0-alpha14-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313774
@@ -136,7 +136,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha13-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha13/Vega-Strike_v0.9.0-alpha13-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313778
@@ -151,7 +151,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0~alpha12-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 77454
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0-alpha12/Vega-Strike_v0.9.0-alpha12-GLVND-Linuxmint-virginia_x86_64.deb
 Size: 79313758

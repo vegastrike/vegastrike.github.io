@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.10.0~alpha3-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 189282
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.10.0-alpha3/Vega-Strike_v0.10.0-alpha3-GLVND-Ubuntu-questing_x86_64.deb
 Size: 193825370

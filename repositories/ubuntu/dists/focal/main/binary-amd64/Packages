@@ -1,7 +1,7 @@
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101974
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-GLVND-Ubuntu-focal_x86_64.deb
 Size: 104421684
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.8.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 101974
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.8.0/Vega-Strike_v0.8.0-py3-LEGACY-Ubuntu-focal_x86_64.deb
 Size: 104421734
@@ -31,7 +31,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 98215
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py2-Ubuntu-focal_x86_64.deb
 Size: 100572928
@@ -46,7 +46,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.7.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 98308
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.7.0/Vega-Strike_v0.7.0-py3-Ubuntu-focal_x86_64.deb
 Size: 100667466

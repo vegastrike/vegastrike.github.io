@@ -1,11 +1,11 @@
 Package: vegastrike
 Version: 0.9.1-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 75475
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.1/Vega-Strike_v0.9.1-GLVND-Ubuntu-noble_x86_64.deb
 Size: 77287400
-SHA256: 0000000000000000000000000000000000000000000000000000000000000000
+SHA256: 9402ce1ece63aa76a308768f4fc9b520793940f39f03f179ed86195a1f838490
 Section: games
 Priority: optional
 Homepage: https://www.vega-strike.org
@@ -16,7 +16,7 @@ Description: Vega Strike Engine
 Package: vegastrike
 Version: 0.9.0-1
 Architecture: amd64
-Maintainer: Vega Strike Development Team <nabaco@tutamail.com>
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
 Installed-Size: 76763
 Filename: https://github.com/vegastrike/Vega-Strike-Engine-Source/releases/download/v0.9.0/Vega-Strike_v0.9.0-GLVND-Ubuntu-noble_x86_64.deb
 Size: 78605320

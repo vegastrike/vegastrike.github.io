@@ -5,18 +5,18 @@ Codename: trixie
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Debian (trixie)
-Date: Sun, 22 Nov 2026 22:52:40 UTC
+Date: Wed, 25 Nov 2026 03:25:33 UTC
 MD5Sum:
- 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
- e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
- 0f9bd52d533cbd387bc0359c6af357ab 2455 testing/binary-amd64/Packages
- 94c8e3d22f5a0a405110ba50a96fb2f8 664 testing/binary-amd64/Packages.gz
- aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
- 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
+ e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
+ 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
+ 5a66e3afe08484393252a9b857203c21 2483 testing/binary-amd64/Packages
+ 19317c5019f08dda5057f58bc8b9ad04 657 testing/binary-amd64/Packages.gz
+ 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
+ 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
 SHA256:
- f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
- ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
- 5e76c980ba449665ec0e1c8a775391837c05742e4804aa937aa57f28b414ce6e 2455 testing/binary-amd64/Packages
- 95929ef4dd7f843f03f4bb981cc9faa9f96747108fe1ac87258e58f2748fea2d 664 testing/binary-amd64/Packages.gz
- 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
- 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz
+ d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
+ 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
+ 61e0cb92212d5d6075a251a2bd39f0bffdec7b2959b96fb9edb428a257de9a12 2483 testing/binary-amd64/Packages
+ 425a714f20c356d1f05e4f3c1b02659a08c285fdfea7f80b5dbd81406a6cf107 657 testing/binary-amd64/Packages.gz
+ 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
+ cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz

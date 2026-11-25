@@ -5,22 +5,22 @@ Codename: hirsute
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (hirsute)
-Date: Sun, 22 Nov 2026 22:52:40 UTC
+Date: Wed, 25 Nov 2026 03:25:33 UTC
 MD5Sum:
- f9b494260587296a4322dbb26627408f 1186 main/binary-amd64/Packages
- fad245789108957e72c7dd2957632af9 413 main/binary-amd64/Packages.gz
- 872acf27e71bf5501f0c47e6e231fea1 3647 main/binary-all/Packages
- e5bda9a435edf77a66b839b307ca405b 533 main/binary-all/Packages.gz
- 762f220087913db860e952e787e74633 6820 testing/binary-amd64/Packages
- 171bd373ec85f0e195a633196877b102 604 testing/binary-amd64/Packages.gz
- aa3a3096d48ac6c12038cfb78aeec636 18780 testing/binary-all/Packages
- 0575007b2562100c1dbf0f73363f9150 1216 testing/binary-all/Packages.gz
+ e9aa8bd07ffe22a37b959128547e038b 1200 main/binary-amd64/Packages
+ 341b09f61385ac63c770b97657c05ff2 409 main/binary-amd64/Packages.gz
+ e57fbb17ed895fd8f2f45611e1d5d4d3 3689 main/binary-all/Packages
+ 51db5abf223e8859d00ed3f95d50d43a 577 main/binary-all/Packages.gz
+ 1f992de576f0e0e995970c9a5c85ca65 6897 testing/binary-amd64/Packages
+ 807b07c37a1d87e46f78ad8143289d72 598 testing/binary-amd64/Packages.gz
+ 7e4bd7b6f42679ba29a1a3884353a22e 18990 testing/binary-all/Packages
+ 4ebb2fe3ff72306d49c820244146ef4e 1209 testing/binary-all/Packages.gz
 SHA256:
- 56d9460d40d3b45bb2c8cf9e2b319fb797e3af0776241816ad24a4f19fa55d12 1186 main/binary-amd64/Packages
- 29409fb274aab2b9bc257a3ae5baaa47e48b55d95e7b7a176dcad497af21f449 413 main/binary-amd64/Packages.gz
- f970759d9e6479cc4553993fb24bb6396dcbbaecd28379cb0d48856fd7e4b8c8 3647 main/binary-all/Packages
- ca8557cb29b002f68ee95df7a754a17562fb5552c3dd77d2350a08755d1ad2b5 533 main/binary-all/Packages.gz
- c69cb70dfbb5b6275d5ec666e3c164f7b808d500496a08020feedee99c377956 6820 testing/binary-amd64/Packages
- 0e52d0327a8fd199649a7a34a8e54bbdde2db4e44eaaf19e516a0dfa823bbcd8 604 testing/binary-amd64/Packages.gz
- 5269025942039c003d1eb08b8285a851ed406af61127f4b3da2dea56a6c5b628 18780 testing/binary-all/Packages
- 5b49953f4f8dd1c06b6238b21d2f09b394c353ef6b4cf425427f972d48c42816 1216 testing/binary-all/Packages.gz
+ 76324837ca0e25598a50bbd4ed6c494aba6dec2d7cc3adc44bc7b88b4a6db064 1200 main/binary-amd64/Packages
+ 03c080df9c9cb79447b7b60d41c9e732f709be09421d7e570cad8e0554761f83 409 main/binary-amd64/Packages.gz
+ d9c113cf0a148d2480d0a599fd637648d8faadf65595f663498e3ad476e45d22 3689 main/binary-all/Packages
+ 3457d6d0990f748aa5980a833a61723712f1546369c708581e19060396d81669 577 main/binary-all/Packages.gz
+ 57b5ae4000a00a5883ff4e14f062d9db5eba57adb735d7c3cac4b5b40143d272 6897 testing/binary-amd64/Packages
+ acb0a539622e1fe865c8fccf8cc7c748e19514d85db2691231e7607430e80835 598 testing/binary-amd64/Packages.gz
+ 97ca899cd71d6f8040d1de5942d28cc419df132bb6da10d7b29e4e2113e43ea4 18990 testing/binary-all/Packages
+ cd35ab40865aeff366a89d36a88e0109074f45bbad632d63681d86aaaa0fd7f0 1209 testing/binary-all/Packages.gz

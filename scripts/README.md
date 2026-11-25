@@ -37,3 +37,15 @@ python3 scripts/generate_repositories.py --build
 ### Automated Updates
 
 The GitHub Actions workflow `.github/workflows/update_repositories.yml` runs weekly and can also be triggered manually via `workflow_dispatch` to keep repository metadata in sync with new Vega Strike releases.
+
+### Checksums Cache (`_data/checksums_cache.json`)
+
+Package SHA256 checksums are tracked persistently in `_data/checksums_cache.json`:
+- For modern releases where GitHub Releases supplies a native `digest`, the native SHA256 digest is used.
+- For releases where GitHub does not provide a native `digest`, the generator checks `_data/checksums_cache.json`.
+- The generator only computes and rebuilds checksum values if an entry is missing from the cache.
+
+> [!NOTE]
+> **Maintainer Guide for Rebuilding Hashes**:
+> If a package's checksum in the cache ever becomes corrupted or needs to be refreshed, simply submit a Pull Request deleting that package's download URL entry from `_data/checksums_cache.json`.
+> On the next run of the generator (or weekly workflow run), the generator will detect that the entry is missing from the cache and will automatically re-download, recompute, and restore the verified hash.
