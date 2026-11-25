@@ -64,6 +64,7 @@ Vega Strike games are split into engine and asset packages:
 
 - [Vega Strike Engine](https://github.com/vegastrike/Vega-Strike-Engine-Source/releases) (`vegastrike`)
 - [Vega Strike: Upon the Coldest Sea](https://github.com/vegastrike/Assets-Production/releases) (`vegastrike-upon-the-coldest-sea` / `vsutcs`)
+- [VSU: Black Paralysis](https://github.com/vegastrike/vsu-black-paralysis/releases) (`vsu-black-paralysis` / `vsubp`)
 
 To install you will need to:
 

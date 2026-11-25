@@ -5,22 +5,22 @@ Codename: ulyana
 Components: main testing
 Architectures: all amd64
 Description: Vega Strike Official Packages for Ubuntu (ulyana)
-Date: Wed, 25 Nov 2026 19:03:42 UTC
+Date: Wed, 25 Nov 2026 22:34:59 UTC
 MD5Sum:
  353d1bdb4af584c73ce4df3165d7320c 1208 main/binary-amd64/Packages
- 5b68108574d0eccaa9fb773f55a11ed8 500 main/binary-amd64/Packages.gz
+ 63adc673a1c3f889a601d2cd9dab6f57 500 main/binary-amd64/Packages.gz
  7d9d28fc0ff62b146271e01f29ad5597 3689 main/binary-all/Packages
- 871e6fcecbe212419a12146809404327 791 main/binary-all/Packages.gz
+ e5212446494471971b87288417d21d67 791 main/binary-all/Packages.gz
  b048382e84d05f968946bbe81c83e257 11859 testing/binary-amd64/Packages
- 7127bf41a81119e70862d9d92bd8dcd4 1547 testing/binary-amd64/Packages.gz
- 69f9e81855580ca89b488a930f84254a 18990 testing/binary-all/Packages
- dcb24a2b2a565c7284305d2cfca0e412 2343 testing/binary-all/Packages.gz
+ c9e6f256cf76959c4c2beccc46394ad3 1547 testing/binary-amd64/Packages.gz
+ 2c3d18cc854e5283a5950cdb4d61d4af 21348 testing/binary-all/Packages
+ 9b79dd14a52952a7875c40c7f530d329 2647 testing/binary-all/Packages.gz
 SHA256:
  bc779331136656429ede0615c6a847a784e3603be4a4181a3c880da0e536c431 1208 main/binary-amd64/Packages
- 9676ec335cea301e89cbe1ec4eb46ec0db89429a83e492e9c6241013435e337b 500 main/binary-amd64/Packages.gz
+ ce456038a4eab38ea3d915fccccebd567908b82633d0a5ce0e89201b62a75f1f 500 main/binary-amd64/Packages.gz
  da87989e21f5c1ecc93889ca3d4985bf9f982ca5348ea90bb320fe9078ea68c7 3689 main/binary-all/Packages
- e42a9825760ff9644dc0799838a27564b95be7622cd445fc25f837c761249842 791 main/binary-all/Packages.gz
+ 1d3d7f8102359b3ab87344fd50889252bf3f7626453c2c7e5dd06593c4b12318 791 main/binary-all/Packages.gz
  794aec7bca7e01dfcdbb4ed4868bb7f8e9c9437bb32b9b2a33257a26b6c5e86a 11859 testing/binary-amd64/Packages
- 386e8fe7a3b78571db4e41d4524ae9557ab2909b1bfab3c23277b11c8d1d5fe0 1547 testing/binary-amd64/Packages.gz
- 09f40877fb9c6ab1007041853d5256011610ce6478b0b7db02381c097983cf9c 18990 testing/binary-all/Packages
- 63a89094949a12144e73e951761968327ce2711c8b5d55f541dcee41e80ca718 2343 testing/binary-all/Packages.gz
+ 38ef686516570b8e1266eea334c8a58c69532e61b58597067c3039ab89df036c 1547 testing/binary-amd64/Packages.gz
+ 74c0ae95adc8a21f11562204d6181e0870e88eea069fcef3fee585eae552dbf0 21348 testing/binary-all/Packages
+ d9e3e3873815d73bc013fd358d3b1cbef1305331dff2bf62bfdf4f2b6c0eae1d 2647 testing/binary-all/Packages.gz
