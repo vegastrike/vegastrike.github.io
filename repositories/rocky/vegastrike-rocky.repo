@@ -1,0 +1,15 @@
+[vegastrike]
+name=Vega Strike - Rocky Linux $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/rocky/$releasever/$basearch/
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d
+
+[vegastrike-testing]
+name=Vega Strike Testing (Alphas & Betas) - Rocky Linux $releasever - $basearch
+baseurl=https://www.vega-strike.org/repositories/rocky-testing/$releasever/$basearch/
+enabled=0
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=1d

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vega Strike - Linux Package Repositories</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    body {
+      background-color: #060606;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .repo-header {
+      background: linear-gradient(180deg, #181c24 0%, #0d0f12 100%);
+      border-bottom: 1px solid #2a313d;
+      padding: 40px 0 30px;
+      margin-bottom: 30px;
+    }
+    .repo-card {
+      background: #14171d;
+      border: 1px solid #272d38;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+      transition: border-color 0.2s ease;
+    }
+    pre.code-block {
+      background: #090a0d;
+      border: 1px solid #222630;
+      border-radius: 6px;
+      color: #79c0ff;
+      padding: 14px;
+      font-size: 0.9em;
+      position: relative;
+      overflow-x: auto;
+    }
+    .btn-copy {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #21262d;
+      border: 1px solid #363b42;
+      color: #c9d1d9;
+      font-size: 0.75em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-copy:hover {
+      background: #30363d;
+      color: #fff;
+    }
+    .nav-tabs > li > a {
+      color: #8b949e;
+      background: transparent;
+      border: 1px solid transparent;
+      font-weight: 600;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+      color: #58a6ff;
+      background-color: #14171d;
+      border: 1px solid #272d38;
+      border-bottom-color: transparent;
+    }
+    .tab-content {
+      background: #14171d;
+      border: 1px solid #272d38;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 24px;
+    }
+    .channel-box {
+      background: #0e1117;
+      border: 1px solid #272d38;
+      border-radius: 6px;
+      padding: 18px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    .channel-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .channel-stable { border-left: 4px solid #2ea043; }
+    .channel-testing { border-left: 4px solid #dbab09; }
+    a.site-nav {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a.site-nav:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="repo-header">
+    <div class="container">
+      <p><a href="/" class="site-nav">&larr; Back to Vega Strike Home</a> | <a href="/install/" class="site-nav">Installation Guide</a></p>
+      <h1>Vega Strike Linux Repositories</h1>
+      <p class="lead" style="color: #8b949e;">Official static repositories for Fedora, openSUSE, Rocky Linux / RHEL, Debian, and Ubuntu.</p>
+      <small style="color: #6e7681;">Updated: November 25, 2026 &bull; Packages served directly from GitHub Releases CDN</small>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom: 60px;">
+    
+    <div class="alert alert-info" style="background-color: #0d2238; border-color: #1f4266; color: #a5d6ff;">
+      <strong>Note:</strong> Vega Strike provides two release channels:
+      <ul style="margin-top: 8px; margin-bottom: 8px;">
+        <li><strong style="color: #56d364;">Stable Channel (Default):</strong> Official releases (e.g. 0.9.1, 0.9.0, 0.8.0). Enabled by default.</li>
+        <li><strong style="color: #e3b341;">Testing Channel (Opt-in):</strong> Latest preview alphas and betas (e.g. 0.10.x, 0.11.x). Disabled by default.</li>
+      </ul>
+      <strong>Available Packages:</strong>
+      <ul style="margin-top: 4px; margin-bottom: 0;">
+        <li><code>vegastrike</code> &mdash; Core Game Engine</li>
+        <li><code>vegastrike-upon-the-coldest-sea</code> &mdash; Vega Strike: Upon the Coldest Sea Assets <em>(also installable as <code>vsutcs</code>)</em></li>
+      </ul>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#fedora" aria-controls="fedora" role="tab" data-toggle="tab">Fedora / RPM</a></li>
+      <li role="presentation"><a href="#opensuse" aria-controls="opensuse" role="tab" data-toggle="tab">openSUSE / Zypper</a></li>
+      <li role="presentation"><a href="#rocky" aria-controls="rocky" role="tab" data-toggle="tab">Rocky Linux / EL</a></li>
+      <li role="presentation"><a href="#debian" aria-controls="debian" role="tab" data-toggle="tab">Debian</a></li>
+      <li role="presentation"><a href="#ubuntu" aria-controls="ubuntu" role="tab" data-toggle="tab">Ubuntu / Mint</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      
+      <!-- Fedora Tab -->
+      <div role="tabpanel" class="tab-pane active" id="fedora">
+        <h3>Fedora (DNF / RPM)</h3>
+        
+        <h4>1. Add the Repository File</h4>
+        <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/fedora/vegastrike-fedora.repo</code></pre>
+        <p><small>Or download: <a href="/repositories/fedora/vegastrike-fedora.repo" download class="site-nav">Download vegastrike-fedora.repo</a></small></p>
+
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Installs the latest official stable release (e.g. 0.9.1):</p>
+          <pre class="code-block"><code>sudo dnf install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <p><small>Also installable using the alias: <code>sudo dnf install vegastrike vsutcs</code></small></p>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To install preview builds or alphas:</p>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <p><small>To permanently enable testing: <code>sudo dnf config-manager --set-enabled vegastrike-testing</code></small></p>
+        </div>
+      </div>
+
+      <!-- openSUSE Tab -->
+      <div role="tabpanel" class="tab-pane" id="opensuse">
+        <h3>openSUSE Leap (Zypper / YaST)</h3>
+
+        <h4>1. Add the Repository</h4>
+        <pre class="code-block"><code>sudo zypper addrepo https://www.vega-strike.org/repositories/opensuse/vegastrike-opensuse.repo
+sudo zypper refresh</code></pre>
+
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo zypper install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+      </div>
+
+      <!-- Rocky Linux Tab -->
+      <div role="tabpanel" class="tab-pane" id="rocky">
+        <h3>Rocky Linux / RHEL / CentOS Stream (DNF)</h3>
+
+        <h4>1. Add the Repository</h4>
+        <pre class="code-block"><code>sudo dnf config-manager --add-repo https://www.vega-strike.org/repositories/rocky/vegastrike-rocky.repo</code></pre>
+
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo dnf install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+      </div>
+
+      <!-- Debian Tab -->
+      <div role="tabpanel" class="tab-pane" id="debian">
+        <h3>Debian (APT)</h3>
+
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <p>Configures the repository for stable releases (component <code>main</code>):</p>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/debian/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <p>To enable preview testing builds (component <code>testing</code>):</p>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+      </div>
+
+      <!-- Ubuntu Tab -->
+      <div role="tabpanel" class="tab-pane" id="ubuntu">
+        <h3>Ubuntu &amp; Linux Mint (APT)</h3>
+
+        <div class="channel-box channel-stable">
+          <h4 class="channel-title" style="color: #56d364;">Stable Channel (Default)</h4>
+          <pre class="code-block"><code>sudo curl -sSL https://www.vega-strike.org/repositories/ubuntu/vegastrike.sources -o /etc/apt/sources.list.d/vegastrike.sources
+sudo apt update
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+
+        <div class="channel-box channel-testing">
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
+sudo apt update
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 40px;">
+      <h3>Channel &amp; Repository Layout</h3>
+      <p style="color: #8b949e;">Each distribution provides separate Stable and Testing repodata:</p>
+      <ul>
+        <li><strong>Fedora Stable:</strong> <code>/repositories/fedora/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Fedora Testing:</strong> <code>/repositories/fedora-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Stable:</strong> <code>/repositories/opensuse/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>openSUSE Testing:</strong> <code>/repositories/opensuse-testing/leap/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Stable:</strong> <code>/repositories/rocky/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Rocky Linux Testing:</strong> <code>/repositories/rocky-testing/$releasever/$basearch/repodata/repomd.xml</code></li>
+        <li><strong>Debian &amp; Ubuntu:</strong> Component <code>main</code> (Stable) and Component <code>testing</code> (Alphas/Betas)</li>
+      </ul>
+      <p style="color: #8b949e;">All package files stream on demand from official GitHub Release binaries.</p>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script>
+    // Native robust tab switching support (works offline and alongside Bootstrap)
+    document.addEventListener("DOMContentLoaded", function () {
+      var tabLinks = document.querySelectorAll('.nav-tabs a[data-toggle="tab"]');
+      tabLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          var targetId = this.getAttribute("href");
+          if (!targetId || targetId === "#") return;
+
+          var navList = this.closest("ul");
+          if (navList) {
+            navList.querySelectorAll("li").forEach(function (li) {
+              li.classList.remove("active");
+            });
+          }
+          if (this.parentElement) {
+            this.parentElement.classList.add("active");
+          }
+
+          var tabContent = document.querySelector(".tab-content");
+          if (tabContent) {
+            tabContent.querySelectorAll(".tab-pane").forEach(function (pane) {
+              pane.classList.remove("active");
+            });
+            var targetPane = document.querySelector(targetId);
+            if (targetPane) {
+              targetPane.classList.add("active");
+            }
+          }
+        });
+      });
+
+      // Add copy button functionality to code blocks
+      document.querySelectorAll("pre.code-block").forEach(function (block) {
+        var btn = document.createElement("button");
+        btn.className = "btn-copy";
+        btn.textContent = "Copy";
+        btn.addEventListener("click", function () {
+          var code = block.querySelector("code") ? block.querySelector("code").innerText : block.innerText;
+          navigator.clipboard.writeText(code.trim()).then(function () {
+            btn.textContent = "Copied!";
+            setTimeout(function () { btn.textContent = "Copy"; }, 2000);
+          });
+        });
+        block.appendChild(btn);
+      });
+    });
+  </script>
+</body>
+</html>

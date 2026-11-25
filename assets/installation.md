@@ -57,10 +57,13 @@ installers are named according to the Darwin version.)
 
 ## Linux
 
-Vega Strike has been split into two main packages:
+Vega Strike provides official Linux package repositories for Fedora, openSUSE, Rocky Linux / RHEL, Debian, and Ubuntu.
+You can configure your package manager (DNF, Zypper, APT) using our [Linux Repositories](/repositories/) page to automatically install and receive updates.
 
-- [Vega Strike: Upon the Coldest Sea](https://github.com/vegastrike/Assets-Production/releases)
-- [Vega Strike Engine](https://github.com/vegastrike/Vega-Strike-Engine-Source/releases)
+Vega Strike games are split into engine and asset packages:
+
+- [Vega Strike Engine](https://github.com/vegastrike/Vega-Strike-Engine-Source/releases) (`vegastrike`)
+- [Vega Strike: Upon the Coldest Sea](https://github.com/vegastrike/Assets-Production/releases) (`vegastrike-upon-the-coldest-sea` / `vsutcs`)
 
 To install you will need to:
 

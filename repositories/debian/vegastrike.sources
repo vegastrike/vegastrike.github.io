@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://www.vega-strike.org/repositories/debian
+Suites: bookworm bullseye buster stretch trixie
+Components: main
+Trusted: yes

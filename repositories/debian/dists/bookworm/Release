@@ -1,0 +1,26 @@
+Origin: Vega Strike
+Label: Vega Strike Debian Repository
+Suite: bookworm
+Codename: bookworm
+Components: main testing
+Architectures: all amd64
+Description: Vega Strike Official Packages for Debian (bookworm)
+Date: Wed, 25 Nov 2026 19:03:42 UTC
+MD5Sum:
+ 1975faf637a830bdf01126716dcac404 1193 main/binary-amd64/Packages
+ 7233da24af24a08e1824ee22284dab5b 507 main/binary-amd64/Packages.gz
+ 7d9d28fc0ff62b146271e01f29ad5597 3689 main/binary-all/Packages
+ 871e6fcecbe212419a12146809404327 791 main/binary-all/Packages.gz
+ 055a25aae4cff3419c32e3e5a85335fd 13607 testing/binary-amd64/Packages
+ 0d58f566bc3c2238f99d8a3decb291f5 1718 testing/binary-amd64/Packages.gz
+ 69f9e81855580ca89b488a930f84254a 18990 testing/binary-all/Packages
+ dcb24a2b2a565c7284305d2cfca0e412 2343 testing/binary-all/Packages.gz
+SHA256:
+ f402a3f0068edce8e608dcd2fb0ac01499f7e089d66a5ae5af9c3a1adaac0128 1193 main/binary-amd64/Packages
+ bd306812170c3d262fea32c5799c9ba5c7086f9496be6a9b3075600b96a704fd 507 main/binary-amd64/Packages.gz
+ da87989e21f5c1ecc93889ca3d4985bf9f982ca5348ea90bb320fe9078ea68c7 3689 main/binary-all/Packages
+ e42a9825760ff9644dc0799838a27564b95be7622cd445fc25f837c761249842 791 main/binary-all/Packages.gz
+ 273288ca1b6fecc8409bccd3817ddb3e1b8df998836f9d11db0e23b2393921fc 13607 testing/binary-amd64/Packages
+ 3c18435e54903e982b95664d2cd8d066cfc26defdf907903c15c468553ec5414 1718 testing/binary-amd64/Packages.gz
+ 09f40877fb9c6ab1007041853d5256011610ce6478b0b7db02381c097983cf9c 18990 testing/binary-all/Packages
+ 63a89094949a12144e73e951761968327ce2711c8b5d55f541dcee41e80ca718 2343 testing/binary-all/Packages.gz
