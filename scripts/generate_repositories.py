@@ -35,6 +35,7 @@ CHECKSUMS_FILE = os.path.join(DATA_DIR, "checksums_cache.json")
 
 VSE_API_URL = "https://api.github.com/repos/vegastrike/Vega-Strike-Engine-Source/releases?per_page=100"
 ASSETS_API_URL = "https://api.github.com/repos/vegastrike/Assets-Production/releases?per_page=100"
+VSUBP_API_URL = "https://api.github.com/repos/vegastrike/vsu-black-paralysis/releases?per_page=100"
 
 def load_checksums_cache():
     if os.path.exists(CHECKSUMS_FILE):
@@ -207,12 +208,78 @@ def parse_package_asset(asset, release_tag, repo_source, is_prerelease=False, ca
             "prerelease": is_prerelease
         }
 
+    # Black Paralysis Assets (RPM):
+    # e.g.: vsuBP_0.1.3-fedora-43.rpm
+    #       vsuBP_0.1.3-opensuse-leap-16.0.rpm
+    #       vsuBP_0.1.3-rocky-10.2.rpm
+    #       vsuBP_v0.1.1-fedora-43.rpm
+    m_vsubp_rpm = re.match(
+        r"^vsuBP[_-]v?([0-9a-zA-Z\.\-]+?)-([a-zA-Z\-]+)-([0-9a-zA-Z\.\-]+)\.rpm$",
+        filename
+    )
+    if m_vsubp_rpm:
+        ver, distro_raw, dist_ver_raw = m_vsubp_rpm.groups()
+        distro = distro_raw.lower()
+        if distro == "centos":
+            distro = "rocky"
+        dist_ver = dist_ver_raw.lower()
+        if distro.startswith("opensuse"):
+            distro = "opensuse"
+            dist_ver = dist_ver.replace("leap-", "")
+
+        return {
+            "component": "assets",
+            "package_name": "vsuBP",
+            "provides": ["vsu-black-paralysis", "vsubp"],
+            "display_name": "VSU: Black Paralysis Assets",
+            "version": ver,
+            "opengl": "any",
+            "distro": distro,
+            "distro_version": dist_ver,
+            "arch": "noarch",
+            "pkg_type": "rpm",
+            "filename": filename,
+            "size": size,
+            "sha256": sha256,
+            "download_url": download_url,
+            "release_tag": release_tag,
+            "repo_source": repo_source,
+            "prerelease": is_prerelease
+        }
+
+    # Black Paralysis Assets (DEB):
+    # e.g.: vsubp_0.1.3.deb
+    #       vsubp_v0.1.1.deb
+    m_vsubp_deb = re.match(r"^vsubp[_-]v?([0-9a-zA-Z\.\-]+?)(?:-Linux)?\.deb$", filename)
+    if m_vsubp_deb:
+        ver = m_vsubp_deb.group(1)
+        return {
+            "component": "assets",
+            "package_name": "vsubp",
+            "provides": ["vsu-black-paralysis"],
+            "display_name": "VSU: Black Paralysis Assets",
+            "version": ver,
+            "opengl": "any",
+            "distro": "debian",  # shared across debian/ubuntu/mint
+            "distro_version": "all",
+            "arch": "all",
+            "pkg_type": "deb",
+            "filename": filename,
+            "size": size,
+            "sha256": sha256,
+            "download_url": download_url,
+            "release_tag": release_tag,
+            "repo_source": repo_source,
+            "prerelease": is_prerelease
+        }
+
     return None
 
 def collect_release_data():
     cache = load_checksums_cache()
     vse_releases = fetch_github_releases(VSE_API_URL)
     assets_releases = fetch_github_releases(ASSETS_API_URL)
+    vsubp_releases = fetch_github_releases(VSUBP_API_URL)
 
     packages = []
     seen_urls = set()
@@ -231,6 +298,15 @@ def collect_release_data():
         is_pre = r.get("prerelease", False)
         for a in r.get("assets", []):
             pkg = parse_package_asset(a, tag, "Assets-Production", is_pre, cache)
+            if pkg and pkg["download_url"] not in seen_urls:
+                packages.append(pkg)
+                seen_urls.add(pkg["download_url"])
+
+    for r in vsubp_releases:
+        tag = r.get("tag_name", "")
+        is_pre = r.get("prerelease", False)
+        for a in r.get("assets", []):
+            pkg = parse_package_asset(a, tag, "vsu-black-paralysis", is_pre, cache)
             if pkg and pkg["download_url"] not in seen_urls:
                 packages.append(pkg)
                 seen_urls.add(pkg["download_url"])
@@ -265,11 +341,14 @@ def generate_rpm_repodata(output_dir, packages_list):
         size = p["size"]
         url = p["download_url"]
         summary = p["display_name"]
-        description = (
-            "Vega Strike 3D Space Flight Simulator"
-            if p["component"] == "engine"
-            else "Vega Strike Upon the Coldest Sea Game Data"
-        )
+        if p["package_name"] == "vegastrike":
+            description = "Vega Strike 3D Space Flight Simulator"
+        elif p["package_name"] == "vsutcs":
+            description = "Vega Strike Upon the Coldest Sea Game Data"
+        elif p["package_name"].lower() in ("vsubp", "vsu-black-paralysis"):
+            description = "VSU Black Paralysis Game Data"
+        else:
+            description = p.get("display_name", "")
 
         primary_xml_lines.append(f'  <package type="rpm">')
         primary_xml_lines.append(f'    <name>{pkg_name}</name>')
@@ -568,6 +647,7 @@ def generate_landing_page(packages):
       <ul style="margin-top: 4px; margin-bottom: 0;">
         <li><code>vegastrike</code> &mdash; Core Game Engine</li>
         <li><code>vegastrike-upon-the-coldest-sea</code> &mdash; Vega Strike: Upon the Coldest Sea Assets <em>(also installable as <code>vsutcs</code>)</em></li>
+        <li><code>vsu-black-paralysis</code> &mdash; VSU: Black Paralysis Assets <em>(also installable as <code>vsubp</code>)</em></li>
       </ul>
     </div>
 
@@ -599,9 +679,13 @@ def generate_landing_page(packages):
         </div>
 
         <div class="channel-box channel-testing">
-          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
-          <p>To install preview builds or alphas:</p>
-          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x, Black Paralysis)</h4>
+          <p>To install preview builds or Black Paralysis:</p>
+          <pre class="code-block"><code># Install Vega Strike Engine &amp; Upon the Coldest Sea
+sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea
+
+# Install VSU: Black Paralysis
+sudo dnf install --enablerepo=vegastrike-testing vegastrike vsu-black-paralysis</code></pre>
           <p><small>To permanently enable testing: <code>sudo dnf config-manager --set-enabled vegastrike-testing</code></small></p>
         </div>
       </div>
@@ -620,8 +704,12 @@ sudo zypper refresh</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
-          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
-          <pre class="code-block"><code>sudo zypper install --from vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x, Black Paralysis)</h4>
+          <pre class="code-block"><code># Install Vega Strike Engine &amp; Upon the Coldest Sea
+sudo zypper install --from vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea
+
+# Install VSU: Black Paralysis
+sudo zypper install --from vegastrike-testing vegastrike vsu-black-paralysis</code></pre>
         </div>
       </div>
 
@@ -638,8 +726,12 @@ sudo zypper refresh</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
-          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
-          <pre class="code-block"><code>sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x, Black Paralysis)</h4>
+          <pre class="code-block"><code># Install Vega Strike Engine &amp; Upon the Coldest Sea
+sudo dnf install --enablerepo=vegastrike-testing vegastrike vegastrike-upon-the-coldest-sea
+
+# Install VSU: Black Paralysis
+sudo dnf install --enablerepo=vegastrike-testing vegastrike vsu-black-paralysis</code></pre>
         </div>
       </div>
 
@@ -656,11 +748,14 @@ sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
-          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x, Black Paralysis)</h4>
           <p>To enable preview testing builds (component <code>testing</code>):</p>
           <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/debian $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
 sudo apt update
-sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+
+# Install Upon the Coldest Sea or Black Paralysis:
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea
+sudo apt install vegastrike vsu-black-paralysis</code></pre>
         </div>
       </div>
 
@@ -676,10 +771,13 @@ sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
         </div>
 
         <div class="channel-box channel-testing">
-          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x)</h4>
+          <h4 class="channel-title" style="color: #e3b341;">Testing Channel (Alphas &amp; Betas: 0.10.x, 0.11.x, Black Paralysis)</h4>
           <pre class="code-block"><code>echo "deb [trusted=yes] https://www.vega-strike.org/repositories/ubuntu $(lsb_release -cs) testing" | sudo tee /etc/apt/sources.list.d/vegastrike-testing.list
 sudo apt update
-sudo apt install vegastrike vegastrike-upon-the-coldest-sea</code></pre>
+
+# Install Upon the Coldest Sea or Black Paralysis:
+sudo apt install vegastrike vegastrike-upon-the-coldest-sea
+sudo apt install vegastrike vsu-black-paralysis</code></pre>
         </div>
       </div>
 

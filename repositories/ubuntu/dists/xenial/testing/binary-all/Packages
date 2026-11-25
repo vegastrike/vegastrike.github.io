@@ -477,3 +477,67 @@ Homepage: https://www.vega-strike.org
 Description: Vega Strike: Upon The Coldest Sea Assets
  Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
  fight, and explore in a vast universe.
+
+Package: vsubp
+Version: 0.1.3-1
+Architecture: all
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
+Installed-Size: 120873
+Filename: https://github.com/vegastrike/vsu-black-paralysis/releases/download/v0.1.3/vsubp_0.1.3.deb
+Size: 123774356
+SHA256: b066d667800d522daa62b2f01252a0173f23c511a1dea1ca63c81a7bd708020d
+Section: games
+Priority: optional
+Provides: vsu-black-paralysis
+Homepage: https://www.vega-strike.org
+Description: VSU: Black Paralysis Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsubp
+Version: 0.1.2-1
+Architecture: all
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
+Installed-Size: 120888
+Filename: https://github.com/vegastrike/vsu-black-paralysis/releases/download/v0.1.2/vsubp_0.1.2.deb
+Size: 123789612
+SHA256: c3a974f9252564bf0685e4bd6730dfa117e55159b10184fb88f4601455aa32a6
+Section: games
+Priority: optional
+Provides: vsu-black-paralysis
+Homepage: https://www.vega-strike.org
+Description: VSU: Black Paralysis Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsubp
+Version: 0.1.1-1
+Architecture: all
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
+Installed-Size: 120879
+Filename: https://github.com/vegastrike/vsu-black-paralysis/releases/download/v0.1.1/vsubp_v0.1.1.deb
+Size: 123780282
+SHA256: 8dc26869702fdd345a3a7103207e515a03d0d377f24991a559f906781784eb6c
+Section: games
+Priority: optional
+Provides: vsu-black-paralysis
+Homepage: https://www.vega-strike.org
+Description: VSU: Black Paralysis Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
+
+Package: vsubp
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Vega Strike Development Team <maintainer@vega-strike.org>
+Installed-Size: 120875
+Filename: https://github.com/vegastrike/vsu-black-paralysis/releases/download/v0.1.0/vsubp_v0.1.0.deb
+Size: 123776864
+SHA256: 6bde122f8fa84d0b22630aeda076fded77b457e3aa9b669aeb0aa190f9be1799
+Section: games
+Priority: optional
+Provides: vsu-black-paralysis
+Homepage: https://www.vega-strike.org
+Description: VSU: Black Paralysis Assets
+ Vega Strike is an Open Source 3D Action-Space-Sim that lets you trade,
+ fight, and explore in a vast universe.
